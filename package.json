@@ -1,0 +1,37 @@
+{
+  "name": "waypoint-mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server that helps teachers translate IEPs into lesson-specific instructional modifications. Submission for the Waypoint Learning founding-engineer challenge.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "waypoint-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "iep",
+    "special-education",
+    "anthropic",
+    "claude"
+  ],
+  "author": "Praveen Tiwari",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "pdf-parse": "^2.4.5",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  }
+}

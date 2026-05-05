@@ -1,0 +1,135 @@
+{
+  "id": "acc-by-profile-executive-function",
+  "title": "Accommodations and Strategies for Executive Function Disorder",
+  "description": "Use when the student profile includes Executive Function Disorder or shows characteristics such as difficulty planning, organizing materials, managing time, breaking tasks into steps, initiating or completing assignments, or coping with transitions. Many of these strategies also apply to students with ADHD/attention profiles.",
+  "applies_to": {
+    "cognitive_deficits": ["short-term-memory", "processing-speed", "fluid-reasoning"],
+    "achievement_deficits": ["written-expression", "reading-comprehension"],
+    "contexts": ["instructional-delivery", "tools-equipment", "transitions", "testing-assessment", "environment"],
+    "profiles": ["executive-function", "adhd-attention"]
+  },
+  "source": {
+    "name": "ADayInOurShoes — Ultimate List of IEP Accommodations, Modifications & Strategies (SDIs)",
+    "section": "General strategies for Executive Function Disorder; Managing time / space / work for Executive Functioning Deficits",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "198-235"
+  },
+  "definition": "Executive Function Disorder describes difficulty with the self-management cognitive processes that organize behavior toward goals — including planning, prioritizing, working memory, time awareness, organization of materials and space, task initiation, sustained attention, and flexible shifting between tasks.",
+  "accommodations": [
+    {
+      "id": "ef-01",
+      "text": "Use visual organizers for a step-by-step approach — e.g., a white board with color markers.",
+      "applies_when": ["instructional-delivery"]
+    },
+    {
+      "id": "ef-02",
+      "text": "Use tools like iPads, watches with timers, and laptops.",
+      "applies_when": ["tools-equipment"]
+    },
+    {
+      "id": "ef-03",
+      "text": "Use and prepare visual schedules; review them several times a day.",
+      "applies_when": ["instructional-delivery"]
+    },
+    {
+      "id": "ef-04",
+      "text": "Ask for large print and written directions paired with oral instructions whenever possible.",
+      "applies_when": ["instructional-delivery"]
+    },
+    {
+      "id": "ef-05",
+      "text": "When schedules and activities shift, plan for transitions.",
+      "applies_when": ["transitions"]
+    },
+    {
+      "id": "ef-06",
+      "text": "Create \"to do\" lists / checklists with estimated times.",
+      "applies_when": ["time-management"]
+    },
+    {
+      "id": "ef-07",
+      "text": "Break long assignments into chunks and assign time frames for completing each chunk.",
+      "applies_when": ["time-management"]
+    },
+    {
+      "id": "ef-08",
+      "text": "Use a hand-held device for reminders on projects, assignments, and meetings (e.g., iTouch, Blackberry, iPhone).",
+      "applies_when": ["time-management", "tools-equipment"]
+    },
+    {
+      "id": "ef-09",
+      "text": "Use a large, easy-to-read, erasable, color-coded calendar for projects, long-term assignments, meetings, events, activities, chores, etc.",
+      "applies_when": ["time-management"]
+    },
+    {
+      "id": "ef-10",
+      "text": "Use a \"date stamp\" for materials — both the date received and the date due.",
+      "applies_when": ["time-management"]
+    },
+    {
+      "id": "ef-11",
+      "text": "Keep an organized work space.",
+      "applies_when": ["space-management", "environment"]
+    },
+    {
+      "id": "ef-12",
+      "text": "Hang a white board / magnetic board to create a visual list of weekly assignments and projects; use magnets to hang papers due.",
+      "applies_when": ["space-management", "environment"]
+    },
+    {
+      "id": "ef-13",
+      "text": "Minimize clutter.",
+      "applies_when": ["space-management", "environment"]
+    },
+    {
+      "id": "ef-14",
+      "text": "Ask for extra textbooks for home use; keep them in work areas.",
+      "applies_when": ["space-management", "tools-equipment"]
+    },
+    {
+      "id": "ef-15",
+      "text": "Have separate work areas with complete sets of supplies for different activities/subjects.",
+      "applies_when": ["space-management", "environment"]
+    },
+    {
+      "id": "ef-16",
+      "text": "Schedule a weekly time to clean and organize the work space.",
+      "applies_when": ["space-management"]
+    },
+    {
+      "id": "ef-17",
+      "text": "Modify tests — they can be overwhelming and stressful. Provide extra time and a quiet space, and break (chunk) the test into parts to do at a time.",
+      "applies_when": ["work-management", "testing-assessment"]
+    },
+    {
+      "id": "ef-18",
+      "text": "Modify assignments and projects: chunk them, use highlighters to emphasize important parts, and use visual organizers to create timelines.",
+      "applies_when": ["work-management"]
+    },
+    {
+      "id": "ef-19",
+      "text": "Use a \"homework system\" the student finds most helpful — e.g., an assignment book that is checked at home and then by staff at school in the morning, with all homework reviewed.",
+      "applies_when": ["work-management"]
+    },
+    {
+      "id": "ef-20",
+      "text": "Use computers or technology as much as possible for visual support and ease of completing work.",
+      "applies_when": ["work-management", "tools-equipment"]
+    },
+    {
+      "id": "ef-21",
+      "text": "Have teachers provide as much information as possible with visuals on the white board and with copies of notes for students.",
+      "applies_when": ["work-management", "instructional-delivery"]
+    },
+    {
+      "id": "ef-22",
+      "text": "For reading, use ebooks, Kindle, iPad, and any visual or auditory form of books for comprehension.",
+      "applies_when": ["work-management", "tools-equipment"]
+    },
+    {
+      "id": "ef-23",
+      "text": "For vocabulary, use iPad, iTouch, iPhone, or other handhelds for apps that have vocabulary practice.",
+      "applies_when": ["work-management", "tools-equipment"]
+    }
+  ]
+}

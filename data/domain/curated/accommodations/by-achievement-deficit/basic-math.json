@@ -1,0 +1,352 @@
+{
+  "id": "acc-by-ach-basic-math",
+  "title": "Basic Math Skill Deficits — Accommodations & Strategies",
+  "description": "Use when the student's IEP present-levels indicate below-grade-level performance in basic math skills, including specific skill gaps in counting, number recognition, math fact recall, or computational algorithms.",
+  "applies_to": {
+    "cognitive_deficits": ["long-term-retrieval", "short-term-memory", "processing-speed"],
+    "achievement_deficits": ["basic-math"],
+    "contexts": ["instructional-delivery", "testing-assessment", "tools-equipment"],
+    "profiles": []
+  },
+  "source": {
+    "name": "Seaman Compendium — Accommodations for Cognitive and Academic Deficits (J. Seaman, PhD)",
+    "section": "Section Two: Accommodations for Achievement Deficits — Basic Math Skill Deficits",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "1575-1827"
+  },
+  "definition": "The student experiences deficits in skills prerequisite to computation (e.g., number recognition, math facts) or in computation itself.",
+  "accommodations": [
+    {
+      "id": "bm-acc-01",
+      "text": "Provide a number line on the student's desk to help the student identify numbers, write numbers, visualize number relationships or for use in simple addition and subtraction.",
+      "applies_when": []
+    },
+    {
+      "id": "bm-acc-02",
+      "text": "Provide a 'cheat sheet' with math facts. Allow the student to use this reference tool on assignments and tests until math facts have been memorized. However, encourage the student to guess before looking for the answer on the cheat sheet. The 'cheat sheet' will provide immediate feedback for the guessing response. Such immediate feedback supports learning.",
+      "applies_when": []
+    },
+    {
+      "id": "bm-acc-03",
+      "text": "Lack of math facts can inhibit practice of algorithms with this student. As a result, allow the student to use a calculator to access math facts when practicing math calculation skills.",
+      "applies_when": []
+    },
+    {
+      "id": "bm-acc-04",
+      "text": "Allow the student to use the touch point math procedure to compensate for lack of memory of addition and subtraction facts.",
+      "applies_when": []
+    },
+    {
+      "id": "bm-acc-05",
+      "text": "Provide adequate space on the page to write and erase numbers during computation.",
+      "applies_when": []
+    },
+    {
+      "id": "bm-acc-06",
+      "text": "Provide graph paper to help the student organize rows and columns when computing math problems.",
+      "applies_when": []
+    },
+    {
+      "id": "bm-acc-07",
+      "text": "Monitor student performance at a high rate to insure the student is not practicing errors. It may be helpful to enlist a peer helper in this regard.",
+      "applies_when": []
+    },
+    {
+      "id": "bm-acc-08",
+      "text": "At the start of an independent seat work assignment, monitor the first couple of items to insure the student understands how to complete problems.",
+      "applies_when": []
+    },
+    {
+      "id": "bm-acc-09",
+      "text": "Avoid confusing the student by mixing problem types (e.g., subtraction and addition) until the student has achieved mastery.",
+      "applies_when": []
+    },
+    {
+      "id": "bm-acc-10",
+      "text": "Reduce the length or number of problems on an assignment in order that the student complete the assignment in the same time as average classmates.",
+      "applies_when": []
+    },
+    {
+      "id": "bm-acc-11",
+      "text": "Due to computation difficulties, the student is slow to complete math assignments. Establish a reasonable limit on the amount of time spent on math homework. This might require adjusting the length of some assignments.",
+      "applies_when": []
+    },
+    {
+      "id": "bm-acc-12",
+      "text": "Allow additional time on math tests or reduce the number of items on the test.",
+      "applies_when": ["testing-assessment"]
+    }
+  ],
+  "instructional_strategies": [
+    {
+      "id": "bm-strat-01",
+      "text": "Identify to what number the student reliably counts. Establish realistic instructional goals by introducing only two or three additional numbers at a time. When these numbers have been mastered, progress by another two or three numbers.",
+      "applies_when": ["counting"]
+    },
+    {
+      "id": "bm-strat-02",
+      "text": "Employ direct instruction procedures when teaching the student to count. Model the counting skill, allow the student numerous opportunities to practice the skill and provide immediate feedback/error correction.",
+      "applies_when": ["counting"]
+    },
+    {
+      "id": "bm-strat-03",
+      "text": "Employ choral responding when teaching the student to count. In this procedure the student counts several times in chorus with the instructor before counting independently.",
+      "applies_when": ["counting"]
+    },
+    {
+      "id": "bm-strat-04",
+      "text": "Use objects to help the student learn to count. Use of meaningful objects such as pictures of students, toys or pieces of candy will be helpful. Alternate objects counted across trials to maintain interest. Emphasize one to one correspondence.",
+      "applies_when": ["counting"]
+    },
+    {
+      "id": "bm-strat-05",
+      "text": "Provide numerous opportunities for the student to use counting in daily activities (e.g., count the friends you are playing with, count the legos in your building, count the cars in the parking lot, count the steps taken to the drinking fountain, count specific objects in catalog pictures, etc.)",
+      "applies_when": ["counting"]
+    },
+    {
+      "id": "bm-strat-06",
+      "text": "Capitalize on the benefits of spaced practice. Rehearse counting several times a day for short periods of time. Providing counting activities for the parents to employ at home and using an upper grade peer tutor to practice counting activities will be helpful in reaching this goal.",
+      "applies_when": ["counting"]
+    },
+    {
+      "id": "bm-strat-07",
+      "text": "Provide the student regular opportunities to play games that require counting. Many early childhood games (e.g., Chutes and Ladders) require counting spaces on a game board.",
+      "applies_when": ["counting"]
+    },
+    {
+      "id": "bm-strat-08",
+      "text": "Emphasize recognizing numbers that are within the range of the student's counting ability.",
+      "applies_when": ["number-recognition"]
+    },
+    {
+      "id": "bm-strat-09",
+      "text": "Establish realistic expectations by introducing only one or two new numbers at a time. Provide opportunities for the student to practice previously learned numbers while rehearsing a new number(s).",
+      "applies_when": ["number-recognition"]
+    },
+    {
+      "id": "bm-strat-10",
+      "text": "Employ direct instruction procedures. Model reading or writing of a number(s), provide the student numerous opportunities to practice the skill and provide immediate feedback/error correction.",
+      "applies_when": ["number-recognition"]
+    },
+    {
+      "id": "bm-strat-11",
+      "text": "Capitalize on the benefits of spaced practice. Practice number recognition and writing of numbers on a daily basis, for short periods, several times a day (e.g., at the outset of school, after recess, at the end of school and as homework). It may be necessary to provide a cross age peer tutor to accomplish such a schedule.",
+      "applies_when": ["number-recognition"]
+    },
+    {
+      "id": "bm-strat-12",
+      "text": "Tape a number line to the student's desk or table. The student can refer to the number line to identify numbers via counting. The student can also copy number forms from the number line.",
+      "applies_when": ["number-recognition"]
+    },
+    {
+      "id": "bm-strat-13",
+      "text": "The student will better learn to recognize and write numbers which have meaning, for which the number concept is established. As a result, when introducing a new number, take time to have the student use the number in activities which enhance meaning (e.g., name five toys you like, show me five fingers, slap my hand five times, etc.).",
+      "applies_when": ["number-recognition"]
+    },
+    {
+      "id": "bm-strat-14",
+      "text": "Provide opportunities for the student to become familiar with numbers by activities employing visual and tactile modalities. Activities such as matching numbers, tracing numbers, copying numbers in wet sand, playing with number puzzles and manipulating plastic number pieces will be helpful. Encourage the student to say the number name when engaging with it. This might require modeling by the instructor.",
+      "applies_when": ["number-recognition"]
+    },
+    {
+      "id": "bm-strat-15",
+      "text": "When teaching a new number, integrate activities to identify the number by name as well as write the number from memory. Learning to identify a number will help the writing process and learning to write a number will help the identification process.",
+      "applies_when": ["number-recognition"]
+    },
+    {
+      "id": "bm-strat-16",
+      "text": "When teaching, sandwich a newly introduced number among known numbers. Identify numbers the student knows and does not know. Introduce an unknown number by pointing to it and saying its name several times followed each time by the student saying the number name. Write the number in an array of two known numbers (e.g., known 1, unknown, known 2). Read the array of numbers in chorus with the student followed by the student reading the array independently. Rehearse the number several times in this manner while changing the position of the target number among different known numbers.",
+      "applies_when": ["number-recognition"]
+    },
+    {
+      "id": "bm-strat-17",
+      "text": "Employ delayed prompting as a strategy to teach and rehearse number names. Organize a set of five flash cards consisting of three known numbers and two unknown numbers to be learned. At the outset, the student is told to only say the number when certain of its name. The cards are flashed by a tutor. If the student recognizes the number, the student says its name. The student remains silent if the number is not recognized and the tutor says the number name which is repeated by the student. The student is praised for correct answers and reminded to wait when not certain. It is helpful to occasionally change the order of cards in the stack.",
+      "applies_when": ["number-recognition"]
+    },
+    {
+      "id": "bm-strat-18",
+      "text": "Use a guided practice procedure moving from large to small muscle activity to teach number writing. The student first forms the number by large movements of the arm. Next the student traces the number on paper several times and then writes the number on paper with the tip of the index finger. The student then copies the number with paper and pencil from a model followed by writing the number from memory.",
+      "applies_when": ["number-recognition"]
+    },
+    {
+      "id": "bm-strat-19",
+      "text": "Since some numbers will be more difficult for a particular student to write, move onto writing new numbers while providing individualized help to learn to write difficult numbers.",
+      "applies_when": ["number-recognition"]
+    },
+    {
+      "id": "bm-strat-20",
+      "text": "Capitalize on the benefits of spaced practice by employing number recognition and writing activities several times per day for short periods of time. An upper grade peer tutor can be of help to run practice activities with the student. In addition, practice at home will be beneficial. It will be important to confer with the student's parents to insure that numbers being practiced at home are those being taught at school.",
+      "applies_when": ["number-recognition"]
+    },
+    {
+      "id": "bm-strat-21",
+      "text": "Explain to the student the value of learning math facts. Knowing math facts will help the student complete assignments with greater ease and accuracy and make learning of new math procedures much easier.",
+      "applies_when": ["math-facts"]
+    },
+    {
+      "id": "bm-strat-22",
+      "text": "Discuss with the student how math facts can be used to quickly solve many daily problems faced by the student. Provide examples (e.g., addition facts used to determine points earned in a game, subtraction facts used to determine point differences between players) and have the student identify more examples.",
+      "applies_when": ["math-facts"]
+    },
+    {
+      "id": "bm-strat-23",
+      "text": "Provide adequate drill and practice so that math facts become automatic. During drill and practice activities, provide immediate feedback/error correction.",
+      "applies_when": ["math-facts"]
+    },
+    {
+      "id": "bm-strat-24",
+      "text": "Capitalize on the benefits of spaced practice. Provide opportunities to practice math facts on a daily basis, for short periods, several times a day (e.g., at the outset of school, after recess, at the end of school and as homework). It may be necessary to provide a cross age peer tutor to accomplish such a schedule.",
+      "applies_when": ["math-facts"]
+    },
+    {
+      "id": "bm-strat-25",
+      "text": "Emphasize success by introducing only a few (e.g., perhaps one, two or three) math facts each day or every other day.",
+      "applies_when": ["math-facts"]
+    },
+    {
+      "id": "bm-strat-26",
+      "text": "During instruction, provide a high number of opportunities for the student to successfully state or write math facts from memory (i.e., not just copy). Provide immediate feedback about accuracy. Immediate feedback might consist of self checking and correcting.",
+      "applies_when": ["math-facts"]
+    },
+    {
+      "id": "bm-strat-27",
+      "text": "When teaching addition facts, first teach the commutative law (e.g., 1+2 = 2+1) and then present math facts in the following sequence: + 0 and + 1; Doubles: 2+2, 3+3, etc.; Doubles + 1: 2+3, 3+4, 4+5, etc.; Doubles + 2: 2+4, 3+5, 4+6, etc.; Plus tens: 2+10, 3+10, etc.; Plus nines: [(any number -1) +10]: 2+9, 3+9, etc.; Remaining facts: 2+5, 2+6, 2+7, 2+8, 3+6, 3+7, 3+8, 4+7, 4+8, 5+8.",
+      "applies_when": ["math-facts"]
+    },
+    {
+      "id": "bm-strat-28",
+      "text": "When teaching multiplication facts, review the commutative law (e.g., 3x4 = 4x3) and use the following order of presentation: x0 and x1; x2 and 2x; x5 and 5x; x9 and 9x; Perfect squares: 1x1, 2x2, 3x3, etc.; Remaining facts: 3x4, 3x6, 3x7, 3x8, 4x6, 4x7, 4x8, 6x7, 6x8, 7x8.",
+      "applies_when": ["math-facts"]
+    },
+    {
+      "id": "bm-strat-29",
+      "text": "Teach multiplication facts even if all addition and subtraction facts are not known.",
+      "applies_when": ["math-facts"]
+    },
+    {
+      "id": "bm-strat-30",
+      "text": "Help the student record math facts that have been learned on a chart to enhance motivation. A useful chart consists of a computation table (i.e., a table with numbers 0 to 12 across the top and side) that lacks answers within cells. As the student learns a math fact, allow the student to place the answer in the corresponding cell.",
+      "applies_when": ["math-facts"]
+    },
+    {
+      "id": "bm-strat-31",
+      "text": "Teach the addition, subtraction and multiplication processes prior to knowledge of all math facts. Understanding of these processes will assist memory for associated math facts.",
+      "applies_when": ["math-facts"]
+    },
+    {
+      "id": "bm-strat-32",
+      "text": "Employ delayed prompting as a strategy to teach math facts. Write math facts to be learned on flash cards. Organize the cards into stacks of five or six. A flash card is shown by the instructor and read by the student. The instructor immediately provides the correct answer followed by the student rereading the card and stating the answer. The cards are successively shown until the stack has been reviewed twice in this manner. At this point the student is told that on the next flashes to only give an answer if certain it is correct. If uncertain, the student is to wait for the instructor to give the right answer. The pack is then presented six times. If the student does not respond to a card in 5 seconds, the instructor says the answer, the student rereads the item and states the answer. If the student gives a wrong answer, the student is reminded to wait when uncertain. A peer tutor or aide can be used to present this program.",
+      "applies_when": ["math-facts"]
+    },
+    {
+      "id": "bm-strat-33",
+      "text": "Teach a peer tutor or parent volunteer to use the cover-copy-compare method with the student. A few math facts to be learned are written down the left-hand margin of a piece of paper. The student reads the first item, covers it with a card and rewrites it to the right of the now covered model. The student uncovers the model, comparing the product with the model. If the student is correct, the student proceeds to the next item. If the student is incorrect, the student copies the model 3 times to the right of the error. The student then covers the work, writes the response from memory and again compares the product with the model. The sequence of items repeats itself several times down the page to allow a high rate of opportunities to respond.",
+      "applies_when": ["math-facts"]
+    },
+    {
+      "id": "bm-strat-34",
+      "text": "Employ the add a fact method to teach math facts. In this method ten math facts to be learned are selected from a master list of unknown facts. The student copies the ten facts down the left-hand margin of a piece of paper. The student covers the column of facts. The instructor dictates each problem which the student writes to the right of the covered model. The student writes the answer to the problem, uncovers the model and compares the product with the model. If the answer is correct, the next fact is dictated. If the answer is wrong, the math fact is copied again. This procedure is carried out daily. When the student responds correctly to an item on 2 consecutive days, it is removed from the list of 10 facts and replaced with another fact from the master list.",
+      "applies_when": ["math-facts"]
+    },
+    {
+      "id": "bm-strat-35",
+      "text": "Employ the drill sandwich method to teach math facts. Three unknown and seven known math facts are identified and written on index cards. The unknown facts are taught by reading them successively to the student and having the student repeat the facts. The unknown facts are then placed in positions 3, 6, and 8 of the stack of ten flash cards. The set of flash cards is presented several times. Across presentations the position of known facts is changed while the unknown facts remain in positions 3, 6 and 8. When the student makes an error, state the correct response and have the student re-read the item and state the correct response three times. A peer tutor can be taught to run this program.",
+      "applies_when": ["math-facts"]
+    },
+    {
+      "id": "bm-strat-36",
+      "text": "Employ daily math fact timings. A graph is made with the date along the x axis and the number of correct responses per minute along the y axis. Daily, the student is given one minute to complete a page of math facts. Afterward, the number of correct responses is plotted on the graph. The student's performance is compared with past performance as well as a goal line which represents the desired number of correct facts per minute. This procedure allows the student to assess progress.",
+      "applies_when": ["math-facts"]
+    },
+    {
+      "id": "bm-strat-37",
+      "text": "Communicate with the student's parents about establishing a home based tutorial program to help learn math facts. It will be important to consult regularly with the student's parents so that they are rehearsing the same facts practiced in class. Provide the parents easy to use tutorial procedures such as cover-copy-compare or the drill sandwich method. Regular communication increases the likelihood of a home based tutorial program being followed.",
+      "applies_when": ["math-facts"]
+    },
+    {
+      "id": "bm-strat-38",
+      "text": "Teach the student the touch point math procedure to be used to compensate for lack of math facts until these facts are learned.",
+      "applies_when": ["math-facts"]
+    },
+    {
+      "id": "bm-strat-39",
+      "text": "Employ direct instruction methods. Model how to compute the algorithm, provide numerous opportunities for the student to practice the skill and provide immediate feedback/error correction.",
+      "applies_when": ["algorithms"]
+    },
+    {
+      "id": "bm-strat-40",
+      "text": "Individually, or in a small group, preview a computation skill with the student before it is taught to the class. This will likely enhance effectiveness of the classwide teaching procedure for the student.",
+      "applies_when": ["algorithms"]
+    },
+    {
+      "id": "bm-strat-41",
+      "text": "Use manipulatives to demonstrate application of an algorithm. Such concrete references will enhance the student's understanding of the process and therefore memory for the procedure.",
+      "applies_when": ["algorithms"]
+    },
+    {
+      "id": "bm-strat-42",
+      "text": "Whenever possible, use real life examples from the student's experience to demonstrate use of a math computation skill.",
+      "applies_when": ["algorithms"]
+    },
+    {
+      "id": "bm-strat-43",
+      "text": "Provide ample space on the page for the student to organize work and erase and correct errors. This is particularly important when a skill is first being learned and practiced.",
+      "applies_when": ["algorithms"]
+    },
+    {
+      "id": "bm-strat-44",
+      "text": "When first teaching a new computation skill, provide the problem written on the page rather than requiring the student to copy the problem. This will insure that the problem is written neatly with adequate room between rows of numbers. It will also eliminate the issue of confusing the problem from the work done to solve the problem.",
+      "applies_when": ["algorithms"]
+    },
+    {
+      "id": "bm-strat-45",
+      "text": "Place a model algorithm at the top of the page to which the student can refer when practicing.",
+      "applies_when": ["algorithms"]
+    },
+    {
+      "id": "bm-strat-46",
+      "text": "Since the student does not know all addition and subtraction facts and uses finger counting to compensate, teach the student to count up from the largest number when adding single digit numbers and to count down from the largest number when subtracting single digit numbers.",
+      "applies_when": ["algorithms"]
+    },
+    {
+      "id": "bm-strat-47",
+      "text": "Break an algorithm into component parts, teaching one part of the computation procedure at a time. It will also be beneficial to provide a verbal set of steps for the student to follow (e.g., when dividing, first estimate, divide, multiply, and subtract).",
+      "applies_when": ["algorithms"]
+    },
+    {
+      "id": "bm-strat-48",
+      "text": "Teach the student that all computation except division begins at the left of the problem and works right. Explain to the student that math is different from reading in this way. On the first few items of a computation worksheet involving addition, subtraction and multiplication problems, it may be helpful to place a left facing arrow at the right-hand side of problems.",
+      "applies_when": ["algorithms"]
+    },
+    {
+      "id": "bm-strat-49",
+      "text": "Provide numerous examples, slowly walking through each step while simultaneously verbalizing the step. Have the student work the problem as the instructor works the problem.",
+      "applies_when": ["algorithms"]
+    },
+    {
+      "id": "bm-strat-50",
+      "text": "Check for accuracy at the outset of an independent seatwork task involving practice of computation problems. It is important that correction be made immediately so that the student does not rehearse errors.",
+      "applies_when": ["algorithms"]
+    },
+    {
+      "id": "bm-strat-51",
+      "text": "Pair the student with a model student who can immediately answer questions, check and correct performance, provide guidance, demonstrate the calculation process and encourage. Initially, the study buddy might demonstrate a problem followed by the student doing the next problem of a worksheet. The pair might trade problems at first until the student is ready to work more independently.",
+      "applies_when": ["algorithms"]
+    },
+    {
+      "id": "bm-strat-52",
+      "text": "The student will benefit from a template that provides boxes to be filled in when completing a computation problem. The template also provides signs on each line to cue the student to the correct procedure (e.g., subtract, etc.) In time the template can be faded and eliminated as the student gains mastery of the skill.",
+      "applies_when": ["algorithms"]
+    },
+    {
+      "id": "bm-strat-53",
+      "text": "After the student has mastered an algorithm, provide opportunities for the student to teach other students the skill.",
+      "applies_when": ["algorithms"]
+    },
+    {
+      "id": "bm-strat-54",
+      "text": "Capitalize on the benefits of spaced practice by providing opportunities for the student to practice newly taught math computation skills for short periods several times a day. This might be accomplished by use of peer tutors as well as providing the parents a tutorial procedure to use at home. It will be important to consult regularly with the student's parents so that they are rehearsing the same skills practiced in class. Also, regular communication increases the likelihood of a home based tutorial program being followed.",
+      "applies_when": ["algorithms"]
+    }
+  ]
+}

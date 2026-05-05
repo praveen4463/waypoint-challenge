@@ -1,0 +1,128 @@
+{
+  "id": "acc-by-context-tools-and-equipment",
+  "title": "Tools and Equipment Accommodations",
+  "description": "Physical tools, assistive technology, and learning aids the student can use during instruction. Use when the student needs alternative input/output methods, organizational supports, sensory tools, or adaptive materials to access curriculum.",
+  "applies_to": {
+    "cognitive_deficits": ["short-term-memory", "long-term-retrieval", "visual-spatial", "auditory-processing"],
+    "achievement_deficits": ["written-expression", "penmanship", "spelling", "basic-reading"],
+    "contexts": ["tools-equipment", "sensory", "instructional-delivery"],
+    "profiles": ["dyslexia", "adhd-attention", "executive-function", "autism"]
+  },
+  "source": {
+    "name": "ADayInOurShoes — Ultimate List of IEP Accommodations, Modifications & Strategies (SDIs)",
+    "section": "Tools and Equipment-SDIs and accommodations",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "34-64"
+  },
+  "accommodations": [
+    {
+      "id": "tools-01",
+      "text": "Visual charts."
+    },
+    {
+      "id": "tools-02",
+      "text": "Visual schedules."
+    },
+    {
+      "id": "tools-03",
+      "text": "Visual cues in locker, lunch box, and on desk."
+    },
+    {
+      "id": "tools-04",
+      "text": "Fidget spinners or fidget toys."
+    },
+    {
+      "id": "tools-05",
+      "text": "Written schedules on locker and lunch box."
+    },
+    {
+      "id": "tools-06",
+      "text": "Graphic organizers."
+    },
+    {
+      "id": "tools-07",
+      "text": "Choice cards."
+    },
+    {
+      "id": "tools-08",
+      "text": "Emotions cards."
+    },
+    {
+      "id": "tools-09",
+      "text": "Ear plugs or headphones."
+    },
+    {
+      "id": "tools-10",
+      "text": "Special seating such as seat pads or sit-upon balls."
+    },
+    {
+      "id": "tools-11",
+      "text": "Adaptive equipment: pens, pencils, calculators, fidget toys, large-print books, audio materials, etc."
+    },
+    {
+      "id": "tools-12",
+      "text": "Use of FM headsets to either block out noise with music or transmit the teacher's voice; use Beats or other socially acceptable headphones to block outside noise."
+    },
+    {
+      "id": "tools-13",
+      "text": "Rewards charts."
+    },
+    {
+      "id": "tools-14",
+      "text": "Yoga, meditation, and relaxation techniques."
+    },
+    {
+      "id": "tools-15",
+      "text": "Use of a scribe or oral testing for open-ended or essay formats."
+    },
+    {
+      "id": "tools-16",
+      "text": "Provide a study guide."
+    },
+    {
+      "id": "tools-17",
+      "text": "Provide audio recordings."
+    },
+    {
+      "id": "tools-18",
+      "text": "Provide video and/or audio recordings."
+    },
+    {
+      "id": "tools-19",
+      "text": "Voice recognition software."
+    },
+    {
+      "id": "tools-20",
+      "text": "Extra set of textbooks — one set for home, one for school."
+    },
+    {
+      "id": "tools-21",
+      "text": "Pencil grips and slant boards."
+    },
+    {
+      "id": "tools-22",
+      "text": "Develop a sensory diet."
+    },
+    {
+      "id": "tools-23",
+      "text": "Spelling dictionary or spell checker."
+    },
+    {
+      "id": "tools-24",
+      "text": "Provide notes, outlines, or organizers with key concepts or terms highlighted."
+    },
+    {
+      "id": "tools-25",
+      "text": "Mnemonics."
+    },
+    {
+      "id": "tools-26",
+      "text": "Remind student to wear glasses or hearing aids.",
+      "applies_when": ["vision-impairment", "hearing-impairment"]
+    },
+    {
+      "id": "tools-27",
+      "text": "Allow use of preferred writing implement."
+    }
+  ]
+}

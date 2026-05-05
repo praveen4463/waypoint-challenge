@@ -1,0 +1,82 @@
+{
+  "id": "mod-primer",
+  "title": "Accommodation vs. Modification — Primer",
+  "description": "Foundational distinction between accommodations (change HOW the student accesses/responds) and modifications (change WHAT the student learns). Use when deciding whether a proposed change to a lesson keeps content equivalent (accommodation) or alters expectations (modification). Modifications may impact graduation requirements; accommodations do not.",
+  "applies_to": {
+    "cognitive_deficits": [],
+    "achievement_deficits": [],
+    "contexts": ["instructional-delivery", "testing-assessment"],
+    "profiles": []
+  },
+  "source": {
+    "name": "Composite — Wikipedia (IEP, Special Education) and Understood.org video transcript",
+    "section": "Accommodation/Modification primer",
+    "files": [
+      {"file": "data/domain/raw/iep.txt", "lines": "24-34"},
+      {"file": "data/domain/raw/special-ed.txt", "lines": "89-110"},
+      {"file": "data/domain/raw/acmod-strg-2.txt", "lines": "1"}
+    ]
+  },
+  "key_distinctions": [
+    {
+      "id": "acc-def",
+      "term": "Accommodation",
+      "definition": "A reasonable adjustment to teaching practices so the student learns the SAME material in a more accessible format. Does not alter content. Common categories: presentation (how info is shown), response (how the student answers), setting (where the work happens), scheduling (timing of work).",
+      "examples": [
+        "Listening to an audiobook while reading the same printed text",
+        "Sitting at the front of the room",
+        "Extra time on a test",
+        "Typing answers instead of handwriting them",
+        "Taking a test in a quieter room"
+      ]
+    },
+    {
+      "id": "mod-def",
+      "term": "Modification",
+      "definition": "A change to WHAT the student is expected to learn, demonstrate, or be assessed on. Alters content, mastery level, or assessment criteria. May impact graduation eligibility — verify with the IEP team before applying broad modifications.",
+      "examples": [
+        "Substituting a shorter, easier book for the assigned text",
+        "Reducing the number of problems on a math worksheet (when the reduction changes what is mastered, not just the volume)",
+        "Modifying a grading rubric to assess different standards",
+        "Skipping a curriculum section deemed inappropriate for the student",
+        "Working on identifying hours while the rest of the class is learning to read minutes"
+      ]
+    },
+    {
+      "id": "sdi-def",
+      "term": "Specially Designed Instruction (SDI)",
+      "definition": "Adaptation of content, methodology, or delivery of instruction designed by a credentialed special-education teacher to meet the unique needs of a student. Goes deeper than accommodations — affects HOW the teacher teaches, not just how the student accesses content.",
+      "examples": [
+        "Multi-sensory phonics instruction for a student with dyslexia (Orton-Gillingham)",
+        "Direct, explicit teaching of a reading-comprehension strategy",
+        "Use of manipulatives to teach abstract math concepts",
+        "Pre-teaching key vocabulary before a content lesson"
+      ]
+    }
+  ],
+  "decision_guide": {
+    "id": "mod-decision-guide",
+    "title": "When to use which",
+    "rules": [
+      "If the change preserves the same learning objective and mastery expectation, it is an accommodation.",
+      "If the change alters the learning objective, the mastery expectation, or the assessment criteria, it is a modification.",
+      "Accommodations are the default — start there and only modify when the IEP authorizes it (the IEP's Modifications section explicitly lists what's allowed).",
+      "Modifications must be documented in the IEP. Generating a modification beyond what the IEP authorizes is outside scope.",
+      "When in doubt, frame the proposal as an accommodation; flag it for the IEP team if it edges toward modification."
+    ]
+  },
+  "common_pitfalls": [
+    {
+      "id": "pitfall-blanket",
+      "text": "Applying blanket accommodations (extra time, sit in front) without tying them to the specific cognitive or achievement deficit they address. Each accommodation should connect to a specific present-level finding."
+    },
+    {
+      "id": "pitfall-grad",
+      "text": "Stacking modifications without considering graduation impact. A student receiving reading-content modifications throughout middle and high school may not meet diploma requirements. The IEP team must consider this."
+    },
+    {
+      "id": "pitfall-shame",
+      "text": "Implementing accommodations or modifications that single the student out in front of peers (e.g., visibly different worksheet, separate desk). Look for adaptations the student can use without peer attention — bone-conduction headphones for audio text, generic-looking graphic organizer, etc."
+    }
+  ]
+}

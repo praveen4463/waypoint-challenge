@@ -1,0 +1,35 @@
+{
+  "id": "acc-by-context-sensory",
+  "title": "Sensory Accommodations",
+  "description": "Supports for sensory regulation, including movement breaks and awareness of environmental sensory inputs. Use when the student is sensitive to smells, sounds, or lighting, needs scheduled movement, or shows signs of sensory overload.",
+  "applies_to": {
+    "cognitive_deficits": [],
+    "achievement_deficits": [],
+    "contexts": ["sensory", "environment"],
+    "profiles": ["autism", "adhd-attention", "anxiety"]
+  },
+  "source": {
+    "name": "ADayInOurShoes — Ultimate List of IEP Accommodations, Modifications & Strategies (SDIs)",
+    "section": "Sensory Accommodations and SDIs",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "99-105"
+  },
+  "accommodations": [
+    {
+      "id": "sens-01",
+      "text": "Give sensory breaks — have the child carry attendance sheets or a few envelopes to the office to allow for movement."
+    },
+    {
+      "id": "sens-02",
+      "text": "Timed bathroom breaks (every 60, 90, or 120 minutes)."
+    },
+    {
+      "id": "sens-03",
+      "text": "Awareness of sensory issues — smells, sounds, lighting — and adjust as appropriate."
+    },
+    {
+      "id": "sens-04",
+      "text": "Scheduled sensory breaks."
+    }
+  ]
+}

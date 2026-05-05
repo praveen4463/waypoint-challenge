@@ -1,0 +1,39 @@
+{
+  "id": "acc-by-context-behavior",
+  "title": "Behavior Accommodations",
+  "description": "Reinforcement systems and task-structuring strategies that shape on-task and positive behavior. Use when the student needs explicit reinforcement, motivational scaffolding, or pacing of preferred and non-preferred tasks to stay engaged.",
+  "applies_to": {
+    "cognitive_deficits": [],
+    "achievement_deficits": [],
+    "contexts": ["behavior", "instructional-delivery"],
+    "profiles": ["adhd-attention", "autism", "executive-function"]
+  },
+  "source": {
+    "name": "ADayInOurShoes — Ultimate List of IEP Accommodations, Modifications & Strategies (SDIs)",
+    "section": "Behavior SDIs and Accommodations",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "106-111"
+  },
+  "accommodations": [
+    {
+      "id": "beh-01",
+      "text": "Frequent reinforcement for desired/positive behaviors."
+    },
+    {
+      "id": "beh-02",
+      "text": "Token board."
+    },
+    {
+      "id": "beh-03",
+      "text": "Intersperse preferred and non-preferred tasks."
+    },
+    {
+      "id": "beh-04",
+      "text": "Agenda checklist for check-ins with a preferred staff member."
+    },
+    {
+      "id": "beh-05",
+      "text": "Task strip with a preferred activity at the end."
+    }
+  ]
+}

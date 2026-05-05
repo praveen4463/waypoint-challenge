@@ -1,0 +1,125 @@
+{
+  "id": "mg-data-collection",
+  "title": "IEP Data Collection and Progress Reporting — Principles and Cadence",
+  "description": "How and when to collect data on IEP goal progress. Distills the measurement portion of the IEP work bins method plus the IEP form's progress-reporting requirements. Use when designing the 'goal data collection' portion of a Teacher Delivery Sheet, or when the teacher asks how to track and report progress.",
+  "applies_to": {
+    "cognitive_deficits": [],
+    "achievement_deficits": [],
+    "contexts": ["testing-assessment", "instructional-delivery"],
+    "profiles": []
+  },
+  "source": {
+    "name": "Composite — Brilin teacher transcript + IEP form template (Massachusetts)",
+    "section": "Data collection and progress reporting",
+    "files": [
+      {"file": "data/domain/raw/measure-goals.txt", "lines": "1"},
+      {"file": "data/students/jasmine-iep.txt", "lines": "609-611"}
+    ]
+  },
+  "cadence_principles": [
+    {
+      "id": "mg-cad-01",
+      "name": "Weekly formal data per goal",
+      "text": "Take one formal data point per IEP goal per week. Trying to score every benchmark every session is unsustainable and produces noisy data. One per week is enough to see trend and report quarterly.",
+      "implication": "A modified lesson should mark which day(s) per week count as 'data day' for which goal."
+    },
+    {
+      "id": "mg-cad-02",
+      "name": "Quarterly progress reporting",
+      "text": "Most IEPs require parent progress reports every quarter (4× per year). The IEP's 'Schedule of Progress Reporting' section is the binding requirement. Quarterly reporting expects ~10 data points per goal — easily produced with weekly data collection.",
+      "implication": "When a teacher asks for a quarterly report, draft from the logged data points. Highlight trend, not just the latest score."
+    },
+    {
+      "id": "mg-cad-03",
+      "name": "Maintenance data every 3–4 weeks for mastered skills",
+      "text": "Once a benchmark is mastered, don't drop it. Re-test maintenance every 3–4 weeks. Many students with autism, intellectual disability, or memory deficits regress without periodic revisit.",
+      "implication": "A 'maintenance' modification looks different from an 'introduction' modification: lighter, more independent, primarily a check rather than instruction."
+    }
+  ],
+  "data_collection_methods": [
+    {
+      "id": "mg-method-01",
+      "name": "Work samples",
+      "text": "Collect a piece of student work that demonstrates the benchmark (e.g., a short-response paragraph for a writing benchmark, a math worksheet for a math benchmark). Score against the IEP rubric. Keep the work sample as evidence.",
+      "best_for": ["written-expression", "math-skills", "reading-comprehension"]
+    },
+    {
+      "id": "mg-method-02",
+      "name": "Curriculum-based assessment (CBA)",
+      "text": "Use a brief, repeatable probe that targets the specific skill (e.g., DIBELS-8 oral reading fluency, a 1-minute math facts probe, a 3-question comprehension check after a passage). CBAs are designed for repeated administration and easy progress graphing.",
+      "best_for": ["reading-fluency", "math-facts", "decoding"]
+    },
+    {
+      "id": "mg-method-03",
+      "name": "Observation with rubric",
+      "text": "Score the student during a specific in-class moment using a structured rubric (e.g., 0–3 scale on 'used calming strategy when frustrated'). Record date, situation, score. Behavioral and self-regulation goals typically use this.",
+      "best_for": ["self-regulation", "social-skills", "task-initiation"]
+    },
+    {
+      "id": "mg-method-04",
+      "name": "ABC behavior log",
+      "text": "Antecedent–Behavior–Consequence log entries for behavioral goals. Each entry captures the trigger, the behavior, the response. Used to measure replacement-behavior goals (e.g., help-seeking instead of disruption).",
+      "best_for": ["behavior-goals", "replacement-behaviors"]
+    },
+    {
+      "id": "mg-method-05",
+      "name": "Office-referral / discipline-data count",
+      "text": "For some behavioral goals, raw counts of office referrals or discipline incidents over time are the cleanest metric. Easy to extract from school information systems.",
+      "best_for": ["behavior-goals", "discipline-reduction"]
+    }
+  ],
+  "scoring_conventions": [
+    {
+      "id": "mg-score-01",
+      "convention": "Percentage accuracy",
+      "use_when": "The IEP target is stated as a percentage (e.g., '50% to 75%' on the ELA goal, '76% to 90%' on decoding). Score the work sample as percent correct on the targeted skill."
+    },
+    {
+      "id": "mg-score-02",
+      "convention": "Frequency-out-of-N opportunities",
+      "use_when": "The IEP target is stated as 'X out of Y opportunities' (e.g., '4 out of 5 opportunities'). Count opportunities and successes during the activity. Common for behavior, self-regulation, and procedural goals."
+    },
+    {
+      "id": "mg-score-03",
+      "convention": "Rubric score 0–3",
+      "use_when": "The school uses standards-based grading. 0 = no evidence, 1 = approaching, 2 = partial mastery, 3 = full mastery. Common for content goals (claim writing, evidence finding, analysis)."
+    },
+    {
+      "id": "mg-score-04",
+      "convention": "Words correct per minute (WCPM)",
+      "use_when": "Reading fluency goal. Standard probe: 1 minute oral reading of a cold-read grade-level passage. Score = words read correctly minus errors."
+    }
+  ],
+  "progress_report_template": {
+    "id": "mg-template-01",
+    "format": "Quarterly progress report — single goal, single page",
+    "fields": [
+      "Student name, IEP date, goal area, goal text",
+      "Baseline (from IEP)",
+      "Annual target (from IEP)",
+      "Data points this quarter: list of (date, score, method, brief context)",
+      "Current trend (improving / stable / declining)",
+      "Score-vs-target % (e.g., 'student is at 68%, target is 75%, so 91% of the way to target')",
+      "Notes on what's working and what's next",
+      "Recommendation: on track / minor adjustment / IEP team review needed"
+    ]
+  },
+  "common_pitfalls": [
+    {
+      "id": "mg-pit-01",
+      "text": "Collecting too much data. If you score every session, you'll burn out and the data becomes inconsistent. Once a week per goal is sufficient and sustainable."
+    },
+    {
+      "id": "mg-pit-02",
+      "text": "Mixing instruction and data collection. The same activity can serve both — but the teacher should know which moment is the 'data point' and not provide help during it. Inconsistent scaffolding contaminates the data."
+    },
+    {
+      "id": "mg-pit-03",
+      "text": "Not recording context. A score of 2/3 with adult support is not the same as 2/3 independent. Always log the support level alongside the score."
+    },
+    {
+      "id": "mg-pit-04",
+      "text": "Forgetting maintenance. Mastered benchmarks need periodic re-check. A goal that hits target and then drops 8 weeks later wasn't really mastered."
+    }
+  ]
+}

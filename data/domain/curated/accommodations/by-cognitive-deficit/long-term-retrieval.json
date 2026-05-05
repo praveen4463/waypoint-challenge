@@ -1,0 +1,207 @@
+{
+  "id": "acc-by-cog-long-term-retrieval",
+  "title": "Long-Term Retrieval Deficits — Accommodations & Strategies",
+  "description": "Use when the student's IEP present-levels indicate difficulty efficiently retrieving previously learned information (e.g., math facts, definitions, vocabulary, dates) despite adequate initial learning. Often co-occurs with reading comprehension challenges driven by weak recall of vocabulary and prior content.",
+  "applies_to": {
+    "cognitive_deficits": ["long-term-retrieval"],
+    "achievement_deficits": ["reading-comprehension", "spelling", "basic-math"],
+    "contexts": ["instructional-delivery", "testing-assessment"],
+    "profiles": ["executive-function"]
+  },
+  "source": {
+    "name": "Seaman Compendium — Accommodations for Cognitive and Academic Deficits (J. Seaman, PhD)",
+    "section": "SECTION ONE: ACCOMMODATIONS FOR COGNITIVE DEFICITS — LONG TERM RETRIEVAL DEFICITS",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "459-581"
+  },
+  "definition": "The student experiences difficulty with retrieval of learned information. While this student might learn information adequately, the student may nonetheless demonstrate difficulty efficiently retrieving it for use in future situations. Long term retrieval difficulties likely vary, however, for different types of information.",
+  "accommodations": [
+    {
+      "id": "ltr-acc-01",
+      "text": "Limit the amount of information to be learned during an instructional session, giving the student fewer concepts or skills to retain at any one time. Examples might be limiting the number of spelling words to learn for the week or number of definitions to memorize.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-acc-02",
+      "text": "Provide \"cheat sheets\" for the student to reference in order to compensate for memory deficits. These might be taped to the student's desk and should also be available at home.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-acc-03",
+      "text": "Allow the student to use a calculator during math computation in order to compensate for lack of recall of math facts.",
+      "applies_when": ["basic-math"]
+    },
+    {
+      "id": "ltr-acc-04",
+      "text": "Since the student might have difficulty recalling important information, allow the student access to a peer helper to provide information needed to solve a problem or assignment.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-acc-05",
+      "text": "Allow the student to take open book tests where information can be found to respond to test items.",
+      "applies_when": ["testing-assessment"]
+    },
+    {
+      "id": "ltr-acc-06",
+      "text": "Employ test formats that require recognition (multiple choice, matching, true/false and fill in the blank with an associated word bank) in favor of test formats that require recall (essay, fill in the blank without a word bank, writing definitions).",
+      "applies_when": ["testing-assessment"]
+    },
+    {
+      "id": "ltr-acc-07",
+      "text": "Allow the student free access to ask questions should he forget information. Encourage the student to ask questions.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-acc-08",
+      "text": "In grading, emphasize concepts understood instead of memory for rote information (e.g., less important names, dates, locations, terms, etc.).",
+      "applies_when": ["testing-assessment"]
+    },
+    {
+      "id": "ltr-acc-09",
+      "text": "During instruction write information on the board to provide a source of external memory.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-acc-10",
+      "text": "Provide written directions to supplement oral directions for a task.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-acc-11",
+      "text": "Provide a written list of tasks to be accomplished. In the case of tasks that require a sequence of steps, provide a written copy for the student to refer to. Such information might be written on an index card and taped to the student's desk as a reminder.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-acc-12",
+      "text": "After directions are given in class, check to insure that the student has retained sufficient information to work independently.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-acc-13",
+      "text": "Limit the length of oral directions and state directions in the order in which the student is expected to complete them.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-acc-14",
+      "text": "If the student is forgetful about some responsibility, put a rubber band around the student's wrist as a reminder and remove when the responsibility or task is accomplished.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-acc-15",
+      "text": "Provide a daily planner in which the student is instructed to write homework and long term assignments down as soon as they are assigned. It may be necessary to check accuracy of this information. A study buddy might be of help in this regard.",
+      "applies_when": ["executive-function"]
+    }
+  ],
+  "instructional_strategies": [
+    {
+      "id": "ltr-strat-01",
+      "text": "Before introducing a new concept or skill, activate prior knowledge to enhance understanding. Prior knowledge can be activated by: 1.) asking questions about the topic being taught, 2.) sharing personal experiences related to the topic, 3.) brainstorming everything the student(s) knows about the topic, 4.) asking the student to identify what the student still needs to learn about the subject matter, 5.) asking the student to respond to opinion statements that prompt discussion regarding the topic (e.g., when discussing the defining characteristics of fruits and vegetables ask: What do you like best about spinach? About apples?, etc.).",
+      "applies_when": ["reading-comprehension"]
+    },
+    {
+      "id": "ltr-strat-02",
+      "text": "Review rote information frequently. Expand time for rehearsal and practice by using peer tutors or teaching assistants to employ structured practice activities. Rehearsing information immediately after it is learned and intermittently thereafter will likely be helpful.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-strat-03",
+      "text": "Capitalize on the benefits of spaced practice by providing the student opportunities to rehearse rote information for short periods several times per day. Rehearsal at home as part of a homework assignment might be helpful.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-strat-04",
+      "text": "Employ multiple modalities (e.g., writing, speaking, listening, etc.) when the student rehearses rote information.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-strat-05",
+      "text": "To teach rote information, employ formal academic accommodations (e.g., cover, copy, compare) which use a high rate of opportunities to respond, high rate of success, immediate feedback and formal error correction procedures.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-strat-06",
+      "text": "Review information at the start of an instructional session to refresh the student's memory for previously taught information.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-strat-07",
+      "text": "Prompt the student to take notes during instruction. Note taking strengthens recall ability and provides a hard copy of information to refer to later.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-strat-08",
+      "text": "Help the student group information into meaningful categories in order to facilitate memory. The more involved the student is in this process, the better the effect on retention.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-strat-09",
+      "text": "Help the student learn to break a long list of information into small parts or chunks of seven or fewer items. Encourage the student to master one small group before moving to the next.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-strat-10",
+      "text": "Enhance meaningfulness by relating new concepts and information taught to experiences familiar to the student (e.g., describe steam formed in a shower on a cold day as an example of condensation). Encourage the student to cite more familiar examples.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-strat-11",
+      "text": "Discuss the meaning of a story or text immediately after it is read. Ask the student to elaborate on what was read. Memory for information will be improved if the student has good understanding and makes associations.",
+      "applies_when": ["reading-comprehension"]
+    },
+    {
+      "id": "ltr-strat-12",
+      "text": "Provide opportunities for the student to use a concept or skill to solve a problem. The student is more likely to retain information which the student has put into practice.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-strat-13",
+      "text": "Prompt the student to elaborate on and reason with information and concepts taught. For instance, the student is more likely to remember that Paraguay is one of the poorest countries in South America if the student develops reasons for this condition (e.g., land locked, small country, lack of natural resources, arid climate, etc.).",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-strat-14",
+      "text": "Help the student use mnemonic devices to retain information. It will be important that the student initiate such efforts and realize the benefits that can be experienced from their use. Specific mnemonic strategies include: Repetition — the student rehearses information by orally repeating it or writing it several times; rehearsal will be most beneficial if it occurs shortly after learning and occurs intermittently thereafter. Acrostic — the student recalls a list of words or terms by forming a word using the first letters of the words to be remembered (e.g., HOMES to recall names of the Great Lakes). Acronym — the student forms a memorable (i.e., silly, outrageous, familiar) phrase or sentence using the first letters of the words or terms to be recalled (e.g., \"My waffle is under the new car\" to recall the seven mountain states of Montana, Wyoming, etc.). Method of Loci — the student imagines himself walking through a familiar location such as a bedroom or walking to school, mentally placing a term, word or element to be recalled in prominent locations along the route; when recall is needed, the student mentally retraces the route and the prominent locations elicit the corresponding element. Learning Something New — the student learns more information about a term or vocabulary word; the association of new information with the term strengthens memory (e.g., reading information about a state capital to become more familiar with the city). Visualization — the student forms a mental image associated with a term to be recalled (e.g., a mental image of a Native American squatting in a corn field to recall the name Squanto).",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-strat-15",
+      "text": "At the start of independent seat work, monitor student functioning to insure that he has necessary information available to complete the task.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-strat-16",
+      "text": "Have the student serve as a peer tutor to help another student rehearse information which the target student is also learning.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-strat-17",
+      "text": "Teach the student to underline important information in text to refer to later.",
+      "applies_when": ["reading-comprehension"]
+    },
+    {
+      "id": "ltr-strat-18",
+      "text": "Teach the student to rehearse information just after learning it to strengthen long term retrieval.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-strat-19",
+      "text": "Consult with parents to rehearse newly acquired information at home.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-strat-20",
+      "text": "Employ computer programs to help the student rehearse learned information.",
+      "applies_when": []
+    },
+    {
+      "id": "ltr-strat-21",
+      "text": "Provide extra time for rehearsal of such academic survival information as math facts and times tables.",
+      "applies_when": ["basic-math"]
+    },
+    {
+      "id": "ltr-strat-22",
+      "text": "The student may experience difficulty learning from a lecture format. Retrieval of previously presented information during the lecture may be limited. As a result, provide visual references such as models and graphic organizers, write key concepts on the board, allow time for the student to take notes and repeat information.",
+      "applies_when": []
+    }
+  ]
+}

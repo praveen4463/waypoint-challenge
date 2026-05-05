@@ -1,0 +1,172 @@
+{
+  "id": "acc-by-ach-reading-comprehension",
+  "title": "Reading Comprehension Deficits — Accommodations & Strategies",
+  "description": "Use when the student's IEP present-levels indicate below-grade-level performance in reading comprehension or specific skill gaps in deriving meaning from text, paraphrasing, summarizing, or applying expository/narrative text structure.",
+  "applies_to": {
+    "cognitive_deficits": ["comprehension-knowledge", "long-term-retrieval"],
+    "achievement_deficits": ["reading-comprehension"],
+    "contexts": ["instructional-delivery", "testing-assessment"],
+    "profiles": ["dyslexia"]
+  },
+  "source": {
+    "name": "Seaman Compendium — Accommodations for Cognitive and Academic Deficits (J. Seaman, PhD)",
+    "section": "Section Two: Accommodations for Achievement Deficits — Reading Comprehension Deficits",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "1299-1412"
+  },
+  "definition": "The student demonstrates deficiency in comprehension of information read.",
+  "accommodations": [
+    {
+      "id": "rc-acc-01",
+      "text": "A lack of knowledge to which the student can relate information from a passage may contribute to lack of comprehension. As a result, it will be important to provide background information about the topic before a passage is read. The more information the student has about the topic, the better will be the student's comprehension when reading about the topic.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-acc-02",
+      "text": "Monitor comprehension after passages are read in class. It may be helpful to ask the student to paraphrase or summarize information read in order to assess level of comprehension.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-acc-03",
+      "text": "On assignments, orally review the content of written directions.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-acc-04",
+      "text": "Encourage the student to ask for assistance if the student lacks understanding of information read. It may be helpful to seat the student next to a study buddy who can provide such assistance.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-acc-05",
+      "text": "Provide texts with key phrases and vocabulary highlighted.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-acc-06",
+      "text": "Provide a study guide prior to the student reading a passage. The study guide might consist of open ended questions, fill in the blank items or true false items which the student responds to. The student first reviews the study guide and then looks for responses while reading the passage.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-acc-07",
+      "text": "A lack of basic reading skills, including adequate reading fluency, is inhibiting comprehension with this student. As a result, it will be helpful to orally review information in a passage before it is read, provide a tape recording of a passage, or have a peer pre-read the passage with the student and discuss its meaning.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-acc-08",
+      "text": "Provide extra time for the student to read a passage or shorten the amount to be read. Reading comprehension difficulties often result in a need to re-read a passage or engage in other cognitive strategies to gain meaning from a passage.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-acc-09",
+      "text": "Review the meaning of key vocabulary words and concepts before a passage from a content area text is read in class. It will likely be helpful to relate the vocabulary to the student's experience. Also, have the student use the vocabulary in sentences. Briefly discuss how this vocabulary will be used in the passage in order to facilitate understanding of the words when read in the text.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-acc-10",
+      "text": "Avoid testing the student on content that is only presented through reading. Make sure that information on tests is taught orally prior to a test.",
+      "applies_when": ["testing-assessment"]
+    },
+    {
+      "id": "rc-acc-11",
+      "text": "It may be necessary in some circumstances to read a test to the student or to employ oral testing methods.",
+      "applies_when": ["testing-assessment"]
+    }
+  ],
+  "instructional_strategies": [
+    {
+      "id": "rc-strat-01",
+      "text": "Encourage the student to read regularly. Provide reading material of interest at independent reading level and assign time for the student to read. In addition, consult with the student's parents to encourage independent reading in areas of interest at home.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-strat-02",
+      "text": "Enhance motivation by clearly identifying concrete and meaningful purposes for reading a passage (e.g., you will learn ......, after you have read this passage you will know how to ....., the information in this passage will be on tomorrow's test, etc.).",
+      "applies_when": []
+    },
+    {
+      "id": "rc-strat-03",
+      "text": "Teach the meaning of key vocabulary and new or unfamiliar terms before the student reads a passage.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-strat-04",
+      "text": "Have the student and a cohort read a passage with the goal of asking each other questions. This activity can be turned into a game by assigning points for questions correctly answered.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-strat-05",
+      "text": "Pair the student with a peer. Both students read a passage paragraph by paragraph. At the end of each paragraph the students suggest questions that were answered by the paragraph and each summarizes the information in a couple of sentences. Each student then predicts what the next paragraph will reveal.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-strat-06",
+      "text": "Teach the student that expository texts (i.e., content area texts) are usually written in a typical style. A chapter is divided into sections by bold print headings. Each section discusses a topic which is summarized by the bold print heading for the section. Within each paragraph of a section are main ideas. Show how this organization applies to texts used in class.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-strat-07",
+      "text": "Prior to reading expository text, activate the student's prior knowledge of the subject matter. This might be done by: 1.) asking questions about the topic, 2.) sharing personal experiences related to the topic, 3.) brainstorming everything the student(s) knows about the topic, 4.) asking the student(s) to identify what the student(s) still needs to learn about the subject matter.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-strat-08",
+      "text": "Using expository texts, teach the student to summarize or paraphrase information read in each paragraph and again at the end of sections.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-strat-09",
+      "text": "Teach the student to identify questions that an expository text passage will answer. Help the student turn a heading for a section in a content area text into a series of questions (e.g. Lewis and Clark Meet Native Americans: Where did they meet the Indians? What Indians did they meet? What happened when they met?). It will be important to model this procedure for the student and provide guided practice.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-strat-10",
+      "text": "If an expository text contains questions at the end of a chapter, encourage the student to review these questions before reading the text.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-strat-11",
+      "text": "Encourage the student to make a mental image of material read.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-strat-12",
+      "text": "Teach the student to take notes when reading. This can be done by helping the student learn to identify and paraphrase the topic of a section of text and the main ideas presented in the section. Writing the topic and main ideas will enhance memory for this information, which in turn will improve comprehension of additional text read.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-strat-13",
+      "text": "Teach the student the SQ3R (i.e., Survey, Question, Read, Recite, Review) Method of expository text reading. In this approach the student first surveys a chapter to be read in order to become familiar with the general topic. The student then reads bold print section headings and turns these into questions. The student reads each section in search of answers to the questions asked. The student recites or restates the answers in the student's own words and moves to the next section of text. Upon completion the student reviews the information learned. Writing out questions and answers helps this process.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-strat-14",
+      "text": "Use an anticipation guide to activate the student's interest in and prior knowledge about a topic in an expository text. This approach requires that key concepts of a passage be written on the board and defined. Then the student responds to a survey form either agreeing or disagreeing to statements about the topic (e.g., deserts are always hot, living at the equator would be fun, etc.). Responses to the survey can be shared and discussed with peers in a group or in a classwide format. The passage is then read and the student is given the chance to change position on survey items.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-strat-15",
+      "text": "Employ a cloze procedure to enhance comprehension for expository text. A set of statements describing a passage is written. Key words in the statements are deleted and replaced with a blank space. The incomplete statements are reviewed with the student. The student reads the passage once, rereads while filling in the blank spaces and then reads it a third time to check answers. In this procedure it is important to review responses with the student to assess student understanding. Cues might be given on the cloze page by providing first letters or letter combinations for the missing words. Also, a word bank might be provided at the top of the page.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-strat-16",
+      "text": "Provide an advance organizer before the student reads from a content area text. This might consist of writing an outline on the board that reviews the content of material to be read. In addition, orally summarize the passage in understandable terms before the student reads the passage.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-strat-17",
+      "text": "Have the student write questions for a test based on material read. In this strategy, the student should first read the passage, then re-read it to formulate possible test questions. A group of students might share and discuss their test questions.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-strat-18",
+      "text": "Teach the student that narrative texts (i.e. novels, stories) have a typical structure that consists of a setting, characters, a problem or set of problems, resolution(s) of the problem(s) and an ending. Identifying these components of a story will assist the student to comprehend the story.",
+      "applies_when": []
+    },
+    {
+      "id": "rc-strat-19",
+      "text": "For reading of narrative text, break the story into parts, asking the student to guess what each part will reveal. After a section is read, the student decides if the prediction(s) was accurate and provides support based on story content. The student then makes predictions for the next section to be read. In this way story content is discussed as the story is being read. This strategy can be employed with a small group of students to facilitate further discussion.",
+      "applies_when": []
+    }
+  ]
+}

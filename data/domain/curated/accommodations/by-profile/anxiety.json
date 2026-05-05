@@ -1,0 +1,205 @@
+{
+  "id": "acc-by-profile-anxiety",
+  "title": "Accommodations for Students with Anxiety",
+  "description": "Use when the student profile includes anxiety (generalized, social, performance, test, or OCD-related anxiety) or shows characteristics such as avoidance, distress with transitions or novelty, blanking on tests, fear of class participation, or excessive perfectionism on homework.",
+  "applies_to": {
+    "cognitive_deficits": ["short-term-memory", "processing-speed"],
+    "achievement_deficits": ["reading-comprehension", "written-expression"],
+    "contexts": ["environment", "transitions", "peer-social", "behavior", "testing-assessment", "instructional-delivery"],
+    "profiles": ["anxiety"]
+  },
+  "source": {
+    "name": "ADayInOurShoes — Ultimate List of IEP Accommodations, Modifications & Strategies (SDIs)",
+    "section": "Anxiety Accommodations: classroom and school environment; Homework, Tests, Assignments; other, field trips, etc.",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "236-338"
+  },
+  "definition": "Anxiety in students is a pattern of excessive worry, fear, or physiological arousal that interferes with learning and daily school functioning. It can present as social anxiety, separation anxiety, generalized anxiety, performance/test anxiety, or OCD-related rumination, and often shows up as avoidance, somatic complaints, perfectionism, or shutdown in response to academic and social demands.",
+  "accommodations": [
+    {
+      "id": "anx-01",
+      "text": "\"Cool down passes\" to take a break from the classroom. Clearly explain the concept to the student and watch for signs of task aversion. Examples: a walk down the hallway, getting water, standing outside the classroom door for a few minutes, completing coloring pages in the back of the room, or using a mindfulness app with headphones.",
+      "applies_when": ["classroom-environment"]
+    },
+    {
+      "id": "anx-02",
+      "text": "Always keep the child in school. Do not reinforce or increase anxiety symptoms by sending a child home unless necessary.",
+      "applies_when": ["classroom-environment", "behavior"]
+    },
+    {
+      "id": "anx-03",
+      "text": "Provide positive reinforcement — like stickers, extended computer time, or a special activity — when a child tolerates a feared situation.",
+      "applies_when": ["classroom-environment", "behavior"]
+    },
+    {
+      "id": "anx-04",
+      "text": "Following directions: address common concerns about getting directions wrong because of distraction or misunderstanding.",
+      "applies_when": ["classroom-environment", "instructional-delivery"]
+    },
+    {
+      "id": "anx-05",
+      "text": "Signal the class first when giving directions (flashing lights, clapping hands). When possible, have directions written on the board or elsewhere — it may help assure anxious children that they have understood the directions.",
+      "applies_when": ["classroom-environment", "instructional-delivery"]
+    },
+    {
+      "id": "anx-06",
+      "text": "Present verbal encouragement and prompts in subtle, non-punitive ways.",
+      "applies_when": ["classroom-environment", "behavior"]
+    },
+    {
+      "id": "anx-07",
+      "text": "Provide a consistent, predictable schedule. Post it in a visible place for the child's reference.",
+      "applies_when": ["classroom-environment", "transitions"]
+    },
+    {
+      "id": "anx-08",
+      "text": "Allow breaks as necessary and offer opportunities for action — for instance, pacing without disturbing others, running an errand, handing out papers, or using a soft squeeze ball.",
+      "applies_when": ["classroom-environment", "behavior"]
+    },
+    {
+      "id": "anx-09",
+      "text": "Prompt in advance before calling on the student to answer a question.",
+      "applies_when": ["classroom-environment", "instructional-delivery"]
+    },
+    {
+      "id": "anx-10",
+      "text": "Avoid using jokes, sarcasm, and bringing unwanted attention to the student.",
+      "applies_when": ["classroom-environment", "instructional-delivery"]
+    },
+    {
+      "id": "anx-11",
+      "text": "Preferential seating in large assemblies (near the back of the room).",
+      "applies_when": ["classroom-environment"]
+    },
+    {
+      "id": "anx-12",
+      "text": "Identify one adult at school the student can seek help from when feeling anxious (school counselor, if available).",
+      "applies_when": ["classroom-environment", "behavior"]
+    },
+    {
+      "id": "anx-13",
+      "text": "Buddy system: pair the student with a peer to aid with transitions to lunch and recess (these less-structured situations can trigger anxious feelings).",
+      "applies_when": ["classroom-environment", "transitions", "peer-social"]
+    },
+    {
+      "id": "anx-14",
+      "text": "Fears of rejection in the cafeteria or on the playground can take the fun out of free time. Help bridge the gap by creating ties between small groups of children — a lunch bunch with two or three children can create a shared experience kids can draw on later. When working in pairs or small groups, don't always have children choose the groupings themselves; alternate this with a \"counting off\" technique or drawing straws to allow variability.",
+      "applies_when": ["classroom-environment", "peer-social"]
+    },
+    {
+      "id": "anx-15",
+      "text": "Anxious children often struggle with the unlikely fear that they will get in trouble. Seat them away from more distracting classmates — it may help them focus on their work and not feel responsible for the class.",
+      "applies_when": ["classroom-environment"]
+    },
+    {
+      "id": "anx-16",
+      "text": "Provide extra time and warnings before transitions.",
+      "applies_when": ["classroom-environment", "transitions"]
+    },
+    {
+      "id": "anx-17",
+      "text": "Preferential seating (near the door, near the front of the room, or near the teacher's desk).",
+      "applies_when": ["classroom-environment"]
+    },
+    {
+      "id": "anx-18",
+      "text": "Extended time on tests will ease the pressure on anxious children, and just knowing that the time is available may obviate the need to use it. Sometimes anxious children become distracted when they see other children working on or turning in their tests and may inaccurately assume they don't know the material as well; testing in an alternate, quiet place is preferable for some children. Consider the use of word banks and equation sheets to cue children whose anxiety may make them \"blank out\" on rote material.",
+      "applies_when": ["homework-tests", "testing-assessment"]
+    },
+    {
+      "id": "anx-19",
+      "text": "Clearly stated and written expectations (behavioral and academic).",
+      "applies_when": ["homework-tests", "instructional-delivery"]
+    },
+    {
+      "id": "anx-20",
+      "text": "Frequent check-ins for understanding, prompted by the teacher.",
+      "applies_when": ["homework-tests", "instructional-delivery"]
+    },
+    {
+      "id": "anx-21",
+      "text": "Modify assignments — have the child complete only odd-numbered problems, allow use of a word processor, or give an oral exam instead of a high-pressure written exam.",
+      "applies_when": ["homework-tests", "testing-assessment"]
+    },
+    {
+      "id": "anx-22",
+      "text": "Allow extra time on quizzes, exams, and in-class assignments.",
+      "applies_when": ["homework-tests", "testing-assessment"]
+    },
+    {
+      "id": "anx-23",
+      "text": "Children with extreme social anxiety may have difficulty with oral reports. Consider having the child present to the teacher alone, or have the child audiotape or videotape the presentation at home.",
+      "applies_when": ["homework-tests", "peer-social", "testing-assessment"]
+    },
+    {
+      "id": "anx-24",
+      "text": "Do not require the student to read aloud or work at the board in front of the class (but work toward self-advocacy).",
+      "applies_when": ["homework-tests", "peer-social", "instructional-delivery"]
+    },
+    {
+      "id": "anx-25",
+      "text": "Allow videotaped presentations or presenting in front of the teacher (instead of the class).",
+      "applies_when": ["homework-tests", "peer-social", "testing-assessment"]
+    },
+    {
+      "id": "anx-26",
+      "text": "Tests are taken in a separate, quiet environment (to reduce performance pressure and distraction).",
+      "applies_when": ["homework-tests", "testing-assessment", "environment"]
+    },
+    {
+      "id": "anx-27",
+      "text": "Word banks and equation sheets — useful for children with test anxiety who tend to \"go blank\" when taking a test. Using one notecard for important facts, dates, etc., can also be helpful.",
+      "applies_when": ["homework-tests", "testing-assessment"]
+    },
+    {
+      "id": "anx-28",
+      "text": "Break down assignments into smaller pieces.",
+      "applies_when": ["homework-tests"]
+    },
+    {
+      "id": "anx-29",
+      "text": "Modified tests and homework.",
+      "applies_when": ["homework-tests", "testing-assessment"]
+    },
+    {
+      "id": "anx-30",
+      "text": "Set reasonable time limits for homework.",
+      "applies_when": ["homework-tests"]
+    },
+    {
+      "id": "anx-31",
+      "text": "Record class lectures or use a scribe for notes.",
+      "applies_when": ["homework-tests", "tools-equipment"]
+    },
+    {
+      "id": "anx-32",
+      "text": "Homework expectations: if a student is spending inordinate amounts of time on homework because of OCD redoing, rechecking, rereading, or worrying that the assignment wasn't done thoroughly enough, the teacher can set a reasonable amount of time and reduce the homework load to fit. Teachers can give time estimates for each assignment so the anxious child can attempt to stay within 10% of the estimated time. Eliminate repetition by having the child do every other math question, reduce reading and writing assignments, consider books on tape if a child cannot read without repetition, and for a child with writing difficulties, consider having a parent, teacher, or another student \"scribe\" while he or she dictates the answers.",
+      "applies_when": ["homework-tests", "behavior"]
+    },
+    {
+      "id": "anx-33",
+      "text": "Preferential group (a teacher or adult the child knows well) for field trips.",
+      "applies_when": ["field-trips-other", "transitions"]
+    },
+    {
+      "id": "anx-34",
+      "text": "Help after illness: missed work can spike anxious feelings. Providing class notes and exempting students from missed homework can help. Assign a responsible buddy to copy notes and share handouts. If tests are given the day of the child's return, give them the option to take the test at another time and use the test time to make up any other missing work.",
+      "applies_when": ["field-trips-other", "peer-social", "testing-assessment"]
+    },
+    {
+      "id": "anx-35",
+      "text": "Substitute teachers: letting the child or family know when a substitute will be in the classroom can help the child prepare.",
+      "applies_when": ["field-trips-other", "transitions"]
+    },
+    {
+      "id": "anx-36",
+      "text": "Class participation: a child may fear getting the answer wrong, saying something embarrassing, or having other kids look at them. Determine the child's comfort with closed-ended questions (yes/no) versus opinion questions, and start with whichever is easiest. Use a signal to let the child know that his turn is coming. Provide opportunities for the child to share knowledge on topics in which he or she is most confident.",
+      "applies_when": ["field-trips-other", "peer-social", "instructional-delivery"]
+    },
+    {
+      "id": "anx-37",
+      "text": "Fire and safety drills: while these drills are necessary, anxious children can be very distressed by imagining these events. If there is an opportunity, signal the child in person just before the alarm sounds — this may buffer the surprise of the drill and allow the child to mobilize with less distress.",
+      "applies_when": ["field-trips-other", "sensory", "transitions"]
+    }
+  ]
+}

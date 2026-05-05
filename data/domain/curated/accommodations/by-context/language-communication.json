@@ -1,0 +1,79 @@
+{
+  "id": "acc-by-context-language-communication",
+  "title": "Language and Communication Accommodations",
+  "description": "Adjustments to how teachers phrase, pace, and deliver verbal information. Use when the student has difficulty processing language, understands literal language better than figurative, or needs simpler/chunked instructions to comprehend tasks.",
+  "applies_to": {
+    "cognitive_deficits": ["auditory-processing", "processing-speed", "comprehension-knowledge", "short-term-memory"],
+    "achievement_deficits": ["reading-comprehension"],
+    "contexts": ["language-communication", "instructional-delivery"],
+    "profiles": ["autism", "nvld", "adhd-attention"]
+  },
+  "source": {
+    "name": "ADayInOurShoes — Ultimate List of IEP Accommodations, Modifications & Strategies (SDIs)",
+    "section": "Language-based SDIs and accommodations",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "65-81"
+  },
+  "accommodations": [
+    {
+      "id": "lang-01",
+      "text": "Minimal use of open-ended statements or questions."
+    },
+    {
+      "id": "lang-02",
+      "text": "Do not use sarcasm or inferences when communicating with the student."
+    },
+    {
+      "id": "lang-03",
+      "text": "Allow 5 or 10 seconds (whatever the child needs) of processing time when a request is made."
+    },
+    {
+      "id": "lang-04",
+      "text": "Chunk down verbal instructions."
+    },
+    {
+      "id": "lang-05",
+      "text": "Use only one question or instruction at a time if the child cannot handle 2- or 3-part questions."
+    },
+    {
+      "id": "lang-06",
+      "text": "Speak slower."
+    },
+    {
+      "id": "lang-07",
+      "text": "Use literal language."
+    },
+    {
+      "id": "lang-08",
+      "text": "Use 'first ___, then ___' structure."
+    },
+    {
+      "id": "lang-09",
+      "text": "Have someone read the material to them."
+    },
+    {
+      "id": "lang-10",
+      "text": "Concise, direct prompts."
+    },
+    {
+      "id": "lang-11",
+      "text": "Clear, concise instructions at the child's ability level."
+    },
+    {
+      "id": "lang-12",
+      "text": "Activity-based learning."
+    },
+    {
+      "id": "lang-13",
+      "text": "Explain metaphors and double meanings."
+    },
+    {
+      "id": "lang-14",
+      "text": "Limit oral questions to the number the child can manage."
+    },
+    {
+      "id": "lang-15",
+      "text": "Provide direct feedback in appropriate settings."
+    }
+  ]
+}

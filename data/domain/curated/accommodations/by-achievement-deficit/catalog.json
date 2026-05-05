@@ -1,0 +1,64 @@
+{
+  "id": "catalog-acc-by-achievement-deficit",
+  "title": "Accommodations by Achievement Deficit — Catalog",
+  "description": "Index of accommodation/strategy files organized by academic skill area (reading, math, spelling, writing, penmanship). Use when the student's IEP present-levels indicate below-grade-level performance in a specific subject skill. Source: Seaman Compendium Sections Two and Three.",
+  "files": [
+    {
+      "file": "basic-math.json",
+      "id": "acc-by-ach-basic-math",
+      "title": "Basic Math Skill Deficits",
+      "description": "Use when the student has below-grade-level basic math skills (counting, number recognition, math facts, computation algorithms). Strategies subdivided via applies_when tags.",
+      "applies_to": {"cognitive_deficits": ["long-term-retrieval", "short-term-memory", "processing-speed"], "achievement_deficits": ["basic-math"], "contexts": ["instructional-delivery", "testing-assessment", "tools-equipment"], "profiles": []},
+      "counts": {"accommodations": 12, "strategies": 54}
+    },
+    {
+      "file": "basic-reading.json",
+      "id": "acc-by-ach-basic-reading",
+      "title": "Basic Reading Skill Deficits",
+      "description": "Use when the student has below-grade-level basic reading skills (decoding, word recognition, fluency, sight vocabulary). Strategies subdivided across motivation, letter-names-sounds, phonetic-decoding, sight-vocabulary, reading-fluency.",
+      "applies_to": {"cognitive_deficits": ["phonemic-awareness", "auditory-processing", "long-term-retrieval", "short-term-memory"], "achievement_deficits": ["basic-reading"], "contexts": ["instructional-delivery", "testing-assessment"], "profiles": ["dyslexia"]},
+      "counts": {"accommodations": 12, "strategies": 44}
+    },
+    {
+      "file": "math-reasoning-and-problem-solving.json",
+      "id": "acc-by-ach-math-reasoning-and-problem-solving",
+      "title": "Math Reasoning and Problem Solving Deficits",
+      "description": "Use when the student has weak math reasoning (math concepts, story problems). Strategies subdivided via applies_when tags.",
+      "applies_to": {"cognitive_deficits": ["fluid-reasoning", "comprehension-knowledge", "long-term-retrieval", "short-term-memory"], "achievement_deficits": ["math-reasoning", "basic-math"], "contexts": ["instructional-delivery", "tools-equipment"], "profiles": []},
+      "counts": {"accommodations": 4, "strategies": 16}
+    },
+    {
+      "file": "penmanship-and-copying-fluency.json",
+      "id": "acc-by-ach-penmanship-and-copying-fluency",
+      "title": "Penmanship and Copying Fluency Deficits",
+      "description": "Use when the student has below-grade-level handwriting or copying speed/accuracy. Note: source has no Instructional Strategies subsection.",
+      "applies_to": {"cognitive_deficits": ["processing-speed", "visual-spatial"], "achievement_deficits": ["penmanship", "written-expression"], "contexts": ["instructional-delivery", "testing-assessment", "tools-equipment"], "profiles": []},
+      "counts": {"accommodations": 20, "strategies": 0}
+    },
+    {
+      "file": "reading-comprehension.json",
+      "id": "acc-by-ach-reading-comprehension",
+      "title": "Reading Comprehension Deficits",
+      "description": "Use when the student has below-grade-level reading comprehension despite adequate decoding. Often co-occurs with comprehension-knowledge cognitive deficit.",
+      "applies_to": {"cognitive_deficits": ["comprehension-knowledge", "long-term-retrieval"], "achievement_deficits": ["reading-comprehension"], "contexts": ["instructional-delivery", "testing-assessment"], "profiles": ["dyslexia"]},
+      "counts": {"accommodations": 11, "strategies": 19}
+    },
+    {
+      "file": "research-supported-techniques.json",
+      "id": "acc-research-supported-techniques",
+      "title": "Research-Supported Academic Accommodation Techniques",
+      "description": "Named, evidence-based instructional techniques (SQ4R, Drill Sandwich, Cover-Copy-Compare, Listening Previewing, Story Mapping, etc.) with step-by-step procedures. Use when the teacher needs a specific named technique with implementation steps.",
+      "applies_to": {"cognitive_deficits": ["long-term-retrieval", "short-term-memory"], "achievement_deficits": ["basic-reading", "reading-comprehension", "spelling"], "contexts": ["instructional-delivery"], "profiles": []},
+      "counts": {"techniques": 19}
+    },
+    {
+      "file": "spelling.json",
+      "id": "acc-by-ach-spelling",
+      "title": "Spelling Deficits",
+      "description": "Use when the student has below-grade-level spelling. Often co-occurs with phonemic-awareness deficits and dyslexia.",
+      "applies_to": {"cognitive_deficits": ["phonemic-awareness", "long-term-retrieval", "short-term-memory", "auditory-processing"], "achievement_deficits": ["spelling", "written-expression"], "contexts": ["instructional-delivery", "testing-assessment"], "profiles": ["dyslexia"]},
+      "counts": {"accommodations": 7, "strategies": 28}
+    }
+  ],
+  "totals": {"files": 7, "accommodations": 66, "strategies": 161, "techniques": 19}
+}

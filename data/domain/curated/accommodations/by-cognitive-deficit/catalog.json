@@ -1,0 +1,64 @@
+{
+  "id": "catalog-acc-by-cognitive-deficit",
+  "title": "Accommodations by Cognitive Deficit — Catalog",
+  "description": "Index of accommodation/strategy files organized by cognitive deficit type, mapped to the Woodcock-Johnson III taxonomy used in many evaluation reports. Use when the student's IEP present-levels reference a specific cognitive-processing weakness. Source: Seaman Compendium (J. Seaman, PhD).",
+  "files": [
+    {
+      "file": "auditory-processing-and-phonemic-awareness.json",
+      "id": "acc-by-cog-auditory-processing-and-phonemic-awareness",
+      "title": "Auditory Processing and Phonemic Awareness Deficits",
+      "description": "Use when the student has difficulty analyzing/synthesizing/discriminating auditory stimuli (auditory-processing) or with phoneme manipulation (phonemic-awareness). Strategies are split via applies_when tags.",
+      "applies_to": {"cognitive_deficits": ["auditory-processing", "phonemic-awareness"], "achievement_deficits": ["basic-reading", "spelling", "reading-comprehension"], "contexts": ["instructional-delivery", "environment", "language-communication"], "profiles": ["dyslexia"]},
+      "counts": {"accommodations": 5, "strategies": 31}
+    },
+    {
+      "file": "comprehension-and-language.json",
+      "id": "acc-by-cog-comprehension-and-language",
+      "title": "Comprehension-Knowledge and Language Deficits",
+      "description": "Use when the student has limited background knowledge and/or language development affecting comprehension of directions, oral instruction, and written content.",
+      "applies_to": {"cognitive_deficits": ["comprehension-knowledge"], "achievement_deficits": ["reading-comprehension", "written-expression"], "contexts": ["instructional-delivery", "language-communication", "testing-assessment"], "profiles": []},
+      "counts": {"accommodations": 8, "strategies": 16}
+    },
+    {
+      "file": "fluid-reasoning.json",
+      "id": "acc-by-cog-fluid-reasoning",
+      "title": "Fluid Reasoning Deficits",
+      "description": "Use when the student has difficulty with reasoning, generalizing learned skills, and solving novel problems.",
+      "applies_to": {"cognitive_deficits": ["fluid-reasoning"], "achievement_deficits": ["math-reasoning", "reading-comprehension"], "contexts": ["instructional-delivery", "testing-assessment"], "profiles": []},
+      "counts": {"accommodations": 7, "strategies": 16}
+    },
+    {
+      "file": "long-term-retrieval.json",
+      "id": "acc-by-cog-long-term-retrieval",
+      "title": "Long-Term Retrieval Deficits",
+      "description": "Use when the student has difficulty efficiently retrieving previously learned information (math facts, spelling, definitions, dates).",
+      "applies_to": {"cognitive_deficits": ["long-term-retrieval"], "achievement_deficits": ["reading-comprehension", "spelling", "basic-math"], "contexts": ["instructional-delivery", "testing-assessment"], "profiles": ["executive-function"]},
+      "counts": {"accommodations": 15, "strategies": 22}
+    },
+    {
+      "file": "processing-speed.json",
+      "id": "acc-by-cog-processing-speed",
+      "title": "Processing Speed Deficits",
+      "description": "Use when the student works slowly on simple/rote tasks — affecting copying, completing assignments, taking notes. Note: source has no Instructional Strategies subsection for this deficit.",
+      "applies_to": {"cognitive_deficits": ["processing-speed"], "achievement_deficits": ["basic-reading", "reading-comprehension", "written-expression", "spelling"], "contexts": ["instructional-delivery", "testing-assessment"], "profiles": ["adhd-attention"]},
+      "counts": {"accommodations": 15, "strategies": 0}
+    },
+    {
+      "file": "short-term-memory.json",
+      "id": "acc-by-cog-short-term-memory",
+      "title": "Short-Term Memory Deficits",
+      "description": "Use when the student has difficulty holding information in immediate mental awareness — affecting following oral directions, note-taking, lecture comprehension.",
+      "applies_to": {"cognitive_deficits": ["short-term-memory"], "achievement_deficits": ["basic-reading", "reading-comprehension", "written-expression"], "contexts": ["instructional-delivery", "environment"], "profiles": ["executive-function", "adhd-attention"]},
+      "counts": {"accommodations": 8, "strategies": 14}
+    },
+    {
+      "file": "visual-spatial.json",
+      "id": "acc-by-cog-visual-spatial",
+      "title": "Visual-Spatial Thinking Deficits",
+      "description": "Use when the student has difficulty perceiving and thinking with visual patterns — affecting interpretation of charts/graphs, math computation alignment, time/temporal reasoning.",
+      "applies_to": {"cognitive_deficits": ["visual-spatial"], "achievement_deficits": ["basic-math", "math-reasoning", "penmanship", "written-expression"], "contexts": ["instructional-delivery", "tools-equipment", "environment"], "profiles": ["nvld"]},
+      "counts": {"accommodations": 12, "strategies": 5}
+    }
+  ],
+  "totals": {"files": 7, "accommodations": 70, "strategies": 104}
+}

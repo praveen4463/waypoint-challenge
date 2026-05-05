@@ -1,0 +1,301 @@
+{
+  "id": "acc-research-supported-techniques",
+  "title": "Research-Supported Academic Accommodation Techniques",
+  "description": "Named, evidence-based instructional techniques (SQ4R, Drill Sandwich, Cover-Copy-Compare, etc.) with step-by-step procedures. Use when teachers need a specific named technique with implementation steps, not just a list of accommodations.",
+  "applies_to": {
+    "cognitive_deficits": ["long-term-retrieval", "short-term-memory"],
+    "achievement_deficits": ["basic-reading", "reading-comprehension", "spelling"],
+    "contexts": ["instructional-delivery"],
+    "profiles": []
+  },
+  "source": {
+    "name": "Seaman Compendium — Section Three: Research Supported Academic Accommodations",
+    "section": "Research Supported Academic Accommodations",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "1947-2352"
+  },
+  "techniques": [
+    {
+      "id": "tech-sq4r-textbook-reading",
+      "name": "SQ4R Method of Textbook Reading",
+      "applies_to_skills": ["reading-comprehension", "study-skills"],
+      "description": "A six-stage cognitive strategy (Survey, Questions, Read/Reflect, Recite, (W)rite, Review) for reading textbook passages with comprehension and retention.",
+      "steps": [
+        "SURVEY: Skim text book pages to identify the topic, some of the main ideas, what is to be learned, how the text is organized and how much time it will take to read the assigned passage. Give special attention to bold print items, headings, charts/tables, and key vocabulary and technical terms.",
+        "QUESTIONS: Develop a set of questions that will be answered in the text. These should be written as they are formulated. The student is taught to turn information gained from surveying into questions that serve as reading guides. Headings and information in bold print are turned into questions. Both factual and higher level reasoning and interpretive questions are posed.",
+        "READ AND REFLECT: The student reads the text with an eye to answering the questions posed. This approach helps organize the reading process and maintains attention. Reflect by rereading key passages and underlining key information that answer questions. The student explains to himself the answer to the question.",
+        "RECITE: The student restates or rehearses the answer using his/her own words.",
+        "(W)RITE: After an answer is recited, it is written as a response to the appropriate question.",
+        "REVIEW: Read answers to questions. Add additional information or elaborate."
+      ],
+      "when_to_use": "When a student needs a structured cognitive strategy to read and retain content from textbook passages."
+    },
+    {
+      "id": "tech-sq4r-studying-for-test",
+      "name": "SQ4R Method of Studying for a Test",
+      "applies_to_skills": ["reading-comprehension", "study-skills", "testing-assessment"],
+      "description": "Adaptation of the SQ4R method (Survey, Questions, Read/Reflect, Recite, (W)rite, Review) applied to studying text, lecture notes, and handouts in preparation for a test.",
+      "steps": [
+        "SURVEY: Survey text pages, lecture notes, and handouts. Give special attention to bold print items, headings, charts/tables, and key vocabulary and technical terms.",
+        "QUESTIONS: Develop a set of questions that might be on the test. Always include questions or problems presented in text or presented by instructor.",
+        "READ AND REFLECT: Read text, class notes, and handouts to find answers to questions. Reflect by rereading key passages and underlining key information that answer questions. Explain to yourself the answer to the question.",
+        "RECITE: Restate answers to questions. Use your own words to describe relationships between information or concepts.",
+        "(W)RITE: Write the answers to your questions, using information from more than one source when appropriate.",
+        "REVIEW: Read answers to questions. Add additional information or elaborate."
+      ],
+      "when_to_use": "When a student is preparing for a test and needs to integrate information across textbook, notes, and handouts."
+    },
+    {
+      "id": "tech-classwide-peer-tutoring",
+      "name": "Classwide Peer Tutoring",
+      "applies_to_skills": ["basic-math", "spelling", "rote-skills"],
+      "description": "Pair-based, classwide procedure to teach rote skills such as math facts, spelling words or capitals of states. Each session, partners alternate as tutor and tutee using a script with immediate feedback and token reinforcement. Research indicates academic gains greater than traditional instruction, sustained achievement advantages into secondary school, and improved behavior for ADHD students.",
+      "steps": [
+        "Randomly assign students in the class into pairs for a 20 minute tutoring session in which each takes a turn as tutor and tutee.",
+        "Provide the tutor a script (e.g., a series of spelling words or math problems) which are dictated to the tutee one at a time.",
+        "The tutor checks performance immediately after the tutee completes each problem. Two points are provided by the tutor for a correct response.",
+        "On an error, the tutor provides the correct response and the tutee rehearses it three times correctly to earn one point.",
+        "Present the item list as many times as possible in ten minutes, then the pair switches roles.",
+        "Afterward, team points are reported to the teacher and recorded for rewards."
+      ],
+      "when_to_use": "When teaching rote skills classwide and you want a high rate of practice opportunities, immediate feedback, and motivation through team rewards."
+    },
+    {
+      "id": "tech-prereading",
+      "name": "Pre-Reading",
+      "applies_to_skills": ["basic-reading", "reading-fluency", "reading-comprehension"],
+      "description": "Home- or school-based oral re-reading routine for reading-deficient students, particularly those asked to read text above instructional level or experiencing frustration with present text. Math and other academic skills can be substituted.",
+      "steps": [
+        "A student reads orally from the instructional text each evening with a parent or at school with a peer tutor. Sessions are short — about 15 minutes.",
+        "The student reads the passage to be read tomorrow in class.",
+        "Student reads orally for six minutes.",
+        "Parent (tutor) asks comprehension questions for three to four minutes.",
+        "Student orally reads passage again.",
+        "Painless error correction: If child fails to recognize a word, wait only briefly. Ask the child to point to the word. The parent (tutor) orally reads the word and the child says it twice. The child rereads the entire sentence."
+      ],
+      "when_to_use": "When a student is struggling with frustration-level text and would benefit from previewing tomorrow's passage at home or with a peer tutor."
+    },
+    {
+      "id": "tech-listening-previewing",
+      "name": "Listening Previewing",
+      "applies_to_skills": ["basic-reading", "reading-fluency", "word-recognition"],
+      "description": "Tutor-led previewing strategy to improve word recognition, oral reading rate and fluency. A good procedure when a passage is beyond a student's instructional level.",
+      "steps": [
+        "The student follows along as a tutor reads a passage from the reading instructional materials to be taught in the next lesson.",
+        "After the tutor reads, the student is asked to read the passage orally.",
+        "Error correction: If the student mispronounces a word or fails to identify a word in 5 seconds, the tutor says the word and asks the student to repeat the word twice while looking at the printed word. The student rereads the sentence.",
+        "Modification: Pre-reading is done one paragraph at a time.",
+        "Modification: The student rereads the entire passage orally after the prereading procedure is completed.",
+        "Modification: Comprehension questions are asked and content discussed following the procedure.",
+        "Modification: The student listens to a tape recording of the text in place of the tutor."
+      ],
+      "when_to_use": "When a passage is at frustrational level and the student needs a model of accurate, fluent reading before attempting it independently."
+    },
+    {
+      "id": "tech-simultaneous-choral-reading",
+      "name": "Simultaneous (Choral) Reading",
+      "applies_to_skills": ["basic-reading", "reading-fluency"],
+      "description": "Also known as the neurological impress method. Tutor and student read orally in unison from the student's instructional text to improve reading rate and fluency.",
+      "steps": [
+        "The student and a tutor read orally together (simultaneously) a passage scheduled to be read within the next day or two from the student's reading instructional text.",
+        "The tutor reads at a rate about 1/3rd faster than the baseline rate of the target student. The tutor also reads with expression and consistent with punctuation.",
+        "After a paragraph or several lines are read in chorus, the student orally reads the passage alone. It is helpful for the tutor to follow along with his/her finger when modeling.",
+        "Error correction: There is no error correction during choral reading. However, if the student mispronounces or fails to identify a word while reading alone, the tutor immediately says the word and the student repeats it and continues reading."
+      ],
+      "when_to_use": "To improve reading rate and fluency, especially for passages at frustrational reading level."
+    },
+    {
+      "id": "tech-delayed-prompting",
+      "name": "Delayed Prompting",
+      "applies_to_skills": ["basic-math", "letter-names-sounds", "sight-vocabulary", "rote-information"],
+      "description": "Flash-card drill procedure to teach rote information such as math facts, definitions, capitals of states, letter-sound associations, etc. Uses a controlled prompt-delay to support errorless learning.",
+      "steps": [
+        "A set of flash cards is written to prompt a response (e.g., 2 X 4 = _____).",
+        "Flash cards are distributed into small packs of five or six each.",
+        "A flash card is shown. The student reads the card and the instructor immediately states the correct answer. The student then rereads the card and says the right answer. Cards are successively shown until the pack has been presented twice.",
+        "The student is told to only give an answer if he is certain it is correct. He is instructed to wait for the correct answer if uncertain.",
+        "The pack is presented six times. If the student does not respond in 4 seconds, the instructor says the answer. The student rereads the item and says the correct answer. If a student gives a wrong answer during the 4-second delay, remind the student to wait if he is not certain and provide the correct answer.",
+        "Provide an enthusiastic praise statement ('Wow, that's terrific!') for unprompted responses that are correct and a simple praise statement ('Good.') for prompted responses."
+      ],
+      "when_to_use": "When teaching rote, fact-based information where errorless practice with prompt delay supports retention."
+    },
+    {
+      "id": "tech-cover-copy-compare",
+      "name": "Cover-Copy-Compare",
+      "applies_to_skills": ["spelling", "basic-math", "rote-information"],
+      "description": "Self-managed practice procedure to improve memory for rote information such as math facts, spelling words, capitals of states, symbols of elements, abbreviations, etc.",
+      "steps": [
+        "A few items such as spelling words or math facts are written down the left side of a piece of paper.",
+        "The student reads the first item, covers it with a card and rewrites it to the right of the now covered model.",
+        "The student uncovers the model and compares his product with the model.",
+        "If the student is correct, he proceeds to the next item. If incorrect, the student copies the model three times to the right of the error. He then covers his work, writes the response from memory, and again compares his product with the model.",
+        "The sequence of items repeats itself several times down the page to allow a high rate of opportunities to respond.",
+        "Modification: The student provides himself points for each correct response. Points are collected to earn a reward."
+      ],
+      "when_to_use": "When a student needs independent, self-checking rehearsal of rote information with built-in error correction."
+    },
+    {
+      "id": "tech-add-a-word",
+      "name": "Add A Word",
+      "applies_to_skills": ["spelling"],
+      "description": "Daily mastery-learning spelling rehearsal procedure with high rate of opportunities to respond. Mastered words rotate off the active list and are replaced by new ones.",
+      "steps": [
+        "From a master list of spelling words, 10 words are identified.",
+        "The student copies the ten words down the left side of a piece of paper.",
+        "The student covers the column of words. The instructor dictates the words which the student writes.",
+        "The student uncovers the copied words to compare with his/her spelling.",
+        "Each word spelled incorrectly is copied again.",
+        "The procedure is carried out daily. If a student spells a word correctly for 2 consecutive days, it is removed from the list of 10 words and replaced with another word from the master list.",
+        "For unmotivated students, words mastered over time can be collected to earn a reinforcer."
+      ],
+      "when_to_use": "When a student needs sustained daily spelling rehearsal with mastery criterion before words are retired."
+    },
+    {
+      "id": "tech-simultaneous-reading-vocabulary",
+      "name": "Simultaneous Reading of Vocabulary Words",
+      "applies_to_skills": ["sight-vocabulary", "reading-fluency", "content-area-reading"],
+      "description": "Tape- or tutor-led previewing of content-area vocabulary to improve recognition and reading rate, particularly when the student lacks adequate decoding skills.",
+      "steps": [
+        "Vocabulary words from a content area lesson (science, social studies, health, etc.) the student will be reading in the next few days are identified.",
+        "The words are listed down a page.",
+        "The instructor makes a tape recording of the word list. The words on the tape are presented at a rate somewhat higher than the baseline rate of the student's oral reading.",
+        "The student, while following along on the list, listens to the words being read from the tape.",
+        "The student reads the list orally.",
+        "The procedure is repeated until the student demonstrates mastery of oral reading of the list.",
+        "Modification: A tutor might be substituted for a tape recording.",
+        "Modification: A teacher might employ the procedure with a whole class or group. The teacher first models the reading of the word list followed by choral reading by the students."
+      ],
+      "when_to_use": "Before a content-area passage is read in class, to preview difficult vocabulary and reduce decoding load during the lesson."
+    },
+    {
+      "id": "tech-folding-in",
+      "name": "Folding In",
+      "applies_to_skills": ["sight-vocabulary", "word-recognition", "reading-fluency"],
+      "description": "Errorless drill procedure to establish word recognition for unknown words in a passage, improve reading rate, and assist a student to read a passage successfully that is at frustration level (greater than 7% unknown words).",
+      "steps": [
+        "SELECT A PASSAGE: Select a passage the student is working on in class. The passage must not contain more than 50% unknown material.",
+        "CONDUCT A ONE MINUTE TIMING: Have the student read a paragraph from the passage for 1 minute. Record the number of words read correctly on a vertical bar graph.",
+        "IDENTIFY TWO UNKNOWN AND EIGHT KNOWN WORDS: Identify two unknown words from the passage read and eight known words. The known words should have meaning (not words such as the, a, and, etc.). Write each of the words (2 unknowns, 8 knowns) each on a 3 x 5 index card.",
+        "TEACH THE FIRST UNKNOWN WORD: Present the first unknown word by showing it, reading it aloud, defining it and using the word in a sentence. Ask the student to read the word and also use the word in a sentence.",
+        "SUCCESSIVELY SHOW THE UNKNOWN WORD SANDWICHED BETWEEN KNOWNS: Show a known word and ask the student to read it aloud. Then show the unknown word and ask the student to read it aloud. Follow with a different known, then the unknown word once again. In this way the student successively reads the unknown word followed by a new known word until all known words have been presented (unknown(1) - known(1) - unknown(1) - known(2) - unknown(1) - known(3) etc.).",
+        "TEACH THE SECOND UNKNOWN WORD AND REPEAT THE PROCEDURE: The second unknown word is presented using the same show-read-define-use-in-sentence routine. The student is then asked to read the unknown word between successive flashes of known words as in Step 5. The original unknown word is included as a known.",
+        "SESSION ENDS WITH THE STUDENT REREADING THE PASSAGE AND GRAPHING RATE DATA: The student is asked to reread the passage to the point where he stopped in Step 2. Measure the number of seconds taken to read the passage and compute words read correctly per minute (# of words correct / # of seconds x 60). Assist the student to graph the results on the bar graph used in Step 2.",
+        "SESSION TWO — REVIEW THE WORD LIST: Session 2 begins by asking the student to read the original set of flash cards from Session 1. If the student is able to recognize the original two unknowns taught in Session 1, they are now included among knowns. For each of these new knowns, an original known from Session 1 is removed from the pile to keep the number of knowns at 8.",
+        "ONE MINUTE TIMING AND IDENTIFICATION OF TWO NEW UNKNOWN WORDS: The student reads the next portion of the passage for one minute. Rate data is again graphed. Two unknown words are identified and written on an index card.",
+        "THE PROCEDURE CONTINUES ACROSS SESSIONS WITH NEWLY LEARNED WORDS REPLACING ORIGINAL KNOWN WORDS: Sessions continue with newly acquired words replacing original known words. Graphing of data at the beginning and end of each session is also continued.",
+        "Error correction: If the student fails to identify a word, the word is read by the instructor. The student reads the word, gives a definition and uses the word in a sentence."
+      ],
+      "when_to_use": "Best used for passages from content area texts (science, social studies) in which new words are frequently presented, especially when the passage is at frustration level. Can be used by a teacher, aide, peer tutor or parent."
+    },
+    {
+      "id": "tech-drill-sandwich",
+      "name": "The Drill Sandwich Method",
+      "applies_to_skills": ["sight-vocabulary", "word-recognition", "basic-math", "letter-names-sounds"],
+      "description": "Flash-card sequencing procedure that places unknown items in fixed positions among known items to establish word recognition (or other rote facts), improve rate, and support reading a passage at frustration level (greater than 7% unknown words).",
+      "steps": [
+        "The student reads a passage. Three unknown words and seven known words are identified and written on 3 x 5 index cards. The known words should have meaning (not words such as the, a, this, etc.).",
+        "The unknown words are taught by reading them successively to the student and having the student repeat.",
+        "The unknown words are placed in positions 3, 6 and 8 in the stack of index cards.",
+        "The set of words is presented multiple times. Across presentations the position of known words is changed while the unknown words remain in positions 3, 6 and 8.",
+        "The passage is reread at the end of the session.",
+        "As with the folding in technique, it is helpful to assist the student to graph rate data (words correct per minute) each time he reads. Comparing the rate of the second reading after the drill sandwich procedure to the baseline rate of the initial reading can be motivating since the student can see the improvement he makes."
+      ],
+      "when_to_use": "Helpful in content area texts where there are a high number of unknown words. Also adaptable for math facts and letter names/sounds."
+    },
+    {
+      "id": "tech-previewing-comprehension-questions",
+      "name": "Previewing Comprehension Questions",
+      "applies_to_skills": ["reading-comprehension"],
+      "description": "Simple advance-organizer technique to improve student comprehension of a passage by prompting attention to specific information. Often incorporated into more elaborate accommodations and applicable to both content area passages and narrative text.",
+      "steps": [
+        "The content of the passage is orally summarized by the instructor.",
+        "New vocabulary words are identified and definitions provided.",
+        "Comprehension questions are reviewed and the student is asked to find the answers while reading the passage."
+      ],
+      "when_to_use": "Whenever you want to provide a cognitive framework before reading and direct attention to the most relevant information in a passage."
+    },
+    {
+      "id": "tech-reading-comprehension-learning-strategy",
+      "name": "Reading Comprehension Learning Strategy",
+      "applies_to_skills": ["reading-comprehension"],
+      "description": "Specific, sequential cognitive strategy taught through self-instruction training (modeling and successively more independent trials) to enhance comprehension across a variety of reading materials.",
+      "steps": [
+        "The student reads the title of the passage (story, chapter, etc.).",
+        "The student skims the passage by reading headings, words in bold print, and reviewing illustrations. This provides the student a general idea about passage content.",
+        "The student reads the story looking for the main ideas and how the passage is organized.",
+        "A series of comprehension questions is provided by the instructor which asks for specific information.",
+        "The student rereads the passage, stopping to answer comprehension questions."
+      ],
+      "when_to_use": "When a student needs an internalized, generalizable strategy for approaching a variety of reading materials with comprehension."
+    },
+    {
+      "id": "tech-story-mapping",
+      "name": "Story Mapping",
+      "applies_to_skills": ["reading-comprehension", "narrative-text"],
+      "description": "Graphic organizer strategy to improve reading comprehension of stories by helping the student understand how parts of a story interrelate. Studies show this strategy generalizes as the student employs it without prompts.",
+      "steps": [
+        "The instructor orally summarizes story content to the student.",
+        "Specific comprehension questions are provided to the student and reviewed.",
+        "The student reads the story.",
+        "The student fills in sections of a map or chart asking information about: A. Setting (Characters, Time, Place); B. The Problem; C. The Goal; D. Action that takes place; E. The outcome.",
+        "The mapping strategy must initially be taught through modeling and guided practice."
+      ],
+      "when_to_use": "When teaching narrative-text comprehension and helping the student associate parts of the story to enhance comprehension and retention."
+    },
+    {
+      "id": "tech-contingency-management-comprehension",
+      "name": "Contingency Management to Improve Reading Comprehension",
+      "applies_to_skills": ["reading-comprehension", "motivation"],
+      "description": "Reinforcement-based procedure to improve reading comprehension and increase motivation for acquiring information from a passage. Self monitoring and group contingencies have been used successfully with this procedure.",
+      "steps": [
+        "Questions are provided to the student prior to reading a passage.",
+        "The student is informed that a reward is made contingent upon responding correctly to comprehension questions after the passage is read.",
+        "Criterion can be a specific number of questions answered correctly or improvement over past performance."
+      ],
+      "when_to_use": "When motivation for engaging with a passage is low and the student would benefit from a clear performance-based contingency."
+    },
+    {
+      "id": "tech-rate-contingent-reinforcement",
+      "name": "Rate Contingent Reinforcement",
+      "applies_to_skills": ["basic-math", "math-fluency"],
+      "description": "Reinforcement procedure to increase the rate of correct responding in math computation. Addresses students who can demonstrate proficiency in a computation skill but lack speed; rate deficits may be due to deficiencies in processing speed, motivation, attention or other factors.",
+      "steps": [
+        "A baseline is taken of the rate of math computation problems correctly completed in a unit of time (e.g., 10 minutes).",
+        "A reinforcer is identified (e.g., free time, activity, mystery reward, treat, privilege, etc.).",
+        "The reinforcer is provided if the student completes math computation problems to a criterion level of performance based on rate. Criterion is first set at baseline. After 3 consecutive days of reaching the criterion (baseline) level, the criterion is raised 5%.",
+        "The procedure is carried out daily with results graphed by the student."
+      ],
+      "when_to_use": "When the student is accurate but slow in computation and needs a motivational system to build speed/fluency."
+    },
+    {
+      "id": "tech-academic-strategy-training",
+      "name": "Academic Strategy Training",
+      "applies_to_skills": ["math-reasoning", "story-problems", "following-directions", "social-skills", "study-skills"],
+      "description": "Self-instruction training that provides students a cognitive model to follow when solving a specific type of problem or accomplishing a task (e.g., math operations, math story problems, following written directions, learning a social skill). Found to generalize well across academic tasks. Also called self-instructional training.",
+      "steps": [
+        "The instructor, through task analysis, determines the most efficient steps to solve a problem or complete a task.",
+        "The steps are displayed in written form to the student and reviewed.",
+        "The instructor models use of the strategy by orally repeating the steps as he/she works the problem.",
+        "The student performs the steps as the instructor orally describes them.",
+        "The student solves the problem while orally guiding himself through the steps. The instructor provides prompts when necessary.",
+        "The student performs the steps while orally describing them without instructor prompts.",
+        "The student performs the task independently with private speech.",
+        "Example (expressing a part as a fraction of a whole): A. Count how many objects there are all together. B. Write this number down. C. Count how many objects there are in the part. D. Write this number on top of the first number to make a fraction."
+      ],
+      "when_to_use": "When a student would benefit from an explicit, internalized step-by-step procedure for a recurring problem type or task."
+    },
+    {
+      "id": "tech-text-highlighting",
+      "name": "Text Highlighting",
+      "applies_to_skills": ["reading-fluency", "content-area-reading"],
+      "description": "Adaptation that pre-marks key sentences, phrases, and vocabulary in content area texts to assist students with deficient reading skills, particularly fluency, in subjects such as social studies, science, or health. Significantly reduces the reading difficulty level of a passage.",
+      "steps": [
+        "With a magic marker underline key sentences, phrases and vocabulary in a content area text book.",
+        "Require the student to read only the underlined material.",
+        "Supplement this activity with discussion and oral presentation of associated content.",
+        "Many content area text books are written at a reading level substantially above the grade level of the readers. As a result, it may be helpful to have a number of highlighted texts on the shelf for use by students with reading deficits."
+      ],
+      "when_to_use": "When a content area text is above the student's instructional reading level and you want to make key information accessible without rewriting the text."
+    }
+  ]
+}

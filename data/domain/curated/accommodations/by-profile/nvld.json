@@ -1,0 +1,170 @@
+{
+  "id": "acc-by-profile-nvld",
+  "title": "Accommodations and Remediation Strategies for Nonverbal Learning Disability (NVLD)",
+  "description": "Use when the student profile includes a Nonverbal Learning Disability (NVLD) or shows characteristics such as strong rote-verbal skills paired with visual-spatial deficits, difficulty generalizing concepts, weak nonverbal/social communication, and trouble organizing written output.",
+  "applies_to": {
+    "cognitive_deficits": ["visual-spatial", "fluid-reasoning", "comprehension-knowledge"],
+    "achievement_deficits": ["written-expression", "reading-comprehension", "math-reasoning"],
+    "contexts": ["transitions", "instructional-delivery", "language-communication", "peer-social", "sensory"],
+    "profiles": ["nvld"]
+  },
+  "source": {
+    "name": "ADayInOurShoes — Ultimate List of IEP Accommodations, Modifications & Strategies (SDIs)",
+    "section": "NVLD; NVLD-Remediation Ideas",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "146-197"
+  },
+  "definition": "Nonverbal Learning Disability (NVLD) is a neurodevelopmental profile in which language structure (phonology, morphology, syntax) is typically intact and age-appropriate, while visual-spatial reasoning, nonverbal communication, social cognition, and the ability to generalize or abstract concepts are impaired. Students with NVLD often appear to understand because they can repeat (\"parrot back\") information, but actually require explicit teaching, re-teaching, and verbal scaffolding to internalize meaning.",
+  "accommodations": [
+    {
+      "id": "nvld-01",
+      "text": "Teach, then re-teach. Have the child explain things back in his own words and require the use of words different from those used in the initial explanation, so the child must process and hold on to information rather than offer rote repetition.",
+      "applies_when": ["instructional-delivery"]
+    },
+    {
+      "id": "nvld-02",
+      "text": "Rehearse getting from place to place.",
+      "applies_when": ["transitions", "visual-spatial"]
+    },
+    {
+      "id": "nvld-03",
+      "text": "Minimize transitions and give several verbal cues before a transition.",
+      "applies_when": ["transitions"]
+    },
+    {
+      "id": "nvld-04",
+      "text": "Avoid assuming the student will automatically generalize instructions or concepts.",
+      "applies_when": ["instructional-delivery"]
+    },
+    {
+      "id": "nvld-05",
+      "text": "Verbally point out similarities, differences, and connections.",
+      "applies_when": ["instructional-delivery"]
+    },
+    {
+      "id": "nvld-06",
+      "text": "Number and present instructions in sequence.",
+      "applies_when": ["instructional-delivery"]
+    },
+    {
+      "id": "nvld-07",
+      "text": "Simplify and break down abstract concepts.",
+      "applies_when": ["instructional-delivery"]
+    },
+    {
+      "id": "nvld-08",
+      "text": "Explain metaphors, nuances, and multiple meanings in reading material.",
+      "applies_when": ["instructional-delivery", "language-communication"]
+    },
+    {
+      "id": "nvld-09",
+      "text": "Answer the student's questions when possible, but let them know a specific number (e.g., three vs. \"a few\") and that you can answer three more at recess or after school.",
+      "applies_when": ["instructional-delivery", "language-communication"]
+    },
+    {
+      "id": "nvld-10",
+      "text": "Allow the child to abstain from participating in activities at signs of overload.",
+      "applies_when": ["sensory", "behavior"]
+    },
+    {
+      "id": "nvld-11",
+      "text": "Thoroughly prepare the child in advance for field trips or other changes, regardless of how minimal.",
+      "applies_when": ["transitions"]
+    },
+    {
+      "id": "nvld-12",
+      "text": "Implement a modified schedule or creative programming.",
+      "applies_when": ["instructional-delivery"]
+    },
+    {
+      "id": "nvld-13",
+      "text": "Never assume the child understands something because he or she can \"parrot back\" what you've just said.",
+      "applies_when": ["instructional-delivery"]
+    },
+    {
+      "id": "nvld-14",
+      "text": "Offer added verbal explanations when the child seems lost or registers confusion.",
+      "applies_when": ["instructional-delivery"]
+    },
+    {
+      "id": "nvld-15",
+      "text": "Recognize that phonology (mastery of the sound system) is intact for these students.",
+      "applies_when": ["language-communication"]
+    },
+    {
+      "id": "nvld-16",
+      "text": "Recognize that morphology, which deals with inflectional word marking, is also adequate.",
+      "applies_when": ["language-communication"]
+    },
+    {
+      "id": "nvld-17",
+      "text": "Recognize that syntax — including the formation of complete sentences and the use of various sentence types — is age appropriate. Language structure is not an area of dysfunction for these children.",
+      "applies_when": ["language-communication"]
+    },
+    {
+      "id": "nvld-18",
+      "text": "Have the child use the computer at school and at home for schoolwork.",
+      "applies_when": ["remediation-strategy", "tools-equipment"]
+    },
+    {
+      "id": "nvld-19",
+      "text": "Help the child learn organizational and time-management skills.",
+      "applies_when": ["remediation-strategy"]
+    },
+    {
+      "id": "nvld-20",
+      "text": "Make use of the child's verbal skills to help with social interactions and non-verbal experiences — for example, giving a verbal explanation of visual material.",
+      "applies_when": ["remediation-strategy", "peer-social", "visual-spatial"]
+    },
+    {
+      "id": "nvld-21",
+      "text": "Teach the child about non-verbal communication (facial expressions, gestures, etc.). Help them learn how to tell from others' reactions whether they are communicating well.",
+      "applies_when": ["remediation-strategy", "peer-social", "language-communication"]
+    },
+    {
+      "id": "nvld-22",
+      "text": "Learn about social competence and how to teach it.",
+      "applies_when": ["remediation-strategy", "peer-social"]
+    },
+    {
+      "id": "nvld-23",
+      "text": "Help the child out in group activities.",
+      "applies_when": ["remediation-strategy", "peer-social"]
+    },
+    {
+      "id": "nvld-24",
+      "text": "Get the child into the therapies they need, such as occupational and physical therapy, psychological, or speech and language therapy.",
+      "applies_when": ["remediation-strategy"]
+    },
+    {
+      "id": "nvld-25",
+      "text": "Recognize that the student with NLD cannot avoid the need to put ideas into a written format.",
+      "applies_when": ["remediation-strategy"]
+    },
+    {
+      "id": "nvld-26",
+      "text": "The role of the special educator is to put a structure in place so that the child can see that written discourse can closely parallel verbal thought.",
+      "applies_when": ["remediation-strategy"]
+    },
+    {
+      "id": "nvld-27",
+      "text": "Begin the intervention strategy for written language by verbalizing and outlining what the final product will look like.",
+      "applies_when": ["remediation-strategy"]
+    },
+    {
+      "id": "nvld-28",
+      "text": "Teach the components of a sentence, then a paragraph, and then an essay.",
+      "applies_when": ["remediation-strategy"]
+    },
+    {
+      "id": "nvld-29",
+      "text": "At times, use a math-like algorithm: a topic sentence + specific supporting details + a concluding sentence = a paragraph.",
+      "applies_when": ["remediation-strategy"]
+    },
+    {
+      "id": "nvld-30",
+      "text": "Allow the student with NVLD to understand the structure first so that, following this structure, a response can be formulated mentally.",
+      "applies_when": ["remediation-strategy"]
+    }
+  ]
+}

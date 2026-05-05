@@ -1,0 +1,122 @@
+{
+  "id": "acc-by-ach-math-reasoning-and-problem-solving",
+  "title": "Math Reasoning and Problem Solving Deficits — Accommodations & Strategies",
+  "description": "Use when the student's IEP present-levels indicate below-grade-level performance in mathematical reasoning or specific skill gaps in understanding mathematical concepts, quantitative vocabulary, or solving story (word) problems.",
+  "applies_to": {
+    "cognitive_deficits": ["fluid-reasoning", "comprehension-knowledge", "long-term-retrieval", "short-term-memory"],
+    "achievement_deficits": ["math-reasoning", "basic-math"],
+    "contexts": ["instructional-delivery", "tools-equipment"],
+    "profiles": []
+  },
+  "source": {
+    "name": "Seaman Compendium — Accommodations for Cognitive and Academic Deficits (J. Seaman, PhD)",
+    "section": "Section Two: Accommodations for Achievement Deficits — Math Reasoning and Problem Solving Deficits",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "1828-1902"
+  },
+  "definition": "The student demonstrates difficulty with understanding mathematical concepts and using math skills to solve problems.",
+  "accommodations": [
+    {
+      "id": "mr-acc-01",
+      "text": "Reword mathematical vocabulary in simpler terms to compensate for the student's lack of knowledge (e.g. reduce means to state a fraction in terms using smaller numbers). It may be necessary to provide concrete examples for some abstract terms.",
+      "applies_when": []
+    },
+    {
+      "id": "mr-acc-02",
+      "text": "Check for comprehension after explanations or directions are given that use mathematical terms.",
+      "applies_when": []
+    },
+    {
+      "id": "mr-acc-03",
+      "text": "Reduce expectations concerning the student's ability to solve problems, including story problems. Provide problems which the student has the conceptual ability to understand and solve.",
+      "applies_when": []
+    },
+    {
+      "id": "mr-acc-04",
+      "text": "The student lacks automaticity with math facts and some algorithms. This deficit will interfere with math problem solving. As a result, modify story problems so that they require computation skills the student has mastered. It may be necessary to allow the student to use a calculator to solve problems in order to compensate for these deficits.",
+      "applies_when": []
+    }
+  ],
+  "instructional_strategies": [
+    {
+      "id": "mr-strat-01",
+      "text": "The student is lacking a quantitative vocabulary (e.g., big, little, more, less, same/equal, wide, tall, etc.). This condition makes instruction and understanding of mathematical concepts, as well as solving story problems, difficult. It will be important to teach a quantitative vocabulary by direct instruction procedures.",
+      "applies_when": ["math-concepts"]
+    },
+    {
+      "id": "mr-strat-02",
+      "text": "The ability to classify objects into abstract categories is important to developing quantitative concepts and engaging in math problem solving. As a result, help the student compare attributes of common objects in order to group them into categories (e.g., students by eye color, school implements that write vs. don't write, toys that are electronic vs. mechanical, etc.). In addition, have the student quantify the number of objects within a category by counting them.",
+      "applies_when": ["math-concepts"]
+    },
+    {
+      "id": "mr-strat-03",
+      "text": "Use familiar situations from the student's experience to demonstrate mathematical concepts (e.g., demonstrate circumference, diameter and radius using a basketball).",
+      "applies_when": ["math-concepts"]
+    },
+    {
+      "id": "mr-strat-04",
+      "text": "Use manipulatives and concrete objects to teach math concepts (e.g., fractions, place value, subtraction, etc). This might also include the student drawing objects. Provide opportunities for the student to not only observe but actually manipulate objects during instruction. Move from the concrete to the abstract making sure that comprehension is established before progressing to the next step.",
+      "applies_when": ["math-concepts"]
+    },
+    {
+      "id": "mr-strat-05",
+      "text": "This student demonstrates stronger inductive than deductive reasoning. As a result, the student might profit from a discovery or bottom-up approach to instruction in which numerous examples are shown which lead the student to understanding an abstract concept or rule.",
+      "applies_when": ["math-concepts"]
+    },
+    {
+      "id": "mr-strat-06",
+      "text": "This student demonstrates stronger deductive than inductive reasoning. As a result, the student will more likely benefit from a top-down approach to instruction in which a rule or concept is clearly stated (e.g., when adding fractions with a common denominator, add together the numerator and keep the denominator the same) and demonstrated followed by the student then using the concept or rule to find examples or solve problems.",
+      "applies_when": ["math-concepts"]
+    },
+    {
+      "id": "mr-strat-07",
+      "text": "Supplement instruction by having a peer tutor or model student explain a concept to the student. This might also extend to solving story problems. The student might profit from hearing another student explain how he or she solved a problem.",
+      "applies_when": ["math-concepts"]
+    },
+    {
+      "id": "mr-strat-08",
+      "text": "When introducing a new concept, do not take for granted that a student has retained understanding of previously taught concepts. Review previously taught concepts regularly. Also, review concepts that are prerequisite for learning a new concept.",
+      "applies_when": ["math-concepts"]
+    },
+    {
+      "id": "mr-strat-09",
+      "text": "Preview a concept individually with the student or with a small group before it is taught classwide. This method will improve comprehension as well as attention when the concept is taught in class.",
+      "applies_when": ["math-concepts"]
+    },
+    {
+      "id": "mr-strat-10",
+      "text": "Teach the student to use manipulatives or drawing a picture to represent information presented in a story problem. This procedure will help understanding as well as reduce demands on working memory.",
+      "applies_when": ["story-problems"]
+    },
+    {
+      "id": "mr-strat-11",
+      "text": "Model the process of solving a story problem by orally talking through the solution steps. After modeling, provide the student opportunities to orally talk through the same or very similar problems.",
+      "applies_when": ["story-problems"]
+    },
+    {
+      "id": "mr-strat-12",
+      "text": "Teach key vocabulary words and terms in story problems that signal use of a particular operation (e.g., and, plus or all together signals addition; less, left or remain signals subtraction; of signals multiply).",
+      "applies_when": ["story-problems"]
+    },
+    {
+      "id": "mr-strat-13",
+      "text": "Teach the student to first paraphrase a story problem, identify what question is being asked and identify what information is given in the story. It may be helpful for the student to write the question and then each piece of information on separate lines of paper in order to help separate and discriminate this information.",
+      "applies_when": ["story-problems"]
+    },
+    {
+      "id": "mr-strat-14",
+      "text": "Help the student identify the various steps required to solve a word problem. These might be sequenced by writing them out on paper.",
+      "applies_when": ["story-problems"]
+    },
+    {
+      "id": "mr-strat-15",
+      "text": "Help the student sort out relevant from irrelevant information in story problems.",
+      "applies_when": ["story-problems"]
+    },
+    {
+      "id": "mr-strat-16",
+      "text": "Have the student create or write story problems. It will be helpful for the student to write problems that involve classroom materials so that with peers the student might act out solving the story problem.",
+      "applies_when": ["story-problems"]
+    }
+  ]
+}

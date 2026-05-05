@@ -1,0 +1,302 @@
+{
+  "id": "acc-by-ach-basic-reading",
+  "title": "Basic Reading Skill Deficits — Accommodations & Strategies",
+  "description": "Use when the student's IEP present-levels indicate below-grade-level performance in basic reading skills, including specific skill gaps in reading readiness, phonetic decoding, word recognition, sight vocabulary, or reading fluency.",
+  "applies_to": {
+    "cognitive_deficits": ["phonemic-awareness", "auditory-processing", "long-term-retrieval", "short-term-memory"],
+    "achievement_deficits": ["basic-reading"],
+    "contexts": ["instructional-delivery", "testing-assessment"],
+    "profiles": ["dyslexia"]
+  },
+  "source": {
+    "name": "Seaman Compendium — Accommodations for Cognitive and Academic Deficits (J. Seaman, PhD)",
+    "section": "Section Two: Accommodations for Achievement Deficits — Basic Reading Skill Deficits (Reading Readiness, Decoding, Word Recognition, Reading Fluency)",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "1044-1298"
+  },
+  "definition": "The student lacks skills in reading readiness, phonetic decoding, word recognition and reading fluency.",
+  "accommodations": [
+    {
+      "id": "br-acc-01",
+      "text": "The student will experience difficulty reading directions whether on the board, on assignments or in texts. It will be helpful to orally review written directions with the student and, when appropriate, provide demonstrations to support comprehension.",
+      "applies_when": []
+    },
+    {
+      "id": "br-acc-02",
+      "text": "Many seatwork tasks and activities that require independent reading as well as writing will be difficult for this student. As a result, expectations will need to be adjusted. It may be necessary to shorten such assignments, provide additional time, modify items, or provide individual help. The student might be assigned to work with another student on such tasks.",
+      "applies_when": []
+    },
+    {
+      "id": "br-acc-03",
+      "text": "Consider seating the student next to a study buddy who can assist the student when the student experiences difficulty with reading.",
+      "applies_when": []
+    },
+    {
+      "id": "br-acc-04",
+      "text": "Content area texts (e.g., social studies, science) may be difficult for the student to read. It may be helpful to review information orally that is presented in expository texts. In addition, reviewing content of text passages may provide context clues that will help the student read the passage.",
+      "applies_when": []
+    },
+    {
+      "id": "br-acc-05",
+      "text": "Highlighting of content area texts can be helpful to compensate for difficulties with reading efficiency. In this strategy key words, phrases and sentences are marked with a highlighter pen. As a result, the amount of reading is reduced and key information is emphasized.",
+      "applies_when": []
+    },
+    {
+      "id": "br-acc-06",
+      "text": "Have a model student read content area texts to the student to compensate for the student's difficulties with reading of the material.",
+      "applies_when": []
+    },
+    {
+      "id": "br-acc-07",
+      "text": "Since the student is identified as reading disabled, the student is eligible to receive books on tape. This may be necessary to compensate for the student's inability to read content area texts. Tapes may be borrowed from Recordings for the Blind and Dyslexic, which is a nonprofit organization serving the needs of blind and learning disabled individuals. It is required that a membership application be completed, which is available at the organization's website. The application requires the signature of an educational professional certifying that the student is unable to read standard print.",
+      "applies_when": []
+    },
+    {
+      "id": "br-acc-08",
+      "text": "Given the student's weakness in basic reading skills, it may be necessary to make adjustments in homework assignments. It will be important to only assign tasks for which the student demonstrates independent reading skills.",
+      "applies_when": []
+    },
+    {
+      "id": "br-acc-09",
+      "text": "As the student demonstrates significant basic reading skill deficits, tests might better be given orally. Should reading and writing be required, consideration should be given to providing additional time to complete a test.",
+      "applies_when": ["testing-assessment"]
+    },
+    {
+      "id": "br-acc-10",
+      "text": "Provide text with larger print (i.e., magnify photocopy).",
+      "applies_when": []
+    },
+    {
+      "id": "br-acc-11",
+      "text": "In order to enhance visual perception of print, require the student to place a book marker under successive lines of text as they are read. Or, provide the student a window to move down the page as text is read.",
+      "applies_when": []
+    },
+    {
+      "id": "br-acc-12",
+      "text": "To avoid embarrassment and an experience of failure, avoid oral reading of difficult passages in public.",
+      "applies_when": []
+    }
+  ],
+  "instructional_strategies": [
+    {
+      "id": "br-strat-01",
+      "text": "Encourage the student's parents to read high interest materials to the student. Parental attention associated with reading will establish reading as a pleasurable experience that is valued by the parents.",
+      "applies_when": ["motivation"]
+    },
+    {
+      "id": "br-strat-02",
+      "text": "It is important that the student experience enjoyment and benefits from reading. Help the student's parents find reading materials in the library that match areas of student interest and are at independent reading level. Encourage the student to read regularly at home. The parents might be assisted to establish a formal reward program to encourage independent reading at home.",
+      "applies_when": ["motivation"]
+    },
+    {
+      "id": "br-strat-03",
+      "text": "Have the student serve as a peer tutor who uses an academic accommodation to help a problem reader in a lower grade class. The student might also read easy reading level stories to students in a lower grade class.",
+      "applies_when": ["motivation"]
+    },
+    {
+      "id": "br-strat-04",
+      "text": "With the student, systematically plot reading performance on a graph to show progress. First take a baseline measure of reading performance (e.g., reading rate in words correct per minute, percentage of words recognized in a passage, words read correctly per minute from a sight word list, etc.). Set a goal and thereafter take regular samples of reading performance, teaching the student to record data on the graph. Reinforce both effort and goal achievement. This method not only provides feedback to the teacher concerning success of an accommodation, but enhances student motivation as well.",
+      "applies_when": ["motivation"]
+    },
+    {
+      "id": "br-strat-05",
+      "text": "Teach the student to say the alphabet. Familiarity with letter names will enhance learning of letter-name associations.",
+      "applies_when": ["letter-names-sounds"]
+    },
+    {
+      "id": "br-strat-06",
+      "text": "Use direct instruction procedures of showing the target stimulus (i.e., the written letter), modeling the correct response (i.e., both name and sound of the letter), providing the student numerous opportunities to rehearse the correct response in the presence of the target stimulus, reinforce success and immediately correct errors in a positive manner.",
+      "applies_when": ["letter-names-sounds"]
+    },
+    {
+      "id": "br-strat-07",
+      "text": "Teach only one or two letter names and sounds at a time. In teaching, show the letter and pair the name with the sound. Regularly review letter names and sounds previously taught.",
+      "applies_when": ["letter-names-sounds"]
+    },
+    {
+      "id": "br-strat-08",
+      "text": "Capitalize on familiarity by first teaching the student the letter names and sounds in the student's name.",
+      "applies_when": ["letter-names-sounds"]
+    },
+    {
+      "id": "br-strat-09",
+      "text": "Pair letters with pictures associated with the letter name or sound. For instance, when teaching the letter a, associate the letter with a picture of an apple and the /a/ sound. Some letters lend themselves to such associations (e.g., m taught as two mountains, s taught as a snake, e taught as an egg).",
+      "applies_when": ["letter-names-sounds"]
+    },
+    {
+      "id": "br-strat-10",
+      "text": "Provide cut out letters and have the student match letters in order to establish discrimination of letter forms.",
+      "applies_when": ["letter-names-sounds"]
+    },
+    {
+      "id": "br-strat-11",
+      "text": "Provide opportunities for the student to play with letter forms by drawing them in sand, making them out of clay, tracing and writing letters on the board and on paper and even making letters out of dough followed by baking and eating them. The student might also play the game Go Fish with letter cards. In such activities make a point to have the student say the letter name and sound often.",
+      "applies_when": ["letter-names-sounds"]
+    },
+    {
+      "id": "br-strat-12",
+      "text": "Encourage the student's parent to review letter names and sounds at home. Communicate regularly so that the parent is working on the same letters taught in class. Suggest specific activities that have been found helpful in class.",
+      "applies_when": ["letter-names-sounds"]
+    },
+    {
+      "id": "br-strat-13",
+      "text": "Capitalize on the benefits of spaced practice by providing several short opportunities (i.e., 10 minutes) spread across the day for the student to practice association of names and sounds with letters.",
+      "applies_when": ["letter-names-sounds"]
+    },
+    {
+      "id": "br-strat-14",
+      "text": "Employ an upper grade peer tutor or parent aide to review letter names and sounds on a regular basis.",
+      "applies_when": ["letter-names-sounds"]
+    },
+    {
+      "id": "br-strat-15",
+      "text": "Enhance motivation by using a positive reinforcement program. For instance, each time the student demonstrates mastery of a letter name and sound, the student pastes a cut out of the letter on a drawing of a ladder. At designated steps on the ladder, reinforcers are earned.",
+      "applies_when": ["letter-names-sounds"]
+    },
+    {
+      "id": "br-strat-16",
+      "text": "Use delayed prompting as a drill activity. Three letters for which the student knows neither name nor sound are written on flash cards. The instructor shows each card and says the name and sound. The stack is presented three times in this manner. Afterward, the student is told that in the next presentations, the student is to say the name and sound. The student is also told to only make a response if absolutely certain. If uncertain, the student is to remain silent following the flash. If the student is correct, a praise statement is issued. If the student waits, the correct response (i.e., letter name and sound) is provided by the instructor followed by the student making the correct response. If the student makes an erroneous response, the student is reminded to only respond if the name and sound are known.",
+      "applies_when": ["letter-names-sounds"]
+    },
+    {
+      "id": "br-strat-17",
+      "text": "The drill sandwich method is recommended as a flash card activity to teach letter names and sounds. An upper grade peer tutor or parent aide may be necessary. Three unknown (i.e., neither name nor sound is associated with the letter) letters and seven known letters are selected. The unknown letters are initially taught by a tutor by showing the student the letter, saying the name and sound and asking the student to repeat it several times while looking at the letter. The tutor then employs a flash card method in which the unknown letters are placed in positions 3, 6 and 8 while known letters are placed in the other positions. The set of letters is presented several times. Occasionally the position of known letters is changed while unknown letters remain in positions 3, 6 and 8.",
+      "applies_when": ["letter-names-sounds"]
+    },
+    {
+      "id": "br-strat-18",
+      "text": "Using words for which the student knows individual letter sounds, teach the student to read the word by blending individual sounds. Likewise, help the student break known words into individual sounds. Always use words the student is readily familiar with. Employ direct instruction methods of modeling the blending process, providing the student many opportunities to practice and providing immediate feedback/error correction.",
+      "applies_when": ["phonetic-decoding"]
+    },
+    {
+      "id": "br-strat-19",
+      "text": "Teach the student that words can be broken into syllables and that often simple words are contained within a larger word.",
+      "applies_when": ["phonetic-decoding"]
+    },
+    {
+      "id": "br-strat-20",
+      "text": "Use letter cards or magnetic letters to teach the student to combine letters into words. First, the instructor says the word, then repeats it phoneme by phoneme while pointing to the corresponding letters sequenced in correct fashion to spell the word. The instructor then scrambles the letters and asks the student to form the word with the letters.",
+      "applies_when": ["phonetic-decoding"]
+    },
+    {
+      "id": "br-strat-21",
+      "text": "Make new words by changing individual letters in a base word. Write a simple word such as cat. Read the word several times with the student. Change one letter (e.g., p/t or u/a) and have the student read the word. The student might suggest letter substitutions. Afterward, have the student read the list of new words that were created.",
+      "applies_when": ["phonetic-decoding"]
+    },
+    {
+      "id": "br-strat-22",
+      "text": "Use word families (e.g., cat, hat, sat, mat, etc or run, bun, fun, etc.) when teaching phonetic decoding skills.",
+      "applies_when": ["phonetic-decoding"]
+    },
+    {
+      "id": "br-strat-23",
+      "text": "Use the game board from a familiar game to play a phonics game. Write phonetically regular words on cards. Also, randomly assign point values to each card. Each time the student correctly decodes a word written on a game card, the student moves the corresponding number of spaces on the game board. This activity can be played with peers and supervised by an upper grade peer tutor. In time, add more challenging words to the stack as the student gains skills.",
+      "applies_when": ["phonetic-decoding"]
+    },
+    {
+      "id": "br-strat-24",
+      "text": "Should the student experience difficulty with a phonetically based word building approach, employ a more linguistic, whole word method in which words are taught by families and/or grouped by root words. Meanwhile, attempt to address underlying auditory/phonemic or short term memory weaknesses that cause difficulty with phonetic analysis and decoding.",
+      "applies_when": ["sight-vocabulary"]
+    },
+    {
+      "id": "br-strat-25",
+      "text": "When teaching a sight vocabulary, choose words the student regularly uses in oral expression. Or, teach the meaning of the word before it is taught.",
+      "applies_when": ["sight-vocabulary"]
+    },
+    {
+      "id": "br-strat-26",
+      "text": "Teach the student the 300 sight words which make up approximately 65% of written material. These words were identified by Fry in 1977 (Fry, E. Elementary Reading Instruction published by McGraw-Hill).",
+      "applies_when": ["sight-vocabulary"]
+    },
+    {
+      "id": "br-strat-27",
+      "text": "Teach only three or four sight words at a time.",
+      "applies_when": ["sight-vocabulary"]
+    },
+    {
+      "id": "br-strat-28",
+      "text": "Use a multi-method, multi-sensory approach to teach sight words. Teach individual sight words by reading the word to the student, having the student read the word back several times, having the student use the word in sentences, having the student trace over the written word while saying the sounds, and having the student write the word from memory while checking and correcting after each attempt. Provide immediate feedback/error correction. Assigning a peer tutor or parent volunteer might be necessary to accomplish this routine.",
+      "applies_when": ["sight-vocabulary"]
+    },
+    {
+      "id": "br-strat-29",
+      "text": "Write sight words on flash cards and have the student drill frequently with a peer tutor.",
+      "applies_when": ["sight-vocabulary"]
+    },
+    {
+      "id": "br-strat-30",
+      "text": "Help the student recognize common sight words in print by having the student scan a text and highlight each example of a specific sight word.",
+      "applies_when": ["sight-vocabulary"]
+    },
+    {
+      "id": "br-strat-31",
+      "text": "Incorporate sight words being taught into the student's weekly spelling list.",
+      "applies_when": ["sight-vocabulary"]
+    },
+    {
+      "id": "br-strat-32",
+      "text": "Identify a specific sight word to be learned. Ask the student to dictate a story using the sight word several times in the story. Afterward, the student reads the story back to the instructor. This strategy can be employed with a peer tutor.",
+      "applies_when": ["sight-vocabulary"]
+    },
+    {
+      "id": "br-strat-33",
+      "text": "Teach the student survival sight words that occur frequently in the student's environment (e.g., stop, men, women, exit, etc.)",
+      "applies_when": ["sight-vocabulary"]
+    },
+    {
+      "id": "br-strat-34",
+      "text": "Review sight vocabulary words from a reading passage by the delayed prompting method. Unknown words from a passage are written on flash cards. Stacks of five or six cards are formed. The tutor shows each card while reading the word aloud. Using this procedure, the tutor presents the stack twice. The student is then told that he will be asked to read each card in the stack. The student is also instructed to only say the word if he is certain he knows it. He is instructed to wait for the correct answer if uncertain. The stack is presented six times. If the student does not respond in four seconds, the tutor reads the word. The student then reads the word twice before the next card is flashed. If the student gives the wrong answer during the four second delay, the student is reminded to wait till the word is read by the tutor. Unprompted correct responses are followed by an enthusiastic praise statement while prompted responses are followed by a simple praise statement. It may be helpful to provide points associated with a reward program to maintain motivation.",
+      "applies_when": ["sight-vocabulary"]
+    },
+    {
+      "id": "br-strat-35",
+      "text": "The drill sandwich method is recommended to preview and teach key vocabulary words from a basal reading text or content area text that will be read in class. Three unknown (i.e., unfamiliar) words and seven known words are selected from the passage. The unknown words are initially taught by showing the student the word, saying the word and asking the student to repeat it several times. The tutor then employs a flash card method in which the unknown words are placed in positions 3, 6 and 8 while known words are placed in the other positions. The set of words is presented several times. Occasionally, the position of known words is changed while unknown words remain in positions 3, 6 and 8. Afterward, the passage from which the words are taken is read orally by the student.",
+      "applies_when": ["sight-vocabulary"]
+    },
+    {
+      "id": "br-strat-36",
+      "text": "Use the simultaneous reading of vocabulary words method to preview reading vocabulary words from content area texts that will be read in class. In this procedure five or six difficult vocabulary words are identified and written down a page. The instructor produces an audio tape in which the words are read in sequence. The tape is played as the student follows along. A peer tutor who reads the words can be substituted for the audio tape. After listening to the words read, the student then reads the list. The procedure is repeated until the student demonstrates mastery for the vocabulary words.",
+      "applies_when": ["sight-vocabulary"]
+    },
+    {
+      "id": "br-strat-37",
+      "text": "For reading vocabulary words which have been particularly resistant to instruction, employ a variety of multi-sensory approaches in which visual, auditory and kinesthetic stimuli are used with a variety of tasks at various cognitive levels. Use of a peer tutor or aide might be required for some of these. The student might hear the word in various sentences, create oral sentences using the word, hear and identify rhyming words, see the word in print, hear the word read, hear the component phonemes and syllables articulated when read, read the word repeatedly, read individual syllables and graphemes that comprise the word, write the word while saying it, draw the word in shaving cream or sand while saying the word, write the word on the board, draw the word in the air with large muscle movements, pick the word out from other words, move letter blocks into position to spell the word, and dictate the word in sentences which the student then reads.",
+      "applies_when": ["sight-vocabulary"]
+    },
+    {
+      "id": "br-strat-38",
+      "text": "Use an overhead transparency to show text on a screen. Point to words on the screen as they are being read orally in class.",
+      "applies_when": ["sight-vocabulary"]
+    },
+    {
+      "id": "br-strat-39",
+      "text": "Provide opportunities for the student to preview passages from the basal reading program before the passages are read in class. In this procedure, the student listens to a peer tutor read a passage or reads along with a peer tutor.",
+      "applies_when": ["reading-fluency"]
+    },
+    {
+      "id": "br-strat-40",
+      "text": "Employ a home based reading previewing program. This will require regular communication between school and home as well as a copy of the basal reading text at home. The parent spends about 15 minutes at least four nights a week listening to the student read a passage that is scheduled to be read within the next couple of days at school. The parent responds to substitution, omission or mispronunciation errors by merely stating the word and asking the student to re-read it twice. The student then starts reading at the beginning of the sentence in which the error occurred. After the passage is read, story content is discussed and the student re-reads the passage.",
+      "applies_when": ["reading-fluency"]
+    },
+    {
+      "id": "br-strat-41",
+      "text": "Use listening previewing as an individualized instructional strategy to build rate and fluency. This strategy is also helpful to preview passages that are at frustrational reading level. The student and a peer tutor read passages from the assigned basal reading text within a day before the passage is read in class. The student listens and follows along as the tutor reads a sentence or short paragraph. The student then orally reads the paragraph. This process is continued until the passage is completed and the student reads the passage aloud independently. Errors are corrected by the tutor saying the word correctly and the student repeating the word three times while looking at the word. After an error correction, the student starts reading at the beginning of the sentence in which the error occurred.",
+      "applies_when": ["reading-fluency"]
+    },
+    {
+      "id": "br-strat-42",
+      "text": "Use the repeated reading method to improve reading fluency. In this strategy a baseline reading rate of words correct per minute is established for a passage from the student's basal reading text. The instructor assists the student to plot this information on a graph and set a goal. Across daily sessions the student re-reads the same passage orally and plots his reading fluency (i.e., words correct per minute) on the graph. Reinforcement is provided when the student reaches the reading fluency goal and the process begins again with a new passage. Goal setting and regular plotting of data by the student are important parts of this method.",
+      "applies_when": ["reading-fluency"]
+    },
+    {
+      "id": "br-strat-43",
+      "text": "Employ a simultaneous or choral reading strategy (also known as neurological impress method) with a peer tutor to improve fluency and to read passages that are at frustrational reading level. The student and a tutor read orally together (simultaneously) from the student's reading instructional text. The tutor reads at a rate approximately 1/3rd faster than the baseline rate of the target student. After a paragraph or several lines are read in chorus, the student orally reads the passage alone. It is helpful for the tutor to follow along with his/her finger when modeling. If the student mispronounces a word or fails to identify a word while reading alone, the tutor immediately says the word and the student repeats it and continues reading. Passages should be material to be read in class within the next couple of days.",
+      "applies_when": ["reading-fluency"]
+    },
+    {
+      "id": "br-strat-44",
+      "text": "Employ a previewing and audio tape strategy in which the student previews a passage to be read within the next day from the student's reading instructional text. The student listens to a tape recording of the passage while reading along with the tape. Afterward, the student re-reads the passage orally.",
+      "applies_when": ["reading-fluency"]
+    }
+  ]
+}

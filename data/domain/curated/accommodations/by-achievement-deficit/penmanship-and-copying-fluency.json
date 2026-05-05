@@ -1,0 +1,121 @@
+{
+  "id": "acc-by-ach-penmanship-and-copying-fluency",
+  "title": "Penmanship and Copying Fluency Deficits — Accommodations & Strategies",
+  "description": "Use when the student's IEP present-levels indicate below-grade-level performance in handwriting or specific skill gaps in letter formation, spacing, page organization, or speed of producing written work or copying from board/text.",
+  "applies_to": {
+    "cognitive_deficits": ["processing-speed", "visual-spatial"],
+    "achievement_deficits": ["penmanship", "written-expression"],
+    "contexts": ["instructional-delivery", "testing-assessment", "tools-equipment"],
+    "profiles": []
+  },
+  "source": {
+    "name": "Seaman Compendium — Accommodations for Cognitive and Academic Deficits (J. Seaman, PhD)",
+    "section": "Section Two: Accommodations for Achievement Deficits — Penmanship and Copying Fluency Deficits",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "1903-1946"
+  },
+  "definition": "The student experiences difficulty with letter formation, spacing, organization of the page or speed of putting written information on paper. As a result, writing is often laborious for the student and difficult to read.",
+  "accommodations": [
+    {
+      "id": "pen-acc-01",
+      "text": "Reduce volume of writing and copying, especially when it is not a critical component of an instructional task.",
+      "applies_when": []
+    },
+    {
+      "id": "pen-acc-02",
+      "text": "Reduce the number of items on a page or assign fewer items (e.g., complete only odd numbered items).",
+      "applies_when": []
+    },
+    {
+      "id": "pen-acc-03",
+      "text": "Use a closure procedure on worksheets. In this method the student fills in a blank rather than writing an entire sentence.",
+      "applies_when": []
+    },
+    {
+      "id": "pen-acc-04",
+      "text": "Provide additional time to complete written tasks.",
+      "applies_when": []
+    },
+    {
+      "id": "pen-acc-05",
+      "text": "Permit the student to respond orally rather than in writing or use a scribe to whom the student can dictate responses.",
+      "applies_when": []
+    },
+    {
+      "id": "pen-acc-06",
+      "text": "Performance on tests might be affected by penmanship and copying fluency difficulties. Consider some test taking accommodations. These might include an individual testing session to provide additional time, fewer test items, taking tests orally, use of fill in the blank or multiple choice items, or dictating test responses to a scribe.",
+      "applies_when": ["testing-assessment"]
+    },
+    {
+      "id": "pen-acc-07",
+      "text": "Provide opportunities for the student to learn keyboarding and word processing skills.",
+      "applies_when": []
+    },
+    {
+      "id": "pen-acc-08",
+      "text": "At the outset of a task requiring writing, assist the student to organize work on the page.",
+      "applies_when": []
+    },
+    {
+      "id": "pen-acc-09",
+      "text": "Provide wide lined paper that has both a baseline and dotted midline.",
+      "applies_when": []
+    },
+    {
+      "id": "pen-acc-10",
+      "text": "Provide expanded space on a page for the student to write responses.",
+      "applies_when": []
+    },
+    {
+      "id": "pen-acc-11",
+      "text": "Provide sufficient visual markers on a page to prompt a student where to write and organize responses.",
+      "applies_when": []
+    },
+    {
+      "id": "pen-acc-12",
+      "text": "Use grid paper for the student to complete math computation problems.",
+      "applies_when": []
+    },
+    {
+      "id": "pen-acc-13",
+      "text": "Provide lecture notes for the student or provide notes in which only key words need to be added.",
+      "applies_when": []
+    },
+    {
+      "id": "pen-acc-14",
+      "text": "Encourage the student to use and maintain appropriate posture during a task requiring writing.",
+      "applies_when": []
+    },
+    {
+      "id": "pen-acc-15",
+      "text": "When copying from text, provide a magnified text copy. Encourage the student to use a ruler to mark location of text being copied.",
+      "applies_when": []
+    },
+    {
+      "id": "pen-acc-16",
+      "text": "When copying from the board, provide seating close to the board.",
+      "applies_when": []
+    },
+    {
+      "id": "pen-acc-17",
+      "text": "When copying from text, provide a sticky note that the student can move along under the line being copied. This will help to visually isolate the print being copied as well as provide a visual marker to locate text after a unit of words has been copied.",
+      "applies_when": []
+    },
+    {
+      "id": "pen-acc-18",
+      "text": "Monitor performance at a high rate and provide prompts when necessary to assist the student to organize writing or copying on a page.",
+      "applies_when": []
+    },
+    {
+      "id": "pen-acc-19",
+      "text": "Provide a stress ball that the student can manipulate for a few minutes as a warm-up activity before writing or copying.",
+      "applies_when": []
+    },
+    {
+      "id": "pen-acc-20",
+      "text": "Provide a pencil grip to facilitate manipulation of the pencil.",
+      "applies_when": []
+    }
+  ],
+  "instructional_strategies": []
+}

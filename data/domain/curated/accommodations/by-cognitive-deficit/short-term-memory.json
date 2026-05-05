@@ -1,0 +1,132 @@
+{
+  "id": "acc-by-cog-short-term-memory",
+  "title": "Short-Term Memory Deficits — Accommodations & Strategies",
+  "description": "Use when the student's IEP present-levels indicate difficulty holding information in immediate mental awareness — affecting ability to follow oral directions, take notes, copy from the board, or retain lecture content. Often co-occurs with executive-function and attention profiles.",
+  "applies_to": {
+    "cognitive_deficits": ["short-term-memory"],
+    "achievement_deficits": ["basic-reading", "reading-comprehension", "written-expression"],
+    "contexts": ["instructional-delivery", "environment"],
+    "profiles": ["executive-function", "adhd-attention"]
+  },
+  "source": {
+    "name": "Seaman Compendium — Accommodations for Cognitive and Academic Deficits (J. Seaman, PhD)",
+    "section": "SECTION ONE: ACCOMMODATIONS FOR COGNITIVE DEFICITS — SHORT TERM MEMORY DEFICITS",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "582-657"
+  },
+  "definition": "The student experiences difficulty holding information in immediate mental awareness. This problem often affects ability to follow oral directions, take notes or retain or understand information presented in a lecture format. Attention is a prerequisite condition supporting short term memory.",
+  "accommodations": [
+    {
+      "id": "stm-acc-01",
+      "text": "Seat the student in a location away from distractions in order to optimize attention.",
+      "applies_when": ["environment", "adhd-attention"]
+    },
+    {
+      "id": "stm-acc-02",
+      "text": "Insure that you have the student's attention before stating a direction. Gaining eye contact and proximity (i.e., be within arms length of student) are often helpful. Difficulty retaining orally stated directions/information will be further aggravated by poor attention.",
+      "applies_when": ["adhd-attention"]
+    },
+    {
+      "id": "stm-acc-03",
+      "text": "Word oral directions clearly and succinctly, avoiding extraneous words and digressions. When possible, limit the number of steps or requests made. State multi-step directions in the sequence in which they are to be completed.",
+      "applies_when": []
+    },
+    {
+      "id": "stm-acc-04",
+      "text": "The student may have difficulty recalling oral directions given to the class. As a result, it will be important to monitor student understanding after group directions are given.",
+      "applies_when": []
+    },
+    {
+      "id": "stm-acc-05",
+      "text": "When giving directions, first provide a simple, global statement that describes the task. Following the general statement, describe in clear terms the sequence of steps required to accomplish the task. Following is an example: \"We're going to complete 15 subtraction problems in your math book now. Here's what you need to do.......\" This approach facilitates memory for the instructions by associating the component parts with a clearly understood objective.",
+      "applies_when": []
+    },
+    {
+      "id": "stm-acc-06",
+      "text": "During oral presentation, write important information on the board. Provide written directions that accompany oral directions.",
+      "applies_when": []
+    },
+    {
+      "id": "stm-acc-07",
+      "text": "Encourage the student to ask for directions or information to be repeated if not understood or remembered.",
+      "applies_when": []
+    },
+    {
+      "id": "stm-acc-08",
+      "text": "It may be helpful to seat the student next to a peer helper who can answer questions or repeat information if the student needs help.",
+      "applies_when": ["environment"]
+    }
+  ],
+  "instructional_strategies": [
+    {
+      "id": "stm-strat-01",
+      "text": "A deficit in short term working memory (holding information in mental awareness while manipulating or solving a problem with the information) can create difficulty with phonetic decoding. The student may not be able to hold phonemes associated with a word in mental awareness long enough to blend and decode. In this case, compensate for phonetic decoding difficulty by teaching a sight vocabulary, teaching the student to recognize root words and morphemes (prefixes and suffixes) and teaching the student to recognize words via contextual clues.",
+      "applies_when": ["basic-reading"]
+    },
+    {
+      "id": "stm-strat-02",
+      "text": "Use a top down approach to instruction in order to lessen memory demands. In this approach, the product is presented as a whole before its component parts are described or taught. For example, when teaching phonetic decoding, say the word first and then help the student phonetically analyze the word.",
+      "applies_when": ["basic-reading"]
+    },
+    {
+      "id": "stm-strat-03",
+      "text": "Break instructions into parts, presenting only one or two parts at a time. Establish understanding or mastery of one component before moving onto the next.",
+      "applies_when": ["executive-function"]
+    },
+    {
+      "id": "stm-strat-04",
+      "text": "Teach information in easily recognized groups or families to facilitate memory.",
+      "applies_when": []
+    },
+    {
+      "id": "stm-strat-05",
+      "text": "When teaching, provide a written or pictorial model the student can refer to. Use of graphic organizers can be helpful in this regard. Write key terms on the board so that the student can readily refer to them.",
+      "applies_when": []
+    },
+    {
+      "id": "stm-strat-06",
+      "text": "Repeat important information at a high rate, emphasizing key words by tone of voice.",
+      "applies_when": []
+    },
+    {
+      "id": "stm-strat-07",
+      "text": "During periods of class recitation and discussion, call on the student shortly after a question has been asked to the class in order to prevent the student from forgetting the question and/or answer. It may also be helpful to use a technique called positive questioning in order to maintain attention of the student as well as classmates. In this method, the teacher asks a question, pauses for the students to formulate a response and then randomly calls on a student.",
+      "applies_when": ["adhd-attention"]
+    },
+    {
+      "id": "stm-strat-08",
+      "text": "Underline key words in text the student will read. This will draw attention to this information as well as provide a reference the student can refer back to if memory fails the student.",
+      "applies_when": ["reading-comprehension"]
+    },
+    {
+      "id": "stm-strat-09",
+      "text": "Encourage the student to immediately write key concepts, vocabulary or information down when it is presented during a lecture or when read in text. Recording such information in written form will reduce memory demands by providing a bank of information the student can refer to.",
+      "applies_when": []
+    },
+    {
+      "id": "stm-strat-10",
+      "text": "The student may experience difficulty taking notes from a lecture. This may be the result of difficulty holding information in mental awareness while recording it in writing. As a result, during lectures, move slowly, repeat key information often and write key words and concepts on the board.",
+      "applies_when": []
+    },
+    {
+      "id": "stm-strat-11",
+      "text": "While listening to a lecture, it may be helpful to provide a formatted, written script for the student on which he can fill in blanks (cloze method) with key words/concepts.",
+      "applies_when": []
+    },
+    {
+      "id": "stm-strat-12",
+      "text": "Provide the student lecture notes either produced by the teacher or those written by another student.",
+      "applies_when": []
+    },
+    {
+      "id": "stm-strat-13",
+      "text": "The student may experience difficulty at times copying information from a book or the board with speed and facility. This may be the result of difficulty keeping information to be copied in mental awareness (i.e., the student forgets information before getting it copied). As a result, the student may be able to only transfer short bits of information at a time. Provide extra time to copy information, provide information already in copied form or reduce the demands of copying on tasks.",
+      "applies_when": ["written-expression"]
+    },
+    {
+      "id": "stm-strat-14",
+      "text": "Consider presenting rote information (particularly sequential information) in the form of a song or rhyme.",
+      "applies_when": []
+    }
+  ]
+}

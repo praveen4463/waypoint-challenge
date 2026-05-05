@@ -1,0 +1,96 @@
+{
+  "id": "acc-by-cog-processing-speed",
+  "title": "Processing Speed Deficits — Accommodations & Strategies",
+  "description": "Use when the student's IEP present-levels indicate slow rate on simple/rote tasks — affecting copying, completing assignments on time, taking notes, or expressing self quickly. Often co-occurs with attention/ADHD profiles and can secondarily impair reading fluency and comprehension.",
+  "applies_to": {
+    "cognitive_deficits": ["processing-speed"],
+    "achievement_deficits": ["basic-reading", "reading-comprehension", "written-expression", "spelling"],
+    "contexts": ["instructional-delivery", "testing-assessment"],
+    "profiles": ["adhd-attention"]
+  },
+  "source": {
+    "name": "Seaman Compendium — Accommodations for Cognitive and Academic Deficits (J. Seaman, PhD)",
+    "section": "SECTION ONE: ACCOMMODATIONS FOR COGNITIVE DEFICITS — PROCESSING SPEED DEFICITS",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "658-701"
+  },
+  "definition": "The student works at a slow rate on simple or rote tasks that are typically automatic in nature. This affects ability to copy, complete academic assignments in a timely manner, take notes with speed and ease or express self quickly and efficiently. Attention is a prerequisite condition to processing speed.",
+  "accommodations": [
+    {
+      "id": "ps-acc-01",
+      "text": "Slow processing speed can significantly reduce the rate of task completion and make long tasks unreasonably difficult to complete. Frustration or boredom can result. As a result, it is important to consider accommodations that emphasize quality of work produced rather than volume and speed of work completed.",
+      "applies_when": []
+    },
+    {
+      "id": "ps-acc-02",
+      "text": "Allow extra time to complete tasks.",
+      "applies_when": ["testing-assessment"]
+    },
+    {
+      "id": "ps-acc-03",
+      "text": "Consider shortening tasks that are repetitive. For instance, the student might complete only odd numbered items on a math worksheet.",
+      "applies_when": []
+    },
+    {
+      "id": "ps-acc-04",
+      "text": "Reduce volume of writing and copying, especially when it is not a critical component of an instructional task.",
+      "applies_when": ["written-expression"]
+    },
+    {
+      "id": "ps-acc-05",
+      "text": "On some written assignments consider substituting a cloze procedure in which the student completes a sentence or fills in a blank rather than writing an entire sentence.",
+      "applies_when": ["written-expression"]
+    },
+    {
+      "id": "ps-acc-06",
+      "text": "When appropriate, permit the student to take work home to be completed.",
+      "applies_when": []
+    },
+    {
+      "id": "ps-acc-07",
+      "text": "Make adjustments in the length of homework assignments. Lengthy assignments may result in the student spending unreasonable amounts of time completing homework.",
+      "applies_when": []
+    },
+    {
+      "id": "ps-acc-08",
+      "text": "In oral discussions allow the student sufficient time to formulate a response.",
+      "applies_when": []
+    },
+    {
+      "id": "ps-acc-09",
+      "text": "During an oral discussion, allow the student time to formulate responses so the student can be an active participant. Questions to be discussed might be reviewed with the student prior to the discussion.",
+      "applies_when": []
+    },
+    {
+      "id": "ps-acc-10",
+      "text": "In grading, emphasize accuracy and quality of items completed on an assignment. Disregard uncompleted items. As a result, a grade is computed by the percentage of correctly completed items rather than based on the total items assigned or present on a task or test.",
+      "applies_when": ["testing-assessment"]
+    },
+    {
+      "id": "ps-acc-11",
+      "text": "Consider individualizing test taking. For instance, some students with processing speed problems may have difficulty staying with the class during a spelling test. Let the student write the test at another time, provide additional time or allow the student to take it orally.",
+      "applies_when": ["testing-assessment", "spelling"]
+    },
+    {
+      "id": "ps-acc-12",
+      "text": "Provide lecture notes for the student or, using a cloze procedure, provide a formatted script of notes in which only key words need to be added.",
+      "applies_when": []
+    },
+    {
+      "id": "ps-acc-13",
+      "text": "Provide the student extra time to read a text, provide a shortened version of the text or have the text read to the student.",
+      "applies_when": ["basic-reading", "reading-comprehension"]
+    },
+    {
+      "id": "ps-acc-14",
+      "text": "With a beginning reader, slow processing speed can impede the time to decode a word. As a result, greater demands are placed on working memory causing the decoding process to fail. When the student attempts to decode an unfamiliar word, assist decoding by saying the sounds and allow the student to blend. Also, developing a strong sight vocabulary will reduce need for phonetic decoding.",
+      "applies_when": ["basic-reading"]
+    },
+    {
+      "id": "ps-acc-15",
+      "text": "Slow processing speed can reduce reading fluency/rate and as a result impair reading comprehension. As a result, it may be helpful to monitor comprehension of text reading and, if necessary, summarize information orally.",
+      "applies_when": ["reading-comprehension"]
+    }
+  ],
+  "instructional_strategies": []
+}

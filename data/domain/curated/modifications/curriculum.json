@@ -1,0 +1,77 @@
+{
+  "id": "mod-curriculum",
+  "title": "Curriculum / Content Modifications",
+  "description": "Modifications that change WHAT the student is taught — the actual curriculum content, mastery level, or scope. Use when the IEP explicitly authorizes content modifications and the student cannot access grade-level material with accommodations alone. Distinct from accommodations: these alter learning expectations and may impact graduation requirements.",
+  "applies_to": {
+    "cognitive_deficits": ["fluid-reasoning", "comprehension-knowledge"],
+    "achievement_deficits": ["basic-reading", "reading-comprehension", "basic-math", "math-reasoning"],
+    "contexts": ["instructional-delivery"],
+    "profiles": []
+  },
+  "source": {
+    "name": "Composite — Wikipedia (IEP, Special Education)",
+    "section": "Modifications, Specially designed instruction, IEP components",
+    "files": [
+      {"file": "data/domain/raw/iep.txt", "lines": "30-41"},
+      {"file": "data/domain/raw/special-ed.txt", "lines": "102-110"}
+    ]
+  },
+  "modifications": [
+    {
+      "id": "mod-curr-01",
+      "category": "Content scope reduction",
+      "text": "Skip curriculum sections that the IEP team deems inappropriate or out-of-reach for the student. Example: a student with poor fine motor skills may be taught printed letters but not cursive handwriting; another student may focus on identifying hours while the class learns minutes.",
+      "applies_when": ["off-grade-level-skills", "fine-motor-deficits"]
+    },
+    {
+      "id": "mod-curr-02",
+      "category": "Off-grade-level work",
+      "text": "Substitute a lower-grade-level version of the same conceptual material. Example: a student in 6th grade reading at a 2nd-grade level may use a 2nd-grade-level retelling of a literary work the class is studying, while still participating in class discussion about the themes.",
+      "applies_when": ["below-grade-reading", "below-grade-math"]
+    },
+    {
+      "id": "mod-curr-03",
+      "category": "Simplified content",
+      "text": "Use parallel texts with both the original and a modern paraphrase available (e.g., side-by-side Shakespeare). The student engages with the simpler version while the class engages with the original. Discussion of meaning, themes, and author's craft can still be shared.",
+      "applies_when": ["complex-text", "below-grade-reading"]
+    },
+    {
+      "id": "mod-curr-04",
+      "category": "Reduced learning objectives",
+      "text": "Modify the learning objectives for a lesson or unit so the student is expected to master a subset of skills rather than all skills. Example: while the class is mastering vocabulary AND spelling AND grammatical use of new words, the modified objective is mastery of meaning only.",
+      "applies_when": ["below-grade-skills", "stamina-limitations"]
+    },
+    {
+      "id": "mod-curr-05",
+      "category": "Pre-requisite gap-filling",
+      "text": "When the student's IEP indicates a foundational skill gap, substitute targeted prerequisite instruction during a portion of the lesson. Example: while peers do multi-step word problems, a student working on integer rules continues that focused work with a special-education teacher push-in or pull-out.",
+      "applies_when": ["foundational-gap", "off-grade-level-skills"]
+    },
+    {
+      "id": "mod-curr-06",
+      "category": "Multi-modal content delivery",
+      "text": "Present curriculum content through multiple modalities (visual, auditory, kinesthetic) where the student's disability impedes single-modality access. Example: when the class reads a content-area text, the student receives the same content via teacher-narration, audio recording, video, AND text.",
+      "applies_when": ["reading-bottleneck", "auditory-processing-deficit"]
+    },
+    {
+      "id": "mod-curr-07",
+      "category": "Focused grading",
+      "text": "Apply a 'focused grade' — a grade that is recognized in a high school diploma but is annotated as 'focused' to indicate the student met modified mastery criteria. Use only when authorized by the IEP team and consistent with state graduation rules.",
+      "applies_when": ["high-school-grading"]
+    }
+  ],
+  "guardrails": [
+    {
+      "id": "guard-iep-auth",
+      "text": "Only apply modifications that the IEP explicitly authorizes in its Modifications section. Generating modifications beyond IEP authorization is outside the scope of any single-lesson modification request — flag instead."
+    },
+    {
+      "id": "guard-grad",
+      "text": "In high school grades, content modifications may impact graduation eligibility. Always check the IEP's Schedule Modification and Assessment sections before recommending broad content modifications."
+    },
+    {
+      "id": "guard-prefer-acc",
+      "text": "Prefer accommodations over modifications wherever possible. Modify only when the student cannot meaningfully access the content with accommodations alone."
+    }
+  ]
+}

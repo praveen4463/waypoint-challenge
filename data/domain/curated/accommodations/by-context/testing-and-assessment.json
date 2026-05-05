@@ -1,0 +1,79 @@
+{
+  "id": "acc-by-context-testing-and-assessment",
+  "title": "Testing and Assignment Accommodations",
+  "description": "Modifications to how assignments and tests are presented, paced, and completed. Use when the student needs assignment chunking, alternative response formats, test-format adjustments, or scheduling supports to demonstrate learning.",
+  "applies_to": {
+    "cognitive_deficits": ["processing-speed", "short-term-memory", "long-term-retrieval", "comprehension-knowledge"],
+    "achievement_deficits": ["written-expression", "reading-comprehension", "basic-reading", "math-reasoning"],
+    "contexts": ["testing-assessment", "instructional-delivery"],
+    "profiles": ["adhd-attention", "executive-function", "anxiety", "dyslexia"]
+  },
+  "source": {
+    "name": "ADayInOurShoes — Ultimate List of IEP Accommodations, Modifications & Strategies (SDIs)",
+    "section": "Testing and Assignments-SDIs and accommodations",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "112-130"
+  },
+  "accommodations": [
+    {
+      "id": "test-01",
+      "text": "Monthly, weekly, or bi-weekly phone or in-person conferences with parents (progress monitoring)."
+    },
+    {
+      "id": "test-02",
+      "text": "Homework assignments chunked down by the teacher to define each task."
+    },
+    {
+      "id": "test-03",
+      "text": "Have the child write down verbal questions to aid in processing."
+    },
+    {
+      "id": "test-04",
+      "text": "Breaking down tests into segments."
+    },
+    {
+      "id": "test-05",
+      "text": "Pre-teaching information, then post-teaching afterwards."
+    },
+    {
+      "id": "test-06",
+      "text": "Alternatives for completing assignments (typed instead of written, or verbal)."
+    },
+    {
+      "id": "test-07",
+      "text": "Provide facilitated experiences."
+    },
+    {
+      "id": "test-08",
+      "text": "Frequent test breaks with opportunities to move."
+    },
+    {
+      "id": "test-09",
+      "text": "Testing in a study carrel."
+    },
+    {
+      "id": "test-10",
+      "text": "Testing in the morning only."
+    },
+    {
+      "id": "test-11",
+      "text": "Masking test items so only single questions are visible."
+    },
+    {
+      "id": "test-12",
+      "text": "Permission to hand in all assignments late, as pre-determined."
+    },
+    {
+      "id": "test-13",
+      "text": "Modify assignments to only include essential content."
+    },
+    {
+      "id": "test-14",
+      "text": "Intersperse easy and difficult demands on an 80/20 basis (and work to increase difficulty over time)."
+    },
+    {
+      "id": "test-15",
+      "text": "Longer assignments broken down and scheduled out in pictures or words."
+    }
+  ]
+}

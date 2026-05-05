@@ -1,0 +1,39 @@
+{
+  "id": "acc-by-context-transitions",
+  "title": "Transition Accommodations",
+  "description": "Accommodations that help a student move between activities, classrooms, or routines. Use when the student struggles with change, needs advance notice, or requires visual/temporal scaffolding to switch tasks or settings.",
+  "applies_to": {
+    "cognitive_deficits": ["processing-speed", "short-term-memory"],
+    "achievement_deficits": [],
+    "contexts": ["transitions"],
+    "profiles": ["autism", "executive-function", "anxiety", "adhd-attention"]
+  },
+  "source": {
+    "name": "ADayInOurShoes — Ultimate List of IEP Accommodations, Modifications & Strategies (SDIs)",
+    "section": "SDIs and accommodations for transitions",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "27-33"
+  },
+  "accommodations": [
+    {
+      "id": "trans-01",
+      "text": "Visual cues in hallways to guide the child to the next classroom or cafeteria."
+    },
+    {
+      "id": "trans-02",
+      "text": "Personal time-outs to regroup and prepare for transition."
+    },
+    {
+      "id": "trans-03",
+      "text": "Time warnings and increased transition time."
+    },
+    {
+      "id": "trans-04",
+      "text": "Advance notice of transitions."
+    },
+    {
+      "id": "trans-05",
+      "text": "Schedule posted on the blackboard, whiteboard, or smartboard."
+    }
+  ]
+}

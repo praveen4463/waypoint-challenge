@@ -1,0 +1,79 @@
+{
+  "id": "acc-by-context-peer-and-social",
+  "title": "People and Peer-Based Accommodations",
+  "description": "Strategies that scaffold social interactions and use peers/adults as supports. Use when the student needs help building social skills, navigating unstructured time, self-advocating, or learning through peer modeling and role play.",
+  "applies_to": {
+    "cognitive_deficits": [],
+    "achievement_deficits": [],
+    "contexts": ["peer-social", "behavior"],
+    "profiles": ["autism", "anxiety", "nvld", "adhd-attention"]
+  },
+  "source": {
+    "name": "ADayInOurShoes — Ultimate List of IEP Accommodations, Modifications & Strategies (SDIs)",
+    "section": "People and Peer based accommodations and SDIs",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "82-98"
+  },
+  "accommodations": [
+    {
+      "id": "peer-01",
+      "text": "Special sign or signal between teacher and student to notify the student of something."
+    },
+    {
+      "id": "peer-02",
+      "text": "Encourage but do not force eye contact; forcing eye contact may break train of thought."
+    },
+    {
+      "id": "peer-03",
+      "text": "Buddy system for unstructured times."
+    },
+    {
+      "id": "peer-04",
+      "text": "Peer-to-peer tutoring as appropriate."
+    },
+    {
+      "id": "peer-05",
+      "text": "Structured social skills groups."
+    },
+    {
+      "id": "peer-06",
+      "text": "Set up opportunities for the child to self-advocate."
+    },
+    {
+      "id": "peer-07",
+      "text": "Peer modeling of appropriate play and interaction."
+    },
+    {
+      "id": "peer-08",
+      "text": "Role play."
+    },
+    {
+      "id": "peer-09",
+      "text": "Social stories."
+    },
+    {
+      "id": "peer-10",
+      "text": "Pair the student with another student prior to learning a new task."
+    },
+    {
+      "id": "peer-11",
+      "text": "Cooperative games rather than win/lose."
+    },
+    {
+      "id": "peer-12",
+      "text": "Facilitated socialization at recess, lunch, and breaks."
+    },
+    {
+      "id": "peer-13",
+      "text": "Education sessions for peers to help them understand the disability."
+    },
+    {
+      "id": "peer-14",
+      "text": "Watch videos of social stories or interactions and ask the student to explain them."
+    },
+    {
+      "id": "peer-15",
+      "text": "Role playing both successful and undesired outcomes (i.e., troubleshooting)."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "mod-assessment",
+  "title": "Assessment Modifications",
+  "description": "Modifications to how a student is assessed — alternate methods, modified rubrics, alternate state assessments. Use when standard assessment cannot accurately measure the student's learning. Distinguishes 'on-demand testing with accommodations' from 'alternate assessment' as defined by IDEA.",
+  "applies_to": {
+    "cognitive_deficits": ["processing-speed", "short-term-memory", "long-term-retrieval"],
+    "achievement_deficits": ["basic-reading", "reading-comprehension", "written-expression", "basic-math"],
+    "contexts": ["testing-assessment"],
+    "profiles": ["anxiety", "adhd-attention", "dyslexia"]
+  },
+  "source": {
+    "name": "Composite — Wikipedia (IEP, Special Education) and IEP form template (Massachusetts)",
+    "section": "State and District-Wide Assessments and Accommodations; Modifications",
+    "files": [
+      {"file": "data/domain/raw/iep.txt", "lines": "30-41"},
+      {"file": "data/domain/raw/special-ed.txt", "lines": "104-110"},
+      {"file": "data/domain/raw/acmod-strg-2.txt", "lines": "1"}
+    ]
+  },
+  "modifications": [
+    {
+      "id": "mod-asm-01",
+      "category": "Modified rubric",
+      "text": "Score the student's work on a different rubric than peers' (e.g., assess content accuracy and reasoning, not spelling and mechanics, when the IEP identifies a writing-mechanics deficit but content goals are at grade level).",
+      "applies_when": ["written-expression-deficit", "spelling-deficit"]
+    },
+    {
+      "id": "mod-asm-02",
+      "category": "Modified mastery criteria",
+      "text": "Lower the criteria for academic success on a specific assessment. Example: rather than requiring 90% mastery on a math fact assessment, accept 70% as evidence of progress for a student with long-term retrieval deficits.",
+      "applies_when": ["long-term-retrieval-deficit", "below-grade-skills"]
+    },
+    {
+      "id": "mod-asm-03",
+      "category": "Alternate assessment method",
+      "text": "Substitute the assessment format. Examples: oral exam in place of written; demonstration in place of test; portfolio in place of single-test summative; teacher observation/checklist in place of written test.",
+      "applies_when": ["written-expression-deficit", "social-anxiety", "test-anxiety"]
+    },
+    {
+      "id": "mod-asm-04",
+      "category": "Alternate state assessment",
+      "text": "For students with the most significant cognitive disabilities, the IEP may indicate participation in an alternate state assessment (e.g., MCAS-Alt in Massachusetts) instead of the standard on-demand state test. This is a high-stakes IEP team decision; not within scope of single-lesson modification.",
+      "applies_when": ["significant-cognitive-disability"]
+    },
+    {
+      "id": "mod-asm-05",
+      "category": "Off-grade-level assessment",
+      "text": "Assess the student against off-grade-level standards documented in the IEP. Example: an 8th-grader reading at a 4th-grade level may be assessed against 4th-grade reading standards in modified IEP-aligned assessment, while remaining in grade-level instruction with accommodations.",
+      "applies_when": ["below-grade-skills"]
+    },
+    {
+      "id": "mod-asm-06",
+      "category": "Reduced item count",
+      "text": "Reduce the number of items on a test (e.g., 5 of 10 spelling words, 10 of 20 math problems). When the student demonstrates mastery on the reduced set, full mastery is inferred. Distinct from extra time — this is a content modification.",
+      "applies_when": ["processing-speed-deficit", "stamina-limitations"]
+    },
+    {
+      "id": "mod-asm-07",
+      "category": "Untimed assessment",
+      "text": "Remove time pressure entirely (not just extended time). For students whose anxiety or processing-speed deficit makes any time limit performance-altering, allow the assessment to be completed without a time cap.",
+      "applies_when": ["test-anxiety", "processing-speed-deficit"]
+    },
+    {
+      "id": "mod-asm-08",
+      "category": "Test in segments / multi-day",
+      "text": "Break a single test into segments administered across multiple days. Reduces fatigue effects and gives the student multiple windows of best performance.",
+      "applies_when": ["stamina-limitations", "anxiety"]
+    },
+    {
+      "id": "mod-asm-09",
+      "category": "Open-resource assessment",
+      "text": "Allow open-book, open-note, or word-bank-provided format on assessments where rote memorization is not the learning objective. Compensates for long-term retrieval deficits while still measuring application/analysis skills.",
+      "applies_when": ["long-term-retrieval-deficit"]
+    }
+  ],
+  "guardrails": [
+    {
+      "id": "guard-asm-iep",
+      "text": "Most state assessment accommodations and modifications must be pre-documented in the IEP's 'State and District-Wide Assessments' section. Adding a new assessment modification without IEP authorization may invalidate the score."
+    },
+    {
+      "id": "guard-asm-mcas",
+      "text": "The IEP-listed MCAS (or state-test) accommodations should be mirrored in classroom assessments. If a student gets text-to-speech on MCAS, they should get text-to-speech on classroom tests too — otherwise the test score and the classroom data don't align."
+    },
+    {
+      "id": "guard-asm-validity",
+      "text": "Validity rule: an accommodation is valid if it changes how the student accesses or responds, not what's measured. A modification changes what's measured. Be explicit about which is which when proposing assessment changes — the distinction matters legally and academically."
+    }
+  ]
+}

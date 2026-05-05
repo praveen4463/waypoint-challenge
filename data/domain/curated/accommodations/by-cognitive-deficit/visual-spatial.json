@@ -1,0 +1,107 @@
+{
+  "id": "acc-by-cog-visual-spatial",
+  "title": "Visual-Spatial Thinking Deficits — Accommodations & Strategies",
+  "description": "Use when the student's IEP present-levels indicate difficulty perceiving and thinking with visual patterns — affecting interpretation of charts/graphs/tables, organizing work spatially on a page, copying from the board, telling time, or managing math computation alignment. Often relevant for nonverbal-learning-disability profiles.",
+  "applies_to": {
+    "cognitive_deficits": ["visual-spatial"],
+    "achievement_deficits": ["basic-math", "math-reasoning", "penmanship", "written-expression"],
+    "contexts": ["instructional-delivery", "tools-equipment", "environment"],
+    "profiles": ["nvld"]
+  },
+  "source": {
+    "name": "Seaman Compendium — Accommodations for Cognitive and Academic Deficits (J. Seaman, PhD)",
+    "section": "SECTION ONE: ACCOMMODATIONS FOR COGNITIVE DEFICITS — VISUAL-SPATIAL THINKING DEFICITS",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "822-880"
+  },
+  "definition": "The student experiences difficulty perceiving and thinking with visual patterns. Visual spatial thinking can affect ability to store and recall visual information as well as difficulty with tasks that require awareness of visual detail.",
+  "accommodations": [
+    {
+      "id": "vs-acc-01",
+      "text": "The student may experience confusion gaining information from charts, graphs and tables. As a result, take time to explain these systems of representing information. It may be necessary to individually assist the student to retrieve information from such visual systems. Pairing with a buddy might be helpful when the student needs immediate help gaining information from charts, graphs and tables.",
+      "applies_when": []
+    },
+    {
+      "id": "vs-acc-02",
+      "text": "Encourage the student to clear desk of extraneous materials, leaving only those that are required for a task.",
+      "applies_when": ["environment"]
+    },
+    {
+      "id": "vs-acc-03",
+      "text": "Reduce extraneous visual stimuli on a page by highlighting the target stimulus (underline key words), covering extraneous stimuli (using a marker when reading) or increasing the size of a stimulus (enlarge print). Also, when writing or solving math problems is required on a page, provide ample white space.",
+      "applies_when": ["tools-equipment"]
+    },
+    {
+      "id": "vs-acc-04",
+      "text": "Highlight or underline in color important information on a page to help the student scan.",
+      "applies_when": []
+    },
+    {
+      "id": "vs-acc-05",
+      "text": "Provide visual markers to guide the student on tasks that are spatial and sequential. For instance, provide an arrow to demonstrate where to start and in what direction to proceed when computing a math problem. Visual markers might also be used to assist the student to organize information on paper (e.g., marker for name, marker for title, marker for where to place paragraphs.)",
+      "applies_when": ["basic-math", "written-expression"]
+    },
+    {
+      "id": "vs-acc-06",
+      "text": "On some tasks the student might benefit from folding a paper to provide quadrants within which specific tasks are to be accomplished.",
+      "applies_when": []
+    },
+    {
+      "id": "vs-acc-07",
+      "text": "Provide graph paper to help the student organize rows and columns on math computation problems.",
+      "applies_when": ["basic-math", "tools-equipment"]
+    },
+    {
+      "id": "vs-acc-08",
+      "text": "Have the student copy math problems with a color marker but work them in pencil to help separate the student's work from the problem.",
+      "applies_when": ["basic-math"]
+    },
+    {
+      "id": "vs-acc-09",
+      "text": "The student may experience difficulty finding his place when copying from the board or a book. Such difficulty might slow rate of task completion. As a result, consider providing pre-copied tasks. When the student is expected to copy from a book, provide a piece of sticky paper the student can use to mark the last line or item copied from the text.",
+      "applies_when": []
+    },
+    {
+      "id": "vs-acc-10",
+      "text": "Assist the student to organize by providing a box for tools, pocket folders color coded by subjects and guidance on how to organize materials in either desk or locker.",
+      "applies_when": ["tools-equipment"]
+    },
+    {
+      "id": "vs-acc-11",
+      "text": "Reduce expectations on tasks that require spatial organization such as art projects. Consider grading the student on skills gained rather than in comparison to peers.",
+      "applies_when": []
+    },
+    {
+      "id": "vs-acc-12",
+      "text": "The student may experience difficulty telling time and understanding temporal relationships. Provide assistance when time measurement, estimating time or temporal concepts are required on a task.",
+      "applies_when": []
+    }
+  ],
+  "instructional_strategies": [
+    {
+      "id": "vs-strat-01",
+      "text": "Avoid relying excessively on visual models, diagrams and demonstrations during instruction with this student. Accompany visual demonstrations with oral explanations.",
+      "applies_when": []
+    },
+    {
+      "id": "vs-strat-02",
+      "text": "When using visual demonstrations or models to teach a skill or concept, be prepared to move slowly and repeat visual demonstrations as needed.",
+      "applies_when": []
+    },
+    {
+      "id": "vs-strat-03",
+      "text": "Break spatial tasks into component parts and provide a verbal set of instructions to match each part. For instance, provide a sequenced verbal strategy to help a student work through the steps of a math computation problem such as regrouping in subtraction.",
+      "applies_when": ["basic-math"]
+    },
+    {
+      "id": "vs-strat-04",
+      "text": "The student may experience difficulty forming a visual representation of a concept in his mind (e.g., change of solar position with latitude). As a result, provide hands on, concrete experiences and manipulatives when teaching an abstract concept that is visual in nature. Accompany these concrete experiences with verbal explanations.",
+      "applies_when": []
+    },
+    {
+      "id": "vs-strat-05",
+      "text": "The student may experience difficulty with visual memory for symbols. As a result, provide a model to which the student can refer when completing tasks (e.g., number line on desk, alphabet on desk, example on desk of a math algorithm including markers to show sequence of steps, etc.)",
+      "applies_when": ["basic-math"]
+    }
+  ]
+}

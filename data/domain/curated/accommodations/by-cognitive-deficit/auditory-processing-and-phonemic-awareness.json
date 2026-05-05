@@ -1,0 +1,202 @@
+{
+  "id": "acc-by-cog-auditory-processing-and-phonemic-awareness",
+  "title": "Auditory Processing and Phonemic Awareness Deficits — Accommodations & Strategies (split: AP vs PA)",
+  "description": "Use when the student's IEP present-levels indicate difficulty analyzing/synthesizing/discriminating auditory stimuli (auditory processing) and/or difficulty manipulating the phonemes that comprise words (phonemic awareness). Phonemic-awareness items are flagged with applies_when ['phonemic-awareness'] and auditory-processing items with ['auditory-processing']; phonemic-awareness deficits are tightly linked to dyslexia and basic-reading challenges.",
+  "applies_to": {
+    "cognitive_deficits": ["auditory-processing", "phonemic-awareness"],
+    "achievement_deficits": ["basic-reading", "spelling", "reading-comprehension"],
+    "contexts": ["instructional-delivery", "environment", "language-communication"],
+    "profiles": ["dyslexia"]
+  },
+  "source": {
+    "name": "Seaman Compendium — Accommodations for Cognitive and Academic Deficits (J. Seaman, PhD)",
+    "section": "SECTION ONE: ACCOMMODATIONS FOR COGNITIVE DEFICITS — AUDITORY PROCESSING AND PHONEMIC AWARENESS DEFICITS",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "702-821"
+  },
+  "definition": "Auditory Processing: The student experiences difficulty analyzing, synthesizing, and discriminating auditory stimuli. Problems can affect receptive communication and may be manifested in difficulty recognizing partially heard words, recognizing words from background sounds and blending sounds into words. Phonemic Awareness: The student experiences difficulty with awareness of and efficient manipulation of the phonemes which comprise words. These problems most directly affect reading and spelling development and are manifested by difficulty segmenting words into parts, recognizing and producing rhymes, blending phonemes to make words and adding, deleting and substituting sounds in words to make new words.",
+  "accommodations": [
+    {
+      "id": "ap-acc-01",
+      "text": "Check for comprehension after group directions are given.",
+      "applies_when": ["auditory-processing"]
+    },
+    {
+      "id": "ap-acc-02",
+      "text": "Place in a well managed classroom with control of extraneous activities that create auditory distractions and competing background noise.",
+      "applies_when": ["auditory-processing", "environment"]
+    },
+    {
+      "id": "ap-acc-03",
+      "text": "Provide preferential seating that supports monitoring of student comprehension.",
+      "applies_when": ["auditory-processing", "environment"]
+    },
+    {
+      "id": "ap-acc-04",
+      "text": "Provide a peer assistant or buddy to provide information when the student did not understand an oral communication.",
+      "applies_when": ["auditory-processing"]
+    },
+    {
+      "id": "ap-acc-05",
+      "text": "Waive foreign language requirements for graduation.",
+      "applies_when": ["auditory-processing", "phonemic-awareness", "dyslexia"]
+    }
+  ],
+  "instructional_strategies": [
+    {
+      "id": "ap-strat-01",
+      "text": "When practical, word instructions individually to the student in order to avoid competition with extraneous background sounds.",
+      "applies_when": ["auditory-processing"]
+    },
+    {
+      "id": "ap-strat-02",
+      "text": "Seat the student in proximity to the teacher in order to facilitate monitoring and to individualize instructions.",
+      "applies_when": ["auditory-processing"]
+    },
+    {
+      "id": "ap-strat-03",
+      "text": "Face the student when speaking and be in proximity.",
+      "applies_when": ["auditory-processing"]
+    },
+    {
+      "id": "ap-strat-04",
+      "text": "Articulate clearly and avoid speaking quickly or slurring words.",
+      "applies_when": ["auditory-processing"]
+    },
+    {
+      "id": "ap-strat-05",
+      "text": "Word directions and instructions clearly, succinctly and in simple terms.",
+      "applies_when": ["auditory-processing"]
+    },
+    {
+      "id": "ap-strat-06",
+      "text": "Encourage the student to ask questions and seek help if the student does not understand.",
+      "applies_when": ["auditory-processing"]
+    },
+    {
+      "id": "ap-strat-07",
+      "text": "Supplement oral directions/instructions with a written counterpart.",
+      "applies_when": ["auditory-processing"]
+    },
+    {
+      "id": "ap-strat-08",
+      "text": "Be prepared to provide a demonstration or concrete example to accompany an oral explanation.",
+      "applies_when": ["auditory-processing"]
+    },
+    {
+      "id": "ap-strat-09",
+      "text": "Write key words on the board or on an overhead to support oral instruction.",
+      "applies_when": ["auditory-processing"]
+    },
+    {
+      "id": "ap-strat-10",
+      "text": "As a pre-teaching strategy, it may be helpful to have the student read about a content area before information is presented orally. Familiarity with content will enhance oral comprehension despite an auditory processing deficit.",
+      "applies_when": ["auditory-processing"]
+    },
+    {
+      "id": "ap-strat-11",
+      "text": "The student may have difficulty interpreting information presented orally during a lecture. As a result, it may be helpful to supply a written study guide the student can follow during the presentation. A study guide might contain an outline of content and provide definitions for key words and concepts. In addition, a cloze technique (fill in the blank) might be incorporated into the study guide to facilitate note taking during the presentation.",
+      "applies_when": ["auditory-processing"]
+    },
+    {
+      "id": "ap-strat-12",
+      "text": "Auditory processing and particularly phonemic awareness deficits can interfere with learning to decode words. Until phonemic awareness skills are strengthened it will likely be helpful to compensate for phonetic decoding difficulty by teaching a sight vocabulary, teaching the student to recognize root words and morphemes (prefixes and suffixes) and teaching the student to recognize words via contextual clues.",
+      "applies_when": ["auditory-processing", "phonemic-awareness", "dyslexia"]
+    },
+    {
+      "id": "ap-strat-13",
+      "text": "Provide a signal to alert the student when an oral direction/instruction is going to be given.",
+      "applies_when": ["auditory-processing"]
+    },
+    {
+      "id": "pa-strat-01",
+      "text": "Strong phonemic awareness skills predict ease in reading development. As a result, it is important that steps be taken to develop and strengthen phonemic awareness skills including segmenting words into syllables, development of rhyming ability, blending phonemes into words and segmenting words into phonemes. In addition, the student should develop skills to manipulate phonemes in words including deleting, adding and substituting phonemes to make new words.",
+      "applies_when": ["phonemic-awareness", "dyslexia"]
+    },
+    {
+      "id": "pa-strat-02",
+      "text": "Read books to the student that play with and manipulate letter sounds. Such literature makes use of rhyming, alliteration and manipulation of phonemes. Dr. Seuss books are entertaining examples.",
+      "applies_when": ["phonemic-awareness", "dyslexia"]
+    },
+    {
+      "id": "pa-strat-03",
+      "text": "Read or recite poems to the student that use different rhyming patterns. Encourage the student to repeat the rhyme and perhaps raise a hand when the rhyme is heard.",
+      "applies_when": ["phonemic-awareness", "dyslexia"]
+    },
+    {
+      "id": "pa-strat-04",
+      "text": "Use phonemic awareness activities for which the student knows individual letter sounds and sounds of letter combinations.",
+      "applies_when": ["phonemic-awareness", "dyslexia"]
+    },
+    {
+      "id": "pa-strat-05",
+      "text": "Discuss how phonemic awareness activities relate to reading and spelling words (e.g., words that rhyme such as cat and hat have similar spelling).",
+      "applies_when": ["phonemic-awareness", "dyslexia"]
+    },
+    {
+      "id": "pa-strat-06",
+      "text": "The student will likely recognize larger word parts and syllables before individual phonemes (specific sounds) in words. As a result, start awareness building activities by breaking compound words into parts (e.g., pan-cake, butter-fly, basket-ball). The student might manipulate pictures of the component words to create compound words. Move from compound words to recognizing syllables in words and in time to recognizing and manipulating individual phonemes in simple and then longer words.",
+      "applies_when": ["phonemic-awareness", "dyslexia"]
+    },
+    {
+      "id": "pa-strat-07",
+      "text": "If syllabicating a word is particularly difficult for the student, explain that when a word is said, the chin drops for each syllable stated. Also, a breath of air is expelled with each syllable stated. These physical cues may help the student understand that words are composed of parts that can be identified.",
+      "applies_when": ["phonemic-awareness", "dyslexia"]
+    },
+    {
+      "id": "pa-strat-08",
+      "text": "The student will likely find greater success segmenting and manipulating words with long vowel sounds and consonant sounds that can be elongated or held when said (e.g., m, f, s).",
+      "applies_when": ["phonemic-awareness", "dyslexia"]
+    },
+    {
+      "id": "pa-strat-09",
+      "text": "When segmenting words into syllables or phonemes, it may be helpful to have the student move an object such as a block or poker chip for each syllable or phoneme heard or said.",
+      "applies_when": ["phonemic-awareness", "dyslexia"]
+    },
+    {
+      "id": "pa-strat-10",
+      "text": "When segmenting, the student will likely be able to most easily identify and manipulate the first and last phonemes in a word. As a result, start by asking the student to identify and manipulate the first, then the last and finally the medial phonemes in words.",
+      "applies_when": ["phonemic-awareness", "dyslexia"]
+    },
+    {
+      "id": "pa-strat-11",
+      "text": "As the student becomes proficient with segmenting words, include the blending process. In time have the student both segment (i.e., move from whole to parts) and then blend (i.e., move from parts to whole) words.",
+      "applies_when": ["phonemic-awareness", "dyslexia"]
+    },
+    {
+      "id": "pa-strat-12",
+      "text": "The student will likely benefit from the following guidelines for teaching blending skills: a.) Start by blending simple compound words, then syllables into words and finally sounds into words. b.) Initially start blending activities with words having long vowels and consonants that make a continuous or stretched sound. c.) When introducing blending, start by blending the initial sound to words (m-at), followed by completing words by blending the final sound (c-at). In time work toward blending all sounds. d.) Move from the instructor modeling the blending to the student independently blending without prompts. e.) Move from the student blending words for which the instructor states syllables or sounds to the student blending words from print. This will require that the student know letter-sound associations.",
+      "applies_when": ["phonemic-awareness", "dyslexia"]
+    },
+    {
+      "id": "pa-strat-13",
+      "text": "Read pairs of words to the student, some of which rhyme and some of which do not. Ask the student to raise a hand when the words rhyme and not raise a hand when the words do not rhyme. Motivation might be increased by providing the student a token for each correct response. Tokens over time would be collected and cashed in for rewards.",
+      "applies_when": ["phonemic-awareness", "dyslexia"]
+    },
+    {
+      "id": "pa-strat-14",
+      "text": "As the student becomes more proficient with rhyming, ask the student to supply a rhyming word to complete a line or to state a word that rhymes with another word.",
+      "applies_when": ["phonemic-awareness", "dyslexia"]
+    },
+    {
+      "id": "pa-strat-15",
+      "text": "During instructional activities, use concrete symbols to represent phonemes. Slowly state a word phoneme by phoneme and place a poker chip on the table as each phoneme is said. Then say one of the phonemes in isolation and ask the student to identify which chip represents the phoneme.",
+      "applies_when": ["phonemic-awareness", "dyslexia"]
+    },
+    {
+      "id": "pa-strat-16",
+      "text": "Identify a root word or sound and have the student produce variations of the word or new words by adding initial or ending sounds (ake: bake, rake, baking, raking).",
+      "applies_when": ["phonemic-awareness", "dyslexia"]
+    },
+    {
+      "id": "pa-strat-17",
+      "text": "Have the student create new words by substituting medial sounds for a base word (bat: bit, bet, but; fan: fun, fin).",
+      "applies_when": ["phonemic-awareness", "dyslexia"]
+    },
+    {
+      "id": "pa-strat-18",
+      "text": "The student may find phonemic awareness activities uninteresting and tedious. As a result, it may be helpful to present activities as part of a game. Use a board from a common game such as Chutes and Ladders. Each time the student is correct in a response to the phonemic awareness activity, the student chooses a card with a number written on the back. The student moves this number of spaces on the game board.",
+      "applies_when": ["phonemic-awareness", "dyslexia"]
+    }
+  ]
+}

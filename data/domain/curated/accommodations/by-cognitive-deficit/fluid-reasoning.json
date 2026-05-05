@@ -1,0 +1,137 @@
+{
+  "id": "acc-by-cog-fluid-reasoning",
+  "title": "Fluid Reasoning Deficits — Accommodations & Strategies",
+  "description": "Use when the student's IEP present-levels indicate difficulty with reasoning manifested by problems comprehending instruction/directions, generalizing learned skills to new contexts, and solving novel problems. Particularly relevant when the student needs explicit rules, worked examples, and concrete scaffolds rather than discovery learning.",
+  "applies_to": {
+    "cognitive_deficits": ["fluid-reasoning"],
+    "achievement_deficits": ["math-reasoning", "reading-comprehension"],
+    "contexts": ["instructional-delivery", "testing-assessment"],
+    "profiles": []
+  },
+  "source": {
+    "name": "Seaman Compendium — Accommodations for Cognitive and Academic Deficits (J. Seaman, PhD)",
+    "section": "SECTION ONE: ACCOMMODATIONS FOR COGNITIVE DEFICITS — FLUID REASONING DEFICITS",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "954-1041"
+  },
+  "definition": "The student demonstrates difficulty with reasoning which may be manifested by problems comprehending instruction and directions, generalizing learned skills and solving novel problems.",
+  "accommodations": [
+    {
+      "id": "fr-acc-01",
+      "text": "The student may not understand relationships between concepts and may not generalize learned rules or procedures to different or new situations. As a result, the student may often appear confused with task demands. It will be necessary to monitor the student at a high rate to assess understanding and provide assistance in a timely manner.",
+      "applies_when": []
+    },
+    {
+      "id": "fr-acc-02",
+      "text": "While the student may initially appear to understand directions, problems may be encountered in applying directions as task demands and contexts change (e.g., generalizing from identifying latitude and longitude of a specific location on a map to new sites and with other maps). As a result, it will be important to monitor functioning throughout a task and particularly when there are changes in task demands.",
+      "applies_when": []
+    },
+    {
+      "id": "fr-acc-03",
+      "text": "It may be helpful to seat the student next to a peer helper who can provide assistance when the student experiences confusion.",
+      "applies_when": []
+    },
+    {
+      "id": "fr-acc-04",
+      "text": "Start a task with the student so that the initial items are done correctly and a model for completion of the assignment is established. This might most conveniently be done by assigning a peer with whom the student can do the first problem(s) of an assignment.",
+      "applies_when": []
+    },
+    {
+      "id": "fr-acc-05",
+      "text": "Avoid frustrating the student with problem solving tasks that require reasoning beyond a level for which the student has demonstrated competency.",
+      "applies_when": []
+    },
+    {
+      "id": "fr-acc-06",
+      "text": "Provide practice tests that include examples similar to those on a graded test.",
+      "applies_when": ["testing-assessment"]
+    },
+    {
+      "id": "fr-acc-07",
+      "text": "Weight grades in favor of concrete information and skills acquired instead of creative use or application of concepts and skills.",
+      "applies_when": ["testing-assessment"]
+    }
+  ],
+  "instructional_strategies": [
+    {
+      "id": "fr-strat-01",
+      "text": "Due to difficulty with deductive reasoning, the student may experience problems using a learned procedure or rule to solve problems. This difficulty might occur when content changes in story problems or when an algorithm is expressed in a different way. As a result, provide various examples of how the rule or procedure can be used across different situations.",
+      "applies_when": ["math-reasoning"]
+    },
+    {
+      "id": "fr-strat-02",
+      "text": "Due to difficulty with deductive reasoning, the student experiences problems using rules or a set of procedures to solve problems. As a result, use discovery learning to provide experiences to assist the student to understand why a rule or principal works. Work from the bottom up by showing how observations result in formation of a rule. After the student understands why, the student might better be able to generalize use of a rule or procedure to solve new problems.",
+      "applies_when": []
+    },
+    {
+      "id": "fr-strat-03",
+      "text": "Due to difficulty with inductive reasoning, the student may experience confusion with discovery learning in which the student is expected to arrive at a rule to explain examples. This student appears to work best when a rule is stated or a well defined set of steps is established to solve a problem.",
+      "applies_when": []
+    },
+    {
+      "id": "fr-strat-04",
+      "text": "To promote understanding and generalization in use of a rule or procedure, clearly describe the rule or procedure and provide numerous concrete examples, particularly from the student's experience.",
+      "applies_when": []
+    },
+    {
+      "id": "fr-strat-05",
+      "text": "Develop understanding of abstract concepts by describing concrete, familiar elements of the concept (e.g., fruit can be eaten, grows on trees, has a seed or stone and has skin). In addition, employ concrete examples including pictures, demonstrations and manipulatives.",
+      "applies_when": []
+    },
+    {
+      "id": "fr-strat-06",
+      "text": "Break complex tasks or procedures into component parts. After the student masters one part, move onto the next.",
+      "applies_when": []
+    },
+    {
+      "id": "fr-strat-07",
+      "text": "Help the student sort out relevant from irrelevant information when solving a problem.",
+      "applies_when": ["math-reasoning"]
+    },
+    {
+      "id": "fr-strat-08",
+      "text": "Move slowly when presenting new information and tie new concepts into previously mastered concepts and information.",
+      "applies_when": []
+    },
+    {
+      "id": "fr-strat-09",
+      "text": "Teach new information in groups or families and clarify how the items or examples are alike.",
+      "applies_when": []
+    },
+    {
+      "id": "fr-strat-10",
+      "text": "Provide a routine or practiced sequence for approaching a difficult or complex task. A practiced routine will help the student solve problems despite difficulty understanding how and why a procedure works. It may be necessary to define when and under what circumstances a procedure is to be used.",
+      "applies_when": []
+    },
+    {
+      "id": "fr-strat-11",
+      "text": "Provide structured opportunities for the student to use a concept or skill in real life contexts (e.g., using subtraction to determine money left after a purchase).",
+      "applies_when": []
+    },
+    {
+      "id": "fr-strat-12",
+      "text": "Consider using a teaching assistant, volunteer or peer tutor to work individually with the student to teach and demonstrate a new skill or concept. This may be most important when classmates have gained insight and the student still lacks understanding for a concept or procedure.",
+      "applies_when": []
+    },
+    {
+      "id": "fr-strat-13",
+      "text": "Explain the purpose of an assignment in order to make the task meaningful to the student. This student may not independently perceive the relationship between completing a task and greater learning outcomes.",
+      "applies_when": []
+    },
+    {
+      "id": "fr-strat-14",
+      "text": "Make an effort to explain in clear, concrete terms why a procedure is being used in a particular problem.",
+      "applies_when": []
+    },
+    {
+      "id": "fr-strat-15",
+      "text": "The student demonstrates reasoning difficulties that might impede understanding of instruction. A study guide might be beneficial to help the student organize information, identify the most relevant information and provide a conceptual framework to understand instruction (or passage reading). A study guide might consist of open ended questions, fill in the blank items or true false questions that the student reads prior to instruction. The student looks for answers during instruction (or while reading) and completes the study guide items.",
+      "applies_when": ["reading-comprehension"]
+    },
+    {
+      "id": "fr-strat-16",
+      "text": "Before teaching a new concept or topic, use semantic maps to organize key vocabulary and prior knowledge. Following are steps to be followed: 1.) Write a sentence on the board that succinctly describes the topic (e.g., The climate of the west is varied). 2.) Ask the student(s) to brainstorm all words and phrases the student(s) can think of about the topic. Write these on the board. 3.) Write key vocabulary words on the board. Define these terms. 4.) Ask the student(s) to identify words and phrases that go together (e.g., rain, snow, hail as one category and hot, cold as another category). Write these in groups or categories. 5.) Encircle the categories and ask the student(s) to think of a label that describes the category (e.g., temperature, precipitation, etc.) 6.) Discuss how the categories relate to each other. 7.) Teach the lesson while referring back and adding to the semantic map.",
+      "applies_when": []
+    }
+  ]
+}

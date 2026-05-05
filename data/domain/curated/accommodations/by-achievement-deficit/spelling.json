@@ -1,0 +1,197 @@
+{
+  "id": "acc-by-ach-spelling",
+  "title": "Spelling Deficits — Accommodations & Strategies",
+  "description": "Use when the student's IEP present-levels indicate below-grade-level performance in spelling or specific skill gaps in correctly spelling words during written expression (phonetic accuracy, orthographic patterns, retention of spelling words).",
+  "applies_to": {
+    "cognitive_deficits": ["phonemic-awareness", "long-term-retrieval", "short-term-memory", "auditory-processing"],
+    "achievement_deficits": ["spelling", "written-expression"],
+    "contexts": ["instructional-delivery", "testing-assessment"],
+    "profiles": ["dyslexia"]
+  },
+  "source": {
+    "name": "Seaman Compendium — Accommodations for Cognitive and Academic Deficits (J. Seaman, PhD)",
+    "section": "Section Two: Accommodations for Achievement Deficits — Spelling Deficits",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "1413-1574"
+  },
+  "definition": "The student experiences difficulty correctly spelling words in written expression.",
+  "accommodations": [
+    {
+      "id": "sp-acc-01",
+      "text": "On tasks requiring written expression, weight grading in favor of content and ideas expressed rather than accuracy of spelling.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-acc-02",
+      "text": "Encourage the student to express himself freely in written expression with the understanding that help will be provided for spelling errors. Instruct the student to merely circle words for which spelling is uncertain as the student writes. These can be corrected with assistance after the student completes the writing activity.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-acc-03",
+      "text": "Seat the student next to a study buddy who can provide help with spelling errors.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-acc-04",
+      "text": "Provide the student a poor speller's dictionary. Encourage the student to look up the word if the student is uncertain about the correct spelling.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-acc-05",
+      "text": "Teach and encourage the student to use a word processing program to assist with correction of spelling errors.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-acc-06",
+      "text": "Provide individualized spelling tests since words from the standard spelling list are inappropriate or the student takes additional time to complete a dictated spelling test.",
+      "applies_when": ["testing-assessment"]
+    },
+    {
+      "id": "sp-acc-07",
+      "text": "Consider employing an alternative spelling test scoring procedure. Provide partial credit (e.g., 1/4 credit, 2 credit, etc.) based on the number of correctly sequenced letters.",
+      "applies_when": ["testing-assessment"]
+    }
+  ],
+  "instructional_strategies": [
+    {
+      "id": "sp-strat-01",
+      "text": "Assemble the student's spelling list from words being taught in the reading instructional program. In this way reading and spelling instruction will reinforce each other.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-02",
+      "text": "The student's spelling problems are sufficiently severe that written communication is significantly inhibited. As a result, select spelling words from the 300 most common words used in writing as identified by Fry.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-03",
+      "text": "Include in the student's spelling list words that the student frequently misspells when completing assignments.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-04",
+      "text": "This student may be overwhelmed with a long spelling list presented at the outset of the week. Instead, estimate how many words a student will be able to learn in one session (e.g., perhaps 2 or 3). Then introduce this many words each day or every other day. Continue to practice newly learned words.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-05",
+      "text": "Use a flow method rather than a standardized set of weekly spelling words. In this method a master list of words to be learned is established. The list is derived from words being taught in the reading curriculum, words from the Fry most common word list and words the student often misspells. The student is tested daily on a short set of these words. When the student is successful in spelling a word three days in a row, the word is replaced by a new word from the master list. Be sure to occasionally review words that have been identified as learned.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-06",
+      "text": "When possible group spelling words according to spelling patterns (i.e., root words and word families). Memory is enhanced when an individual groups information into categories. As a result, it will also be helpful to teach the student to find similarities (e.g., same root word, same ending, etc.) among spelling words and place the words into groups based on these similarities.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-07",
+      "text": "Devise a spelling list comprised of a root word(s) and its derivatives created by various morphemes (i.e., prefixes and suffixes). For instance, the list might be created using the root word welcome with its derivations of unwelcome, welcoming, welcomed and welcomes.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-08",
+      "text": "Establish a reasonable number of new spelling words introduced each week. If the student is unable to learn to spell 80% of the words correctly, further abbreviate the list. To enhance success and not draw attention to an abbreviated list, include on the list two or three words which the student has recently mastered.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-09",
+      "text": "Insure that the student is able to read, understand and use spelling words in oral expression. When introducing spelling words, have the student use them orally in sentences to insure an adequate level of comprehension.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-10",
+      "text": "When possible, incorporate spelling words into daily reading and writing activities.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-11",
+      "text": "On written assignments, provide feedback for spelling errors by writing the correct spelling of incorrectly spelled words. Encourage the student to take time to study these corrections.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-12",
+      "text": "Teach the student to break spelling words into component parts of syllables and sounds. Use direct instruction procedures of modeling the skill, providing many opportunities for the student to practice the skill and providing immediate feedback/error correction.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-13",
+      "text": "Communicate and consult regularly with the student's parents concerning strategies to rehearse spelling words at home.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-14",
+      "text": "The student usually spells words in a phonetically accurate manner but often makes orthographic errors (i.e., incorrect letter combinations). Inform the student of this problem and encourage the student to study the letter sequences in words, how words look, and to form a mental image of the word when practicing spelling words. To form a mental image the student should be taught to close his eyes and see the word on a mental screen.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-15",
+      "text": "Use of a cloze procedure might help the student overcome orthographic errors (i.e., spelling phonetically and making errors in letter sequences). In this strategy the instructor or tutor writes the word at the top of a piece of paper. Underneath the model, the word is written several times with progressively more letters replaced by a blank space. The student fills in the blanks to complete the word. After completing this task, the student turns the paper over and spells the word from memory.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-16",
+      "text": "The student might improve orthographic skills by looking for a word in print. Each time the word is found, the student underlines the word, reads it and orally spells the word while looking at each letter. Looking for the word and looking at each letter while spelling the word may help form a mental image of the word that will facilitate spelling.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-17",
+      "text": "Capitalize on the benefits of spaced practice. Provide opportunities for the student to practice spelling words on a daily basis, several times a day, for short periods, at spaced intervals (e.g., self starter in morning, self starter after lunch, peer tutoring activity before end of school, spelling homework assignment).",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-18",
+      "text": "Pair the student with a peer to play a spelling game. A common game board such as from Chutes and Ladders is used. Each spelling word is written on a card. The student chooses a card, reads the word and then chooses to spell the word by copying it from the card or turning the card over and writing it from memory. The student moves two spaces if the word is spelled from memory, one space if copied and no spaces if misspelled. A peer tutor or parent volunteer serves as the referee.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-19",
+      "text": "Turn spelling tests into an instructional opportunity. It will be important to provide immediate feedback following each test and a method to rehearse the correct spelling of each misspelled word.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-20",
+      "text": "During instruction, provide a high number of opportunities for the student to successfully spell the word from memory (i.e., not just copy). Provide immediate feedback about accuracy. Immediate feedback might consist of self checking and correcting.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-21",
+      "text": "Use visual, auditory and kinesthetic modalities in instructional activities. The student sees the word, hears the word read, reads the word, studies individual letters and letter combinations, hears the word pronounced by syllables and phonemes, hears the word spelled, orally spells the word, copies the word in the air with arm movements while saying each letter, traces the word with his fingers while saying the letter names, copies the word on paper and spells the word from memory.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-22",
+      "text": "Employ the Fernald Method to teach spelling of phonetically irregular words or words the student especially struggles with. Follow the steps below. 1.) Write the word on a piece of paper. 2.) As the student looks at the word, the instructor clearly states the word followed by the student clearly articulating the word. 3.) The student studies the word to form a mental image. This might be facilitated by the student visually studying the word, saying the word and spelling it aloud and tracing the word. 4.) Only when the student is absolutely certain he can spell it correctly, the student turns the page over and writes the word from memory. 5.) The student checks his product with the master.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-23",
+      "text": "Provide the student an opportunity to rehearse spelling words presented on a tape recording. The student hears the word read, then spelled, while looking at the word on a spelling word list. The tape repeats the spelling several times as the student responds in chorus. The tape then directs the student to pause the recorder, cover the word on the list and write it from memory. The student immediately compares the product with the model. If correct, the student moves to the next taped word. If incorrect, the student copies the word three times and attempts again to write it from memory.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-24",
+      "text": "Employ a modification of the delayed prompting procedure with a peer tutor to rehearse spelling words. From a short list of words being practiced, the tutor reads the first word. The student is instructed to orally spell the word if the student knows how. If the student is uncertain, the student is instructed not to respond. The tutor then spells the word orally followed by the student spelling the word. Two points are awarded for spelling the word without a prompt and one point for spelling it with a prompt. If the student attempts to spell a word for which the student is uncertain, a reminder is provided to only spell the word if certain. The list is presented several times or until the student feels comfortable trying to spell words from dictation.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-25",
+      "text": "Teach the student to use the Cover-Copy-Compare procedure to rehearse spelling words. The instructor writes a short list of spelling words several consecutive times (a,b,c,a,b,c, etc.) down the left-hand column of a piece of paper. The student reads the first word, orally spells the word, covers the word and writes the word from memory next to the covered model. The student then removes the cover and compares the word with the model. If the word is spelled correctly, the student moves to the second word and repeats the process. If the word is misspelled, the student copies it three times, covers the model and writes it from memory. This error correction routine is continued until the word is written correctly from memory. If the student experiences difficulty with this procedure, reduce the number of new words by sandwiching new words between two words the student knows how to spell (i.e., new, known, new, known, etc.).",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-26",
+      "text": "With the help of a peer tutor or aide, employ magnetic letters or letters on cards with the cover-copy-compare procedure. In this strategy, the peer tutor orally states a word and then spells the word. The student says the word, and orally spells the word while assembling the word using magnetic letters or letter cards. The student then looks at the word, orally spells the word, covers the model and writes it from memory. The student then compares his product with the model. A new word is introduced if the student is correct. If the student is incorrect, the student copies the word three times while orally stating the letters as copied and tries again to write it from memory. In this procedure a few words are repeated in sequence several times.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-27",
+      "text": "Employing a peer tutor or aide, use the Add a Word method to rehearse spelling words. Ten words are taken from a master list and copied by the student down the left-hand column of a piece of paper. As the student copies, the student first reads the word and says each letter name as it is written. After copying the words, the student covers the words. The tutor dictates the list to the student who writes each word next to its covered model. After the ten words are dictated, the student compares his spelling to the model. Each word spelled incorrectly is copied with the student saying the word and saying each letter as it is written. The procedure is carried out daily. Words that are spelled correctly on two consecutive days are replaced with new words from the master list.",
+      "applies_when": []
+    },
+    {
+      "id": "sp-strat-28",
+      "text": "For particularly difficult words that have been resistant to accommodation, associate a tune with the spelling of the word. Five letter words: Use the tune You Are My Sunshine. The word will need to be spelled six times to finish the tune. Six letter words: Use the tune Happy Birthday. The word will need to be spelled four times to complete the tune. Seven letter words: Use the tune Twinkle Twinkle Little Star. The word will need to be spelled six times to complete the tune.",
+      "applies_when": []
+    }
+  ]
+}

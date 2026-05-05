@@ -1,0 +1,142 @@
+{
+  "id": "acc-by-cog-comprehension-and-language",
+  "title": "Comprehension-Knowledge and Language Deficits — Accommodations & Strategies",
+  "description": "Use when the student's IEP present-levels indicate limited background knowledge and/or language development affecting comprehension of directions and text, oral expression, and content of written language. Strongly indicated for students with reading-comprehension deficits.",
+  "applies_to": {
+    "cognitive_deficits": ["comprehension-knowledge"],
+    "achievement_deficits": ["reading-comprehension", "written-expression"],
+    "contexts": ["instructional-delivery", "language-communication", "testing-assessment"],
+    "profiles": []
+  },
+  "source": {
+    "name": "Seaman Compendium — Accommodations for Cognitive and Academic Deficits (J. Seaman, PhD)",
+    "section": "SECTION ONE: ACCOMMODATIONS FOR COGNITIVE DEFICITS — COMPREHENSION-KNOWLEDGE AND LANGUAGE DEFICITS",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "881-953"
+  },
+  "definition": "The student lacks background knowledge and/or language development to support academic learning. As a result, the student may demonstrate difficulty with comprehension of directions and material read, as well as difficulty with oral expression and content of written language.",
+  "accommodations": [
+    {
+      "id": "ck-acc-01",
+      "text": "The student may experience difficulty comprehending oral or written directions. As a result, provide preferential seating to enhance monitoring of comprehension.",
+      "applies_when": []
+    },
+    {
+      "id": "ck-acc-02",
+      "text": "After group directions are given, check with the student to insure comprehension of task demands. This might be done by asking the student to paraphrase directions in the student's own words.",
+      "applies_when": []
+    },
+    {
+      "id": "ck-acc-03",
+      "text": "The student will likely benefit from oral communication that is individualized and features the following elements: 1.) use of clear, concise language, 2.) use of vocabulary that is comprehensible, 3.) use of pauses between phrases or sentences to promote processing of information, 4.) avoidance of complex and lengthy sentences, 5.) check of comprehension after the communication is completed.",
+      "applies_when": ["language-communication"]
+    },
+    {
+      "id": "ck-acc-04",
+      "text": "Encourage the student to ask for clarification if a communication is not understood.",
+      "applies_when": []
+    },
+    {
+      "id": "ck-acc-05",
+      "text": "Seat the student near peer models who can clarify information or directions and provide individual assistance.",
+      "applies_when": []
+    },
+    {
+      "id": "ck-acc-06",
+      "text": "Provide a word bank from which the student can draw when involved in written expression.",
+      "applies_when": ["written-expression"]
+    },
+    {
+      "id": "ck-acc-07",
+      "text": "Provide a glossary of important terms the student can refer to in order to compensate for lack of background information and vocabulary.",
+      "applies_when": []
+    },
+    {
+      "id": "ck-acc-08",
+      "text": "Insure that test items do not include vocabulary which has not been taught or is not familiar to the student.",
+      "applies_when": ["testing-assessment"]
+    }
+  ],
+  "instructional_strategies": [
+    {
+      "id": "ck-strat-01",
+      "text": "Review and/or teach key vocabulary words before a lecture or before the student is asked to read from content area texts. It may be necessary to review individually with the student. Use of an aide or parent assistant might be helpful in this regard.",
+      "applies_when": ["reading-comprehension"]
+    },
+    {
+      "id": "ck-strat-02",
+      "text": "During instruction, write key words and terms on the board to provide a reference to which the student can refer. It is likely the student will not retain information that is only presented orally since there is a lack of background information and related vocabulary.",
+      "applies_when": []
+    },
+    {
+      "id": "ck-strat-03",
+      "text": "Pair oral instruction with demonstrations, visual examples and models. Use concrete references familiar to the student when presenting new vocabulary or concepts.",
+      "applies_when": []
+    },
+    {
+      "id": "ck-strat-04",
+      "text": "Word instructions clearly, using specific language and vocabulary that is familiar to the student. Avoid long and complex sentences.",
+      "applies_when": ["language-communication"]
+    },
+    {
+      "id": "ck-strat-05",
+      "text": "During instruction stick to the point - avoid digressions and excessive language.",
+      "applies_when": []
+    },
+    {
+      "id": "ck-strat-06",
+      "text": "Insure understanding for present information before introducing additional information.",
+      "applies_when": []
+    },
+    {
+      "id": "ck-strat-07",
+      "text": "Assist the student to express ideas by providing necessary vocabulary words.",
+      "applies_when": ["written-expression"]
+    },
+    {
+      "id": "ck-strat-08",
+      "text": "A lack of information and vocabulary may affect reading comprehension. As a result, orally review information the student read about in a passage. When necessary reinterpret information using familiar vocabulary, terms and experiences.",
+      "applies_when": ["reading-comprehension"]
+    },
+    {
+      "id": "ck-strat-09",
+      "text": "Use direct instruction methods to teach new words. Model use of the word, cite concrete references to enhance understanding of the word, have the student use the word in various tasks and contexts, and provide immediate feedback/error correction. Attempt to link new vocabulary to prior learning and familiar experiences.",
+      "applies_when": []
+    },
+    {
+      "id": "ck-strat-10",
+      "text": "Attempt to expand the student's vocabulary by substituting more sophisticated or precise terms for the student's. For instance, when the student says his dog \"runs around and barks,\" restate the description by stating, \"Oh, your dog is frisky.\"",
+      "applies_when": ["language-communication"]
+    },
+    {
+      "id": "ck-strat-11",
+      "text": "Teach the student to use a thesaurus to expand oral and written vocabulary.",
+      "applies_when": ["written-expression"]
+    },
+    {
+      "id": "ck-strat-12",
+      "text": "Use catalogs to associate pictures with vocabulary. Provide the correct vocabulary and ask the student to use the word in one or more sentences. It might be helpful to ask the student's parent to employ this procedure.",
+      "applies_when": []
+    },
+    {
+      "id": "ck-strat-13",
+      "text": "Attempt to increase the student's fund of knowledge by exposing the student to information rich mediums such as newspapers, news magazines, television documentaries and television news programs. Provide opportunities to discuss information presented.",
+      "applies_when": []
+    },
+    {
+      "id": "ck-strat-14",
+      "text": "Prior to a lecture, provide an advance organizer. This might consist of an outline, written on the board, of the material to be presented. Refer to each topic on the board as it is presented.",
+      "applies_when": []
+    },
+    {
+      "id": "ck-strat-15",
+      "text": "During oral presentations and lectures, use a cloze strategy to help the student be vigilant to key vocabulary and concepts to be presented. This method requires that definitions of key concepts and vocabulary be written out. Important terms are then substituted with a blank space on the cloze form. During the lecture, the student listens carefully and fills in the blank terms as they are presented in the lecture. It may be helpful to have a word bank of terms at the top of the page to which the student can refer. While lecturing, the instructor should use the exact wording of statements on the cloze page being completed by the student. Afterward, correct the student's responses.",
+      "applies_when": []
+    },
+    {
+      "id": "ck-strat-16",
+      "text": "Immediately correct grammatical or word usage errors and require the student to respond correctly.",
+      "applies_when": ["language-communication"]
+    }
+  ]
+}

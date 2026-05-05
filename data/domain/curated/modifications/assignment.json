@@ -1,0 +1,89 @@
+{
+  "id": "mod-assignment",
+  "title": "Assignment Modifications",
+  "description": "Modifications to the work the student is asked to do — what's assigned, how much, in what form. Use when the assignment as given would prevent the student from meaningfully participating, even with standard accommodations. Examples: shorter assignments, alternate-format assignments, modified output requirements.",
+  "applies_to": {
+    "cognitive_deficits": ["processing-speed", "short-term-memory", "long-term-retrieval"],
+    "achievement_deficits": ["written-expression", "basic-reading", "reading-comprehension", "basic-math"],
+    "contexts": ["instructional-delivery", "testing-assessment"],
+    "profiles": ["adhd-attention", "anxiety", "dyslexia"]
+  },
+  "source": {
+    "name": "Composite — Wikipedia (Special Education) and ADayInOurShoes",
+    "section": "Examples of modifications — assignment-level",
+    "files": [
+      {"file": "data/domain/raw/special-ed.txt", "lines": "104-110"},
+      {"file": "data/domain/raw/iep.txt", "lines": "24-32"}
+    ]
+  },
+  "modifications": [
+    {
+      "id": "mod-asn-01",
+      "category": "Reduced volume",
+      "text": "Assign fewer items of the same content (e.g., odd-numbered problems only, or 5 of 10 short-response questions). When the reduction is about volume only and the student still demonstrates the same skill, this is borderline accommodation. When the student is expected to master fewer concepts, it crosses into modification.",
+      "applies_when": ["processing-speed-deficit", "stamina-limitations"]
+    },
+    {
+      "id": "mod-asn-02",
+      "category": "Alternate format",
+      "text": "Substitute a different format for the same learning objective. Examples: oral response in place of written; typed in place of handwritten; recorded video presentation in place of live class presentation; dictated response in place of typed.",
+      "applies_when": ["written-expression-deficit", "social-anxiety", "fine-motor-deficits"]
+    },
+    {
+      "id": "mod-asn-03",
+      "category": "Simplified version",
+      "text": "Provide a simplified version of the assignment that targets the same skill at a more accessible difficulty level. Example: instead of an open-ended short response, provide a graphic organizer with prompts for each box; instead of writing a full paragraph, complete sentence stems.",
+      "applies_when": ["below-grade-skills", "executive-function-deficit"]
+    },
+    {
+      "id": "mod-asn-04",
+      "category": "Alternate question types",
+      "text": "Substitute recognition-format questions (multiple choice, matching, true/false, fill-in-blank with word bank) for recall-format questions (open-ended, fill-in-blank without word bank, essay). Use when the IEP indicates long-term retrieval deficits or anxiety-related blanking.",
+      "applies_when": ["long-term-retrieval-deficit", "test-anxiety"]
+    },
+    {
+      "id": "mod-asn-05",
+      "category": "Word/equation bank provided",
+      "text": "Provide a word bank, equation sheet, or formula reference for assignments that would otherwise require pure recall. The student demonstrates application skills rather than memorization.",
+      "applies_when": ["long-term-retrieval-deficit", "math-fact-recall-deficit"]
+    },
+    {
+      "id": "mod-asn-06",
+      "category": "Chunked release",
+      "text": "Release the assignment in chunks rather than presenting the whole at once. Example: fold the worksheet so only one section is visible; reveal the next section after the previous is complete. Reduces overwhelm and supports task initiation.",
+      "applies_when": ["executive-function-deficit", "anxiety", "task-initiation-deficit"]
+    },
+    {
+      "id": "mod-asn-07",
+      "category": "Extended timeline / flexible deadline",
+      "text": "Extend the timeline for assignment completion beyond standard accommodations (which already allow extra time). For students whose disability flares unexpectedly, allow flexible-deadline completion: turn in within 1–3 days of a flare-up rather than the standard due date.",
+      "applies_when": ["health-impairment-flare", "anxiety"]
+    },
+    {
+      "id": "mod-asn-08",
+      "category": "Reduced volume of writing/copying",
+      "text": "Reduce volume of writing and copying when those activities are not the critical learning objective. Example: provide pre-printed math problems so the student doesn't have to copy them and can spend their cognitive effort on solving.",
+      "applies_when": ["processing-speed-deficit", "penmanship-deficit"]
+    },
+    {
+      "id": "mod-asn-09",
+      "category": "Cloze procedure",
+      "text": "Substitute a cloze (fill-in-the-blank) procedure for tasks that would otherwise require full sentence or paragraph writing. The student demonstrates content mastery without the writing burden.",
+      "applies_when": ["written-expression-deficit", "processing-speed-deficit"]
+    }
+  ],
+  "guardrails": [
+    {
+      "id": "guard-asn-iep",
+      "text": "Modifications listed here apply only when the IEP authorizes them. Most IEPs allow extra time and alternate formats by default; check the IEP's Modifications section for content-altering modifications like simplified version or alternate question types."
+    },
+    {
+      "id": "guard-asn-rubric",
+      "text": "When modifying the assignment, also clarify whether the rubric is modified. A modified assignment graded against the unmodified rubric will fail the student artificially. The two must be aligned."
+    },
+    {
+      "id": "guard-asn-skill-preservation",
+      "text": "Preserve the core skill being assessed. If the lesson's skill focus is 'identify central idea,' don't modify the assignment in a way that bypasses that skill (e.g., a multiple-choice version that gives away the answer). Modify the support around the skill, not the skill itself."
+    }
+  ]
+}

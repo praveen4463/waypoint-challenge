@@ -1,0 +1,92 @@
+{
+  "id": "acc-by-context-environment",
+  "title": "Environment Accommodations",
+  "description": "Accommodations affecting the physical and structural classroom environment. Use when the student needs reduced distraction, structured seating, modified physical access, or a calmer setting to access instruction.",
+  "applies_to": {
+    "cognitive_deficits": ["auditory-processing", "processing-speed"],
+    "achievement_deficits": [],
+    "contexts": ["environment"],
+    "profiles": ["adhd-attention", "anxiety", "autism"]
+  },
+  "source": {
+    "name": "ADayInOurShoes — Ultimate List of IEP Accommodations, Modifications & Strategies (SDIs)",
+    "section": "IEP accommodations and strategies for environment",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "5-26"
+  },
+  "accommodations": [
+    {
+      "id": "env-01",
+      "text": "A quiet area to complete the work or take a test."
+    },
+    {
+      "id": "env-02",
+      "text": "Having someone read a test to them."
+    },
+    {
+      "id": "env-03",
+      "text": "Preferential seating: sitting near the front, away from distraction, or in their area of preference (if they prefer a left or right visual field)."
+    },
+    {
+      "id": "env-04",
+      "text": "Preferential seating for hearing/audio access.",
+      "applies_when": ["hearing-impairment"]
+    },
+    {
+      "id": "env-05",
+      "text": "Preferential seating away from distractions, windows, doors, and speakers."
+    },
+    {
+      "id": "env-06",
+      "text": "Extra time to complete the work or reading given."
+    },
+    {
+      "id": "env-07",
+      "text": "Early dismissal from class to get to locker and to next class."
+    },
+    {
+      "id": "env-08",
+      "text": "Identify and limit distractions."
+    },
+    {
+      "id": "env-09",
+      "text": "Opportunity for practice."
+    },
+    {
+      "id": "env-10",
+      "text": "A 'hot pass' or 'cool off card' the student can flash to the teacher to leave class and go to a designated person (office, guidance counselor, nurse) to cool off if they feel a negative behavior coming on."
+    },
+    {
+      "id": "env-11",
+      "text": "High contrast materials and limited visual clutter."
+    },
+    {
+      "id": "env-12",
+      "text": "Adapted lunch setting to reduce sensory stressors."
+    },
+    {
+      "id": "env-13",
+      "text": "Adapted recess with adult-led activities to increase peer interactions."
+    },
+    {
+      "id": "env-14",
+      "text": "Recess and group activities designed with IEP goals in mind."
+    },
+    {
+      "id": "env-15",
+      "text": "Keep days and activities structured."
+    },
+    {
+      "id": "env-16",
+      "text": "Structured seating arrangements."
+    },
+    {
+      "id": "env-17",
+      "text": "Small group instruction."
+    },
+    {
+      "id": "env-18",
+      "text": "Access to resource room or learning support room."
+    }
+  ]
+}

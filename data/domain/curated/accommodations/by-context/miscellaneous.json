@@ -1,0 +1,63 @@
+{
+  "id": "acc-by-context-miscellaneous",
+  "title": "Miscellaneous Accommodations for Cognitive and Academic Deficits",
+  "description": "Cross-cutting interventions for perceived cognitive and academic deficits, including reminders, scheduling supports, motivation hooks, and recognition-based test formats. Use when the student needs general executive-function scaffolding, memory aids, or interest-based engagement that doesn't fit a single context.",
+  "applies_to": {
+    "cognitive_deficits": ["short-term-memory", "long-term-retrieval", "fluid-reasoning"],
+    "achievement_deficits": [],
+    "contexts": ["instructional-delivery", "behavior", "testing-assessment"],
+    "profiles": ["executive-function", "adhd-attention", "anxiety", "autism"]
+  },
+  "source": {
+    "name": "ADayInOurShoes — Ultimate List of IEP Accommodations, Modifications & Strategies (SDIs)",
+    "section": "Miscellaneous, interventions for perceived cognitive and academic deficits",
+    "file": "data/domain/raw/acmod-strg.txt",
+    "lines": "131-145"
+  },
+  "accommodations": [
+    {
+      "id": "misc-01",
+      "text": "Alarms as reminders — phone, wristwatch, etc."
+    },
+    {
+      "id": "misc-02",
+      "text": "AM/PM check-in with a preferred staff person."
+    },
+    {
+      "id": "misc-03",
+      "text": "Use of prompt hierarchy."
+    },
+    {
+      "id": "misc-04",
+      "text": "Incorporate the child's personal interests into activities whenever possible."
+    },
+    {
+      "id": "misc-05",
+      "text": "To-do lists."
+    },
+    {
+      "id": "misc-06",
+      "text": "Journal."
+    },
+    {
+      "id": "misc-07",
+      "text": "Show example of completed projects."
+    },
+    {
+      "id": "misc-08",
+      "text": "Picture calendar or schedule."
+    },
+    {
+      "id": "misc-09",
+      "text": "When appropriate and not distracting, guide the student through real-life situations."
+    },
+    {
+      "id": "misc-10",
+      "text": "Provide calming strategies."
+    },
+    {
+      "id": "misc-11",
+      "text": "Test format that taps 'recognition memory' — such as matching or multiple choice — rather than fill-in-the-blank without a word bank."
+    }
+  ]
+}

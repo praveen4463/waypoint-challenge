@@ -1,0 +1,113 @@
+{
+  "id": "mg-iep-work-bins",
+  "title": "IEP Work Bins Method — A Practicing Special-Ed Teacher's System",
+  "description": "Concrete classroom system for ensuring every student's IEP goals get worked on, measured, and maintained over time. Method developed and demonstrated by Brilin, a self-contained special-ed teacher (lower elementary). Use when designing the data-collection portion of a lesson plan or when the teacher asks 'how do I actually keep track of IEP progress?' This is the practitioner-grade answer.",
+  "applies_to": {
+    "cognitive_deficits": [],
+    "achievement_deficits": [],
+    "contexts": ["instructional-delivery"],
+    "profiles": []
+  },
+  "source": {
+    "name": "Brilin (special-ed teacher) — IEP work bins / data collection (YouTube transcript)",
+    "section": "Full transcript",
+    "file": "data/domain/raw/measure-goals.txt",
+    "lines": "1"
+  },
+  "method_overview": {
+    "id": "mg-overview",
+    "summary": "Combine whole-group instruction (broad grade-level skills) with small-group instruction (IEP-targeted, per-student) AND a dedicated 'IEP work bin' block per day for maintenance and data collection on previously taught objectives. Each student has one bin; bins are stocked with materials targeted at the student's current AND recently mastered IEP objectives. The teacher rotates through students during the bin block, taking maintenance data and selecting new objectives to introduce.",
+    "core_loop": [
+      "Whole-group lesson (10–15 min): broad skill, everyone together, builds classroom belonging and exposure.",
+      "Small-group lesson (rotating, ~20–30 min): students grouped by current IEP objective; teacher or paraprofessional works with one group at a time on targeted IEP work folders.",
+      "IEP work bin block (~30 min/day): each student has a personal bin; teacher pulls 1–3 students per day and works on maintenance + advancement of recently taught skills."
+    ]
+  },
+  "key_principles": [
+    {
+      "id": "mg-prin-01",
+      "name": "One objective at a time",
+      "text": "Don't try to work on every IEP benchmark simultaneously. Pick one objective per goal — the simplest/foundational one — and work on it until mastered. Then transition to the next benchmark in the IEP's sequence. This is far more effective than thin attention across all benchmarks.",
+      "implication": "When designing a lesson modification, identify ONE benchmark from the IEP that this lesson can collect data on. Don't try to hit five benchmarks at once."
+    },
+    {
+      "id": "mg-prin-02",
+      "name": "Goals should be written so each objective flows into the next",
+      "text": "Well-written IEP goals have benchmarks that build on each other in a natural sequence. The first benchmark is the simplest; mastery unlocks the next. Example: 1-to-1 correspondence → counting groups → combining manipulatives → addition with fingers.",
+      "implication": "When modifying a lesson, find where the lesson's task fits in the student's benchmark sequence. If the lesson asks for benchmark 4-level work and the student is on benchmark 2, that's the gap to scaffold across."
+    },
+    {
+      "id": "mg-prin-03",
+      "name": "Data is taken weekly, not daily",
+      "text": "Formal IEP-goal data is collected approximately once per week per goal — not every session. Sessions in between are practice/instruction; the weekly check measures retention.",
+      "implication": "A modified lesson's delivery sheet shouldn't expect the teacher to score every benchmark every time. It should highlight ONE moment in the lesson where data IS taken."
+    },
+    {
+      "id": "mg-prin-04",
+      "name": "Maintenance prevents regression",
+      "text": "Once a student masters an objective, the materials don't get thrown away. They move to the student's IEP work bin where they're revisited periodically (every 3–4 weeks) to check maintenance. Without this, students with autism, intellectual disability, or memory deficits often lose recently learned skills within a month.",
+      "implication": "Modification recommendations should distinguish 'introduction' lessons (new skill being taught) from 'maintenance' moments (recently mastered skill being revisited). The modifications differ — maintenance can be lighter, more independent, with the goal of confirming retention."
+    },
+    {
+      "id": "mg-prin-05",
+      "name": "Generalization across materials",
+      "text": "After a student masters a skill on one set of materials, swap in DIFFERENT materials targeting the same skill (different story for the same character/setting question; different number cards for the same counting objective). This forces generalization rather than memorization.",
+      "implication": "Modified lesson packets should vary surface form across days while preserving the same skill target — keeps Claude/the teacher from producing identical packets that the student memorizes."
+    },
+    {
+      "id": "mg-prin-06",
+      "name": "Pick the simplest first",
+      "text": "When a teacher inherits a student with multiple IEP benchmarks and is unsure where to start, pick the SIMPLEST first. Don't agonize over which is most important — the simplest is the foundation, and mastery builds momentum.",
+      "implication": "If the IEP has multiple benchmarks for the same goal, recommend the simplest unmastered benchmark as the primary target for the modified lesson."
+    }
+  ],
+  "worked_example_kevin_math": {
+    "id": "mg-ex-kevin",
+    "scenario": "Pretend student Kevin, 2nd grade, IEP goals around early counting (rote count to 20, identify numerals 1–20, beginning patterns, skip counting).",
+    "approach": "Start with rote counting first — the simplest skill in the sequence. The IEP work folder for Kevin contains: index cards numbered 1–5; baggie of pennies/cubes; file folder with apples-and-numbers matching task; a patterning task (blue-red-blue-red); two coloring sheets as palette cleansers.",
+    "session_structure": [
+      "Activity 1: Identify numbers 1–5 from cards, then put them in order.",
+      "Activity 2: Match number card to the right count of chips (1 chip for the 1 card, 5 chips for the 5 card).",
+      "Activity 3: Number-to-picture matching file folder (e.g., 3 apples → '3').",
+      "Pattern task as palette cleanser (blue-red pattern with cubes).",
+      "Coloring page break.",
+      "Each activity: 5 minutes work, 5-minute iPad/break trade-in."
+    ],
+    "transition": "After 4 weeks of mastery, replace counting-to-5 materials with counting-to-10, then 1–15. Old materials move to the IEP work bin for maintenance. After roughly 3 months total, transition into patterning, then skip counting.",
+    "modification_takeaway": "For Kevin, a generic 'addition' lesson would be inaccessible. The right modification surfaces ONE foundational benchmark (rote counting), supplies multiple short activities that hit it from different angles, and structures the session around very short work-then-break loops."
+  },
+  "worked_example_brilin_reading": {
+    "id": "mg-ex-brilin",
+    "scenario": "Pretend student 'Brilin', 4th grade, working on reading comprehension. Decoding is intact; comprehension is weak.",
+    "approach": "Use a familiar simple story (Hickory Dickory Doc, Little Red Hen). Each day, the student reads/reviews the same story and works on ONE comprehension benchmark — character identification, then setting, then sequencing, then main idea — one benchmark at a time.",
+    "session_structure": [
+      "Read the same familiar story at the start of each session (builds confidence and removes decoding load).",
+      "Work on ONE comprehension target via a file-folder activity (e.g., manila folder with sheet protectors and Velcro, character names on one side, story details on the other).",
+      "After mastery on the familiar story, swap in a NEW story targeting the same comprehension skill, to force generalization.",
+      "Once the new story is also mastered, move both to the maintenance bin and introduce the next benchmark."
+    ],
+    "modification_takeaway": "For a comprehension-deficit student facing a complex new text, the modification isn't 'easier text on the same skill'; it's 'this familiar text I already know, working on a single comprehension move I can attend to.' Then swap text to generalize."
+  },
+  "implications_for_lesson_modification": [
+    {
+      "id": "mg-impl-01",
+      "text": "When generating a modified lesson, the Teacher Delivery Sheet (Part B) should explicitly identify ONE IEP benchmark this lesson collects data on. Not five. One."
+    },
+    {
+      "id": "mg-impl-02",
+      "text": "The data-collection moment should be a specific activity in the lesson — usually the independent practice or short response — not a vague 'observe throughout.' Tell the teacher exactly which artifact to score, on what rubric (0–3 typical), and where to log it."
+    },
+    {
+      "id": "mg-impl-03",
+      "text": "Distinguish 'introduction' lessons (new benchmark) from 'maintenance' lessons (previously mastered benchmark being revisited). The modification approach differs."
+    },
+    {
+      "id": "mg-impl-04",
+      "text": "When the same student returns to a lesson on a different day, vary the surface materials but preserve the skill target. This forces generalization and prevents rote memorization."
+    },
+    {
+      "id": "mg-impl-05",
+      "text": "Frame data collection as 'one data point this week,' not 'every session.' Reduces teacher burnout and matches the actual cadence of IEP progress reporting."
+    }
+  ]
+}

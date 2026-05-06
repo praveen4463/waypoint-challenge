@@ -22,14 +22,12 @@ const LESSONS_DIR = join(
   "lessons",
 );
 
-// `parsed` is loosely typed here; the lesson parser will tighten it later.
-export type ParsedLesson = Record<string, unknown>;
+export type ParsedLessonShape = Record<string, unknown>;
 
 export interface LessonRecord {
   slug: string;
   title: string;
-  parsed: ParsedLesson;
-  raw_text: string;
+  parsed: ParsedLessonShape;
   uploaded_at: string;
 }
 
@@ -41,7 +39,7 @@ export interface LessonSummary {
 
 export function saveLesson(
   title: string,
-  parsed: ParsedLesson,
+  parsed: ParsedLessonShape,
   raw_text: string,
 ): LessonRecord {
   const slug = slugify(title);
@@ -52,12 +50,10 @@ export function saveLesson(
     slug,
     title,
     parsed,
-    raw_text,
     uploaded_at: new Date().toISOString(),
   };
 
-  const { raw_text: _omit, ...meta } = record;
-  writeFileSync(join(dir, "lesson.json"), JSON.stringify(meta, null, 2));
+  writeFileSync(join(dir, "lesson.json"), JSON.stringify(record, null, 2));
   writeFileSync(join(dir, "lesson.raw.txt"), raw_text);
 
   return record;
@@ -66,11 +62,15 @@ export function saveLesson(
 export function getLesson(slug: string): LessonRecord | null {
   const dir = join(LESSONS_DIR, slug);
   if (!existsSync(dir)) return null;
-  const meta = JSON.parse(
-    readFileSync(join(dir, "lesson.json"), "utf8"),
-  ) as Omit<LessonRecord, "raw_text">;
-  const raw_text = readFileSync(join(dir, "lesson.raw.txt"), "utf8");
-  return { ...meta, raw_text };
+  return JSON.parse(readFileSync(join(dir, "lesson.json"), "utf8")) as LessonRecord;
+}
+
+/** On-demand accessor for raw lesson text. Used only by tools that need
+ *  line-anchored quoting. */
+export function getLessonRawText(slug: string): string | null {
+  const file = join(LESSONS_DIR, slug, "lesson.raw.txt");
+  if (!existsSync(file)) return null;
+  return readFileSync(file, "utf8");
 }
 
 export function listLessons(): LessonSummary[] {

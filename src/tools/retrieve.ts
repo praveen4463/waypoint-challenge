@@ -32,11 +32,6 @@ If no match is found, the response is { status: "missing_data" } with a
 the missing lesson via upload_lesson.
 `.trim();
 
-function omitRawText<T extends { raw_text?: string }>(rec: T): Omit<T, "raw_text"> {
-  const { raw_text: _omit, ...rest } = rec;
-  return rest;
-}
-
 export function registerRetrieveTools(server: McpServer): void {
   server.registerTool(
     "find_student",
@@ -80,7 +75,7 @@ export function registerRetrieveTools(server: McpServer): void {
       }
       return {
         content: [
-          { type: "text", text: JSON.stringify(omitRawText(record), null, 2) },
+          { type: "text", text: JSON.stringify(record, null, 2) },
         ],
       };
     },
@@ -128,7 +123,7 @@ export function registerRetrieveTools(server: McpServer): void {
       }
       return {
         content: [
-          { type: "text", text: JSON.stringify(omitRawText(record), null, 2) },
+          { type: "text", text: JSON.stringify(record, null, 2) },
         ],
       };
     },

@@ -1,6 +1,6 @@
-// File system persistence for IEP documents (parsed + raw + diagnostics).
+// File system persistence for IEP documents.
 // Each student has a folder under file-system-db/indexed/students/<slug>/
-// holding their IEP and (Phase 2) progress data.
+// holding their IEP (parsed JSON + raw text) and (Phase 2) progress data.
 
 import {
   existsSync,
@@ -31,7 +31,6 @@ export interface IepRecord {
   slug: string;
   student_name: string;
   parsed: ParsedIepShape;
-  raw_text: string;
   uploaded_at: string;
 }
 
@@ -54,13 +53,10 @@ export function saveIep(
     slug,
     student_name,
     parsed,
-    raw_text,
     uploaded_at: new Date().toISOString(),
   };
 
-  // Persist parsed JSON without the raw text (raw lives in the .txt file).
-  const { raw_text: _omit, ...meta } = record;
-  writeFileSync(join(dir, "iep.json"), JSON.stringify(meta, null, 2));
+  writeFileSync(join(dir, "iep.json"), JSON.stringify(record, null, 2));
   writeFileSync(join(dir, "iep.raw.txt"), raw_text);
 
   return record;
@@ -69,12 +65,16 @@ export function saveIep(
 export function getIep(slug: string): IepRecord | null {
   const dir = join(STUDENTS_DIR, slug);
   if (!existsSync(dir)) return null;
-  const meta = JSON.parse(readFileSync(join(dir, "iep.json"), "utf8")) as Omit<
-    IepRecord,
-    "raw_text"
-  >;
-  const raw_text = readFileSync(join(dir, "iep.raw.txt"), "utf8");
-  return { ...meta, raw_text };
+  return JSON.parse(readFileSync(join(dir, "iep.json"), "utf8")) as IepRecord;
+}
+
+/** On-demand accessor for the raw IEP text. Used only by tools that need
+ *  line-anchored quoting. The raw text is NOT bundled into IepRecord to
+ *  keep the in-memory record (and Claude's tool responses) lean. */
+export function getIepRawText(slug: string): string | null {
+  const file = join(STUDENTS_DIR, slug, "iep.raw.txt");
+  if (!existsSync(file)) return null;
+  return readFileSync(file, "utf8");
 }
 
 export function listIeps(): IepSummary[] {

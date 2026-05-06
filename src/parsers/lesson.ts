@@ -30,6 +30,7 @@ export interface ParsedLessonMeta {
 }
 
 export interface VocabularyEntry {
+  id: string;
   word: string;
   pronunciation?: string;
 }
@@ -61,11 +62,17 @@ export interface ParsedMCQ {
   /** Best-effort structured options. May be empty if the source uses a
    *  layout we can't disentangle (e.g., "A. B. C. D." bunched markers
    *  followed by 4 text lines). Always cross-check with `options_text`. */
-  options: { letter: string; text: string }[];
+  options: MCQOption[];
   /** Always-populated raw text of the options region — source of truth. */
   options_text: string;
   start_line: number;
   end_line: number;
+}
+
+export interface MCQOption {
+  id: string; // e.g., "mcq_1_A"
+  letter: string;
+  text: string;
 }
 
 export interface ParsedShortResponse {
@@ -191,7 +198,11 @@ function extractVocabulary(lines: string[]): VocabularyEntry[] {
     // Require at least one lowercase letter in the word — filters out
     // all-caps headers that match the lexical shape of a vocab entry.
     if (!/[a-z]/.test(m[1])) break;
-    out.push({ word: m[1].trim(), pronunciation: m[2]?.trim() });
+    out.push({
+      id: `vocab-${String(out.length + 1).padStart(2, "0")}`,
+      word: m[1].trim(),
+      pronunciation: m[2]?.trim(),
+    });
     if (out.length >= 12) break;
   }
   return out;
@@ -398,18 +409,22 @@ function extractMCQs(lines: string[]): ParsedMCQ[] {
     while ((mm = markerRe.exec(region)) !== null) {
       markers.push({ letter: mm[1], pos: mm.index + mm[0].length });
     }
-    const options: { letter: string; text: string }[] = [];
+    const options: MCQOption[] = [];
     for (let mi = 0; mi < markers.length; mi++) {
       const stopAt = markers[mi + 1] ? markers[mi + 1].pos - 3 : region.length;
       const slice = region.slice(markers[mi].pos, stopAt).replace(/\s+/g, " ").trim();
       if (slice.length >= 2) {
-        options.push({ letter: markers[mi].letter, text: slice });
+        options.push({
+          id: `mcq_${number}_${markers[mi].letter}`,
+          letter: markers[mi].letter,
+          text: slice,
+        });
       }
     }
     // If we ended up with fewer than 4 distinct lettered options, prefer
     // the raw text and keep options as an empty array — clearer signal.
     const distinctLetters = new Set(options.map((o) => o.letter));
-    const finalOptions = distinctLetters.size === 4 ? options : [];
+    const finalOptions: MCQOption[] = distinctLetters.size === 4 ? options : [];
 
     mcqs.push({
       id: `mcq_${number}`,

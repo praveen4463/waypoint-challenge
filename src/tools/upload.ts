@@ -12,13 +12,31 @@ an IEP file to the conversation, pastes IEP content, or asks to begin
 working with a new student. Required before generating modifications or
 logging progress for that student.
 
+INPUT
 The 'content' parameter must be the full extracted text of the IEP
-document (Massachusetts Riverstone Prep template). When the user attaches
-a PDF, extract the text and pass it through.
+document. Pass it verbatim — do not summarize, condense, or reformat.
+Preserve original line breaks and section headers as they appear.
 
-The response includes parse diagnostics ('anchors_found' /
-'anchors_missing', 'received_chars', a head/tail sample of the received
-content) so the teacher can verify nothing was lost in extraction.
+RESPONSE — IMPORTANT
+The response contains a 'parsed' field with the canonical structured
+view of the IEP: meta, profile, concerns, present_levels (academics,
+behavioral, communication, additional_areas), accommodations
+(contexts × columns, with stable item IDs like
+'acc-timing-and-scheduling-classroom-02'), modifications (same shape),
+and goals (each with structured annual_target fields and benchmarks
+with stable IDs like 'bench-3-03').
+
+ALWAYS use 'parsed' as the source of truth for any subsequent
+reasoning, citation, or modification work. Do NOT re-derive accommodation
+text, goal benchmarks, or section content from the raw IEP text you
+extracted from the PDF — that text may have wrapping or whitespace
+artifacts that the parser has already normalized. Cite by stable IDs
+from 'parsed' (e.g., 'acc-response-classroom-01', 'bench-3-03',
+'goal-3').
+
+The response also includes 'parse_quality' (per-section field counts)
+and echo diagnostics ('anchors_found' / 'anchors_missing', head/tail
+sample) so the teacher can verify nothing was lost in extraction.
 `.trim();
 
 export function registerUploadTools(server: McpServer): void {
@@ -78,6 +96,75 @@ export function registerUploadTools(server: McpServer): void {
         content,
       );
 
+      // Parse-quality summary — lets a reviewer spot incomplete extraction
+      // without inspecting the saved file.
+      const presentLevelsSummary = Object.fromEntries(
+        Object.entries(parsed.present_levels).map(([k, v]) => [
+          k,
+          v
+            ? {
+                current_performance_chars: v.current_performance.length,
+                strengths_chars: v.strengths.length,
+                impact_chars: v.impact_of_disability.length,
+              }
+            : null,
+        ]),
+      );
+
+      const accommodationsSummary = parsed.accommodations
+        ? {
+            contexts: Object.fromEntries(
+              Object.entries(parsed.accommodations.contexts).map(([name, ctx]) => [
+                name,
+                {
+                  presentation_of_instruction: ctx.presentation_of_instruction.length,
+                  response: ctx.response.length,
+                  timing_and_scheduling: ctx.timing_and_scheduling.length,
+                  setting_and_environment: ctx.setting_and_environment.length,
+                  total:
+                    ctx.presentation_of_instruction.length +
+                    ctx.response.length +
+                    ctx.timing_and_scheduling.length +
+                    ctx.setting_and_environment.length,
+                },
+              ]),
+            ),
+          }
+        : null;
+
+      const modificationsSummary = parsed.modifications
+        ? {
+            contexts: Object.fromEntries(
+              Object.entries(parsed.modifications.contexts).map(([name, ctx]) => [
+                name,
+                {
+                  content: ctx.content.length,
+                  instruction: ctx.instruction.length,
+                  student_output: ctx.student_output.length,
+                  total:
+                    ctx.content.length + ctx.instruction.length + ctx.student_output.length,
+                },
+              ]),
+            ),
+          }
+        : null;
+
+      const goalsSummary = parsed.goals.map((g) => ({
+        id: g.id,
+        area: g.area,
+        baseline_chars: g.baseline.length,
+        annual_target_fields_present: {
+          target: !!g.annual_target.target,
+          criteria: !!g.annual_target.criteria,
+          method: !!g.annual_target.method,
+          schedule: !!g.annual_target.schedule,
+          person_responsible: !!g.annual_target.person_responsible,
+        },
+        benchmark_count: g.benchmarks.length,
+        progress_reporting_present: !!g.progress_reporting,
+        full_lines: g.full_lines,
+      }));
+
       return {
         content: [
           {
@@ -87,18 +174,18 @@ export function registerUploadTools(server: McpServer): void {
                 status: "ok",
                 student_slug: stored.slug,
                 student_name: stored.student_name,
-                meta: parsed.meta,
-                profile: parsed.profile,
-                counts: {
-                  goals: parsed.goals.length,
-                  sections_present: Object.values(parsed.sections).filter(Boolean).length,
-                  present_levels_present: Object.values(parsed.present_levels).filter(Boolean).length,
+                uploaded_at: stored.uploaded_at,
+                // 'parsed' is the canonical structured view. Use this for
+                // all downstream reasoning — do NOT fall back to the raw
+                // IEP text passed in 'content'.
+                parsed,
+                parse_quality: {
+                  concerns_captured: !!parsed.concerns,
+                  present_levels: presentLevelsSummary,
+                  accommodations: accommodationsSummary,
+                  modifications: modificationsSummary,
+                  goals: goalsSummary,
                 },
-                goals: parsed.goals.map((g) => ({
-                  id: g.id,
-                  area: g.area,
-                  full_lines: g.full_lines,
-                })),
                 ...echo,
               },
               null,
@@ -119,16 +206,31 @@ Stores a lesson plan in Waypoint's registry. Call this whenever the user
 attaches a lesson file to the conversation or pastes lesson content.
 Required before generating modifications for the lesson.
 
-The 'content' parameter must be the full extracted text of the lesson
-(Riverstone Prep ELA "Community and Belonging" curriculum format). When
-the user attaches a PDF, extract the text and pass it through.
+INPUT
+The 'content' parameter must be the full extracted text of the lesson.
+Pass it verbatim — do not summarize, condense, or reformat. Preserve
+original line breaks, paragraph markers like [N], and section headers
+as they appear.
 
-Pass the document content verbatim — do not summarize, condense, or
-reformat. Preserve original line breaks, paragraph markers like [N], and
-section headers as they appear.
+RESPONSE — IMPORTANT
+The response contains a 'parsed' field with the canonical structured
+view: meta (title, skill_standard, author), vocabulary, paragraphs
+(with stable IDs like 'p1'), DRQs (with stable IDs like 'drq_p1_2_a',
+modality, optional flag), MCQs (with stable IDs like 'mcq_1', standard
+tag, options + options_text), short_response, discussion_questions
+(with stable IDs like 'discussion_q1').
 
-The response includes parse diagnostics (anchors_found / anchors_missing,
-received_chars, a head/tail sample) so the teacher can verify extraction.
+ALWAYS use 'parsed' as the source of truth for any subsequent
+reasoning, citation, or modification work. Do NOT re-derive paragraph
+text, DRQ prompts, MCQ options, or discussion questions from the raw
+lesson text you extracted from the PDF — that text may have wrapping
+or whitespace artifacts that the parser has already normalized. Cite
+by stable IDs from 'parsed' (e.g., 'drq_p1_2_a', 'mcq_3',
+'short_response_1', 'p4').
+
+The response also includes echo diagnostics ('anchors_found' /
+'anchors_missing', head/tail sample) so the teacher can verify
+extraction.
       `.trim(),
       inputSchema: {
         content: z
@@ -189,46 +291,22 @@ received_chars, a head/tail sample) so the teacher can verify extraction.
                 status: "ok",
                 lesson_slug: stored.slug,
                 lesson_title: stored.title,
-                meta: parsed.meta,
-                counts: {
+                uploaded_at: stored.uploaded_at,
+                // 'parsed' is the canonical structured view. Use this for
+                // all downstream reasoning — do NOT fall back to the raw
+                // lesson text passed in 'content'.
+                parsed,
+                parse_quality: {
                   vocabulary: parsed.vocabulary.length,
                   paragraphs: parsed.paragraphs.length,
                   drqs: parsed.drqs.length,
-                  mcqs: parsed.mcqs.length,
+                  mcqs_with_structured_options: parsed.mcqs.filter(
+                    (m) => m.options.length === 4,
+                  ).length,
+                  mcqs_total: parsed.mcqs.length,
                   short_response: parsed.short_response ? 1 : 0,
                   discussion_questions: parsed.discussion_questions.length,
                 },
-                paragraphs: parsed.paragraphs.map((p) => ({
-                  id: p.id,
-                  number: p.number,
-                  start_line: p.start_line,
-                  end_line: p.end_line,
-                  preview: p.text.slice(0, 80),
-                })),
-                drqs: parsed.drqs.map((d) => ({
-                  id: d.id,
-                  paragraph_range: d.paragraph_range,
-                  modality: d.modality,
-                  optional: d.optional,
-                  preview: d.prompt.slice(0, 80),
-                })),
-                mcqs: parsed.mcqs.map((m) => ({
-                  id: m.id,
-                  standard: m.standard,
-                  options_structured_count: m.options.length,
-                  preview: m.prompt.slice(0, 80),
-                })),
-                short_response: parsed.short_response
-                  ? {
-                      id: parsed.short_response.id,
-                      standard: parsed.short_response.standard,
-                      preview: parsed.short_response.prompt.slice(0, 100),
-                    }
-                  : null,
-                discussion_questions: parsed.discussion_questions.map((q) => ({
-                  id: q.id,
-                  preview: q.prompt.slice(0, 80),
-                })),
                 ...echo,
               },
               null,

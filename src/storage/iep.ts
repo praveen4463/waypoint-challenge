@@ -1,3 +1,7 @@
+// File system persistence for IEP documents (parsed + raw + diagnostics).
+// Each student has a folder under file-system-db/indexed/students/<slug>/
+// holding their IEP and (Phase 2) progress data.
+
 import {
   existsSync,
   mkdirSync,
@@ -8,7 +12,7 @@ import {
 } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { personNameToSlug, slugify } from "./slugify.js";
+import { slugify } from "./slugify.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const STUDENTS_DIR = join(
@@ -20,35 +24,35 @@ const STUDENTS_DIR = join(
   "students",
 );
 
-// `parsed` is loosely typed here; the IEP parser will tighten it later.
-export type ParsedIep = Record<string, unknown>;
+// `parsed` is loosely typed here; the IEP parser provides the real shape.
+export type ParsedIepShape = Record<string, unknown>;
 
-export interface StudentRecord {
+export interface IepRecord {
   slug: string;
-  name: string;
-  parsed: ParsedIep;
+  student_name: string;
+  parsed: ParsedIepShape;
   raw_text: string;
   uploaded_at: string;
 }
 
-export interface StudentSummary {
+export interface IepSummary {
   slug: string;
-  name: string;
+  student_name: string;
   uploaded_at: string;
 }
 
-export function saveStudent(
-  name: string,
-  parsed: ParsedIep,
+export function saveIep(
+  student_name: string,
+  parsed: ParsedIepShape,
   raw_text: string,
-): StudentRecord {
-  const slug = personNameToSlug(name);
+): IepRecord {
+  const slug = slugify(student_name);
   const dir = join(STUDENTS_DIR, slug);
   mkdirSync(dir, { recursive: true });
 
-  const record: StudentRecord = {
+  const record: IepRecord = {
     slug,
-    name,
+    student_name,
     parsed,
     raw_text,
     uploaded_at: new Date().toISOString(),
@@ -62,17 +66,18 @@ export function saveStudent(
   return record;
 }
 
-export function getStudent(slug: string): StudentRecord | null {
+export function getIep(slug: string): IepRecord | null {
   const dir = join(STUDENTS_DIR, slug);
   if (!existsSync(dir)) return null;
-  const meta = JSON.parse(
-    readFileSync(join(dir, "iep.json"), "utf8"),
-  ) as Omit<StudentRecord, "raw_text">;
+  const meta = JSON.parse(readFileSync(join(dir, "iep.json"), "utf8")) as Omit<
+    IepRecord,
+    "raw_text"
+  >;
   const raw_text = readFileSync(join(dir, "iep.raw.txt"), "utf8");
   return { ...meta, raw_text };
 }
 
-export function listStudents(): StudentSummary[] {
+export function listIeps(): IepSummary[] {
   if (!existsSync(STUDENTS_DIR)) return [];
   return readdirSync(STUDENTS_DIR)
     .filter((entry) => {
@@ -82,22 +87,26 @@ export function listStudents(): StudentSummary[] {
     .map((slug) => {
       const meta = JSON.parse(
         readFileSync(join(STUDENTS_DIR, slug, "iep.json"), "utf8"),
-      ) as { slug: string; name: string; uploaded_at: string };
-      return { slug: meta.slug, name: meta.name, uploaded_at: meta.uploaded_at };
+      ) as { slug: string; student_name: string; uploaded_at: string };
+      return {
+        slug: meta.slug,
+        student_name: meta.student_name,
+        uploaded_at: meta.uploaded_at,
+      };
     });
 }
 
 /**
  * Resolve a free-text hint (e.g., a project name like "Jasmine Bailey",
- * or just "jasmine") to a stored student. Returns the full record or null.
+ * or just "jasmine") to a stored IEP. Returns the full record or null.
  *
  * Matching strategy, most-specific to least:
  *   1. Exact slug match.
  *   2. Substring containment in either direction.
  *   3. Any word overlap.
  */
-export function findStudentByHint(hint: string): StudentRecord | null {
-  const all = listStudents();
+export function findIepByStudent(hint: string): IepRecord | null {
+  const all = listIeps();
   if (all.length === 0) return null;
 
   const hintSlug = slugify(hint);
@@ -119,5 +128,5 @@ export function findStudentByHint(hint: string): StudentRecord | null {
     });
   }
 
-  return match ? getStudent(match.slug) : null;
+  return match ? getIep(match.slug) : null;
 }

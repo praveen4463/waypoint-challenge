@@ -1,3 +1,5 @@
+// File system persistence for lessons.
+
 import {
   existsSync,
   mkdirSync,
@@ -82,13 +84,16 @@ export function listLessons(): LessonSummary[] {
       const meta = JSON.parse(
         readFileSync(join(LESSONS_DIR, slug, "lesson.json"), "utf8"),
       ) as { slug: string; title: string; uploaded_at: string };
-      return { slug: meta.slug, title: meta.title, uploaded_at: meta.uploaded_at };
+      return {
+        slug: meta.slug,
+        title: meta.title,
+        uploaded_at: meta.uploaded_at,
+      };
     });
 }
 
 /**
- * Resolve a free-text hint to a stored lesson. Same matching strategy as
- * findStudentByHint: exact slug → containment → word overlap.
+ * Resolve a free-text hint to a stored lesson.
  */
 export function findLessonByHint(hint: string): LessonRecord | null {
   const all = listLessons();

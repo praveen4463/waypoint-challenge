@@ -1,8 +1,11 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { loadInstructions } from "./instructions.js";
+import { registerUploadTools } from "./tools/upload.js";
+import { registerStrategyTools } from "./tools/strategies.js";
+import { registerRetrieveTools } from "./tools/retrieve.js";
 
 export function createServer(): McpServer {
-  return new McpServer(
+  const server = new McpServer(
     {
       name: "waypoint",
       version: "0.1.0",
@@ -14,4 +17,10 @@ export function createServer(): McpServer {
       },
     },
   );
+
+  registerUploadTools(server);
+  registerRetrieveTools(server);
+  registerStrategyTools(server);
+
+  return server;
 }

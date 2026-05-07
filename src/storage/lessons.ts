@@ -8,19 +8,9 @@ import {
   statSync,
   writeFileSync,
 } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
+import { LESSONS_DIR } from "../paths.js";
 import { slugify } from "./slugify.js";
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const LESSONS_DIR = join(
-  __dirname,
-  "..",
-  "..",
-  "file-system-db",
-  "indexed",
-  "lessons",
-);
 
 export type ParsedLessonShape = Record<string, unknown>;
 

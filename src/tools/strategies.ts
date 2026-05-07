@@ -35,9 +35,9 @@ Tag vocabulary (canonical strings — must use exactly these):
   dyslexia, autism
 
 Pass 'tags' as a flat array drawn from any of the four categories. Each
-returned file includes its source citation — use 'source.name' plus
-individual item IDs (e.g., 'rc-acc-03', 'tech-sq4r') when citing
-strategies in modification output.
+returned file includes its source citation and individual item IDs.
+Output-format and citation rules for the modification are returned
+separately in the 'rules' field of the response.
 `.trim();
 
 export function registerStrategyTools(server: McpServer): void {

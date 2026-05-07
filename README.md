@@ -201,9 +201,7 @@ data/
   domain/               # domain knowledge data that helps find strategies and tools per the IEP
     raw/                # source materials used to generate the curated data
     curated/
-      role/server-instructions.md   # MCP instructions content. Same instructions copied to tool output
-                                    # as claude desktop doesn't respect server instructions every time
-                                    # https://blog.modelcontextprotocol.io/posts/2025-11-03-using-server-instructions/a-note-on-implementation-variability
+      role/server-instructions.md   # MCP instructions content
       accommodations/, modifications/, measuring-goals/
 file-system-db/
   indexed/students/<slug>/iep.json

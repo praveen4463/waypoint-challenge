@@ -3,12 +3,8 @@
 // indexes — kept separately from content files.
 
 import { readdirSync, readFileSync, statSync } from "node:fs";
-import { dirname, join, relative } from "node:path";
-import { fileURLToPath } from "node:url";
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const CURATED_DIR = join(__dirname, "..", "..", "data", "domain", "curated");
-const ROOT_CATALOG_PATH = join(CURATED_DIR, "catalog.json");
+import { join, relative } from "node:path";
+import { CURATED_DIR, ROOT_CATALOG } from "../paths.js";
 
 export interface AppliesTo {
   cognitive_deficits?: string[];
@@ -64,5 +60,5 @@ export function loadCuratedLibrary(): LoadedCuratedFile[] {
 }
 
 export function getRootCatalog(): unknown {
-  return JSON.parse(readFileSync(ROOT_CATALOG_PATH, "utf8"));
+  return JSON.parse(readFileSync(ROOT_CATALOG, "utf8"));
 }

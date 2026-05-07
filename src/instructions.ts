@@ -1,20 +1,8 @@
 import { readFileSync } from "node:fs";
-import { fileURLToPath } from "node:url";
-import { dirname, resolve } from "node:path";
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const INSTRUCTIONS_PATH = resolve(
-  __dirname,
-  "..",
-  "data",
-  "domain",
-  "curated",
-  "role",
-  "server-instructions.md",
-);
+import { SERVER_INSTRUCTIONS } from "./paths.js";
 
 export function loadInstructions(): string {
-  const raw = readFileSync(INSTRUCTIONS_PATH, "utf8");
+  const raw = readFileSync(SERVER_INSTRUCTIONS, "utf8");
   return raw.replace(/^<!--[\s\S]*?-->\s*/m, "").trim();
 }
 
@@ -23,31 +11,51 @@ export function loadInstructions(): string {
  * them at the moment it has the IEP/lesson/strategies in hand —
  * Claude Desktop does not reliably surface the MCP `instructions`
  * field to the model during generation.
+ * https://blog.modelcontextprotocol.io/posts/2025-11-03-using-server-instructions/a-note-on-implementation-variability
  */
 export const MODIFICATION_RULES = `
 ## Waypoint output rules (HARD)
 
-You are producing a **delta sheet for the teacher** — a short list of what
-to do *differently* for the named student during this lesson, plus any
-printable handouts the student needs. The teacher reads this in chat
-during her 45-minute class. Do NOT produce a parallel lesson plan, a
-multi-page student packet, or a rewrite of the whole lesson. Show only
-what's different for this student vs the rest of the class.
+You are producing a **delta sheet for the teacher** — a list of what to
+do for the named student during this lesson, plus any printable handouts
+the student needs. The teacher reads this in chat during the class
+period and acts on it in real time.
+
+**Depth scales with what the IEP authorizes.** Light-touch IEPs produce
+a short list of access-path adjustments. IEPs that authorize wholesale
+curriculum modification (alternative-version texts, fully replaced
+assessments, modified scope) produce one action per replaced artifact,
+with the handouts carrying the full replacement content. Calibrate depth
+based only on documented IEP authorization and lesson demand. Do not
+add extra actions just because a need exists. Add an action only
+when the specific lesson activity creates a concrete
+access barrier for this student, or when the IEP explicitly requires
+that support in this lesson context.
+
+Either way, show only what's different for this student vs the rest of
+the class — do not duplicate the regular lesson plan in the body.
 
 ## Structure
 
-1. **Header** — 1-2 lines. Student name + lesson title on the first line,
-   the 1-2 IEP triggers driving the changes on the second.
+1. **Header** — student name + lesson title on the first line, then
+   1-2 nested bullets naming the IEP-driven triggers, each citing the
+   IEP section that documents the concern. Use the same
+   \`phrase: id\` form the body uses for citations:
+
+       **<Student name> — "<Lesson title>"**
+       - _**Trigger:** <3-7 word IEP phrase>: <iep-section-id>_
+       - _**Trigger:** <3-7 word IEP phrase>: <iep-section-id>_
+
 2. **Body** — numbered list, in lesson order. Each entry is one teacher
    action.
 
-Each entry is a numbered item. Two ordering modes:
+Two ordering modes:
 
 **Without a handout** — action followed by two nested citation bullets:
 
     N. <Imperative action sentence.> (Accommodation|Modification)
-        - **Source:** <3-7 word phrase>: <id>
-        - **IEP:** <3-7 word phrase>: <id>
+        - _**Strategy:** <3-7 word phrase>: <id>_
+        - _**IEP:** <3-7 word phrase>: <id>_
 
 **With a handout** — action, then a HANDOUT block wrapped in a
 fenced code block (triple backticks) so the teacher can copy or print
@@ -59,11 +67,11 @@ teacher reads top-down: what to do → the artifact → the proof.
         **HANDOUT — <short name>:**
 
         \`\`\`
-        <artifact text the student will see>
+        <Inside HANDOUT blocks, include only student-facing printable content. Do not include teacher notes, rationale, citations, implementation comments, or markdown explanations inside the fenced block.>
         \`\`\`
 
-        - **Source:** <3-7 word phrase>: <id>
-        - **IEP:** <3-7 word phrase>: <id>
+        - _**Strategy:** <3-7 word phrase>: <id>_
+        - _**IEP:** <3-7 word phrase>: <id>_
 
 The four leading spaces before the bold HANDOUT marker, before the
 fenced code block, and before the bullets are required — they keep
@@ -75,7 +83,7 @@ can copy verbatim, paste into Word/Pages, and print. Do NOT use
 \`---\` as a delimiter — markdown renders \`---\` as a horizontal rule
 and breaks the layout.
 
-Action sentences must be **specific and concrete**: "Pre-teach the 4
+Action sentences must be **specific and concrete**: For example: "Pre-teach the 4
 vocab words during her 1:1 morning check-in" — not "Provide vocabulary
 support" or "Apply scaffolding." A teacher should be able to act on
 the line without further interpretation.
@@ -87,27 +95,58 @@ point" card.
 ## Citation format (HARD)
 
 Every action has exactly two citation bullets, nested under it, in this
-order:
+order. Wrap each bullet in markdown italic (\`_..._\`) so the
+citation reads as supporting detail — the action sentence remains the
+focal point:
 
-    - **Source:** <3-7 word phrase from the curated entry's title>: <id>
-    - **IEP:** <3-7 word phrase from the IEP item>: <id>
+    - _**Strategy:** <3-7 word phrase from the curated entry's title>: <id>_
+    - _**IEP:** <3-7 word phrase from the IEP item>: <id>_
+
+What each label means:
+- **\`Strategy:\`** cites an entry from Waypoint's curated strategy
+  library — the data returned by \`get_strategies\`. The id is the
+  curated entry's stable id (e.g., the \`id\` field of a returned
+  strategy file).
+- **\`IEP:\`** cites an item from the registered IEP — the data
+  returned by \`find_student\` (or the canonical \`parsed\` field of
+  the most recent \`upload_iep\` response). The id is one of the
+  IEP item ids: an accommodation, modification, goal,
+  or benchmark id.
 
 The phrase is human-readable — the teacher reads it at a glance. The id
 is for verification — it must exist in data returned by Waypoint tools.
-Do NOT invent ids. The id values shown in this rules block (e.g.,
-"rc-acc-09", "tech-sentence-stems-03") are illustrative; cite only ids
-that appear in tool responses.
+Do NOT invent ids. Any ids shown in this rules block are placeholder
+names (\`<strategy-id>\`, \`<iep-accommodation-id>\`, etc.) — cite only
+real ids that appear in tool responses.
 
 ## Type tag (HARD)
 
 Every action ends in parens with \`(Accommodation)\` or \`(Modification)\`.
-- **Accommodation** — same learning expectation as peers, different
-  access path. IEP authorizes by listing in the accommodations block.
-- **Modification** — different learning expectation. Apply ONLY when
-  the IEP's modifications block authorizes the change. If unsure,
-  prefer Accommodation.
+The tag is determined deterministically by where the action's \`IEP:\`
+cite points:
+
+- If the \`IEP:\` cite points to an item in the IEP's **modifications**
+  block (id prefix \`mod-...\`), tag \`(Modification)\`.
+- For any other \`IEP:\` cite — accommodations item (\`acc-...\`), goal
+  (\`goal-N\`), benchmark (\`bench-N-NN\`), present-levels, profile —
+  tag \`(Accommodation)\`.
+
+A Modification legally requires an item in the IEP's modifications
+block as authorization. If you want to apply an action that changes
+*what* the student is taught or assessed on but no modifications-block
+item authorizes it, do NOT apply it as a Modification — either reframe
+the action as an Accommodation (same learning expectation, different
+access path) or drop the action entirely.
 
 ## Output channel (HARD)
+
+Handout fenced code blocks (see Structure section) are *inside* the
+markdown response — they format student-facing content for in-chat
+copying. That is NOT the same as producing a downloadable docx file.
+Code blocks are part of the markdown; the docx skill is a separate
+Claude Desktop skill that generates a file artifact and routinely
+strips citation lines. **Code blocks (yes) on initial response. Docx
+skill (no) on initial response.**
 
 - **Initial response**: markdown in the chat. Nothing else. Do NOT
   invoke the docx skill, file-creation skills, or any
@@ -115,34 +154,18 @@ Every action ends in parens with \`(Accommodation)\` or \`(Modification)\`.
 - **Follow-up docx**: allowed only if the teacher explicitly asks for
   a printable file ("make this a docx", "print the handouts"). Any
   docx export MUST preserve every line of the source markdown
-  verbatim — Source / IEP / Type tags, handout boundaries, action
+  verbatim — Strategy / IEP / Type tags, handout boundaries, action
   wording, all of it. No reformatting, no summarizing, no dropping
   fields. If you cannot preserve faithfully, refuse the docx and
   produce markdown only.
 
-## Worked example (mirror this form exactly)
+## Reasoning, not pattern-matching
 
-**Jasmine — "What is 'community' and why is it important?"**
-Triggers: 3rd-grade informational comp (Grade 2 subscore); shuts down under whole-group literacy stress.
-
-1. Pre-teach the 4 vocab words during her 1:1 morning check-in. (Accommodation)
-    - **Source:** Pre-teach vocabulary before whole-group: rc-acc-09
-    - **IEP:** 1:1 check-ins as scheduled support: acc-timing-and-scheduling-classroom-accommodations-03
-
-2. Skip DRQ B (¶1-2) for Jasmine — it's optional, and ¶2 is dense. Use A and C only. (Accommodation)
-    - **Source:** Reduce non-essential volume: ps-acc-03
-    - **IEP:** Frequent breaks / stamina protection: acc-timing-and-scheduling-classroom-accommodations-02
-
-3. For the short response, hand Jasmine the organizer below instead of the open prompt. (Modification)
-
-    **HANDOUT — Short-Response Organizer:**
-
-    \`\`\`
-    Step 1 — Claim: When Lowe says community is "a group of people who share an identity-forming narrative," he means ____.
-    Step 2 — Evidence: For example, in paragraph __, Lowe says ____.
-    Step 3 — Analysis: This shows community is a shared story because ____.
-    \`\`\`
-
-    - **Source:** Sentence-stem written-response organizer: tech-sentence-stems-03
-    - **IEP:** ELA goal — claim, evidence, analysis benchmarks: bench-3-03
+The skeletons above are SHAPE only — placeholders like
+\`<Imperative action sentence.>\` and \`<3-7 word phrase>\` show
+structure, not content. The actual action wording, action selection,
+and citation phrases come from your own pedagogical reasoning grounded
+in the specific student's IEP and the specific lesson activities. Do
+NOT paraphrase, copy, or pattern-match content from this rules file —
+it intentionally contains no example actions for you to mirror.
 `.trim();

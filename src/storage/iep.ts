@@ -10,19 +10,9 @@ import {
   statSync,
   writeFileSync,
 } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
+import { STUDENTS_DIR } from "../paths.js";
 import { slugify } from "./slugify.js";
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const STUDENTS_DIR = join(
-  __dirname,
-  "..",
-  "..",
-  "file-system-db",
-  "indexed",
-  "students",
-);
 
 // `parsed` is loosely typed at this layer; the real type is ParsedIep
 // from src/types/iep.ts. We store unknown to keep the storage module

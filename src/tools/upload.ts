@@ -15,8 +15,9 @@ for that student.
 
 WHAT TO DO
 Read the attached IEP PDF (or pasted IEP text). Extract its content into
-the structured 'parsed' fields below. The schema mirrors the
-Massachusetts Riverstone Prep IEP template.
+the structured 'parsed' fields below. The schema covers the standard
+IEP sections — meta, concerns, present levels, profile, accommodations,
+modifications, and goals.
 
 EXTRACTION RULES
 - Preserve text VERBATIM from the IEP — do not summarize, condense, or

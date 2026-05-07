@@ -2,18 +2,20 @@ import { z } from "zod";
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { getRootCatalog } from "../domain/catalog.js";
 import { getStrategies } from "../domain/strategies.js";
-import { partitionTags, TAG_VOCABULARY } from "../domain/tags.js";
+import { formatTagVocabulary, partitionTags } from "../domain/tags.js";
 import { MODIFICATION_RULES } from "../instructions.js";
 
 const LIST_CATALOG_DESCRIPTION = `
 Returns the root catalog of Waypoint's curated domain library: all
 sections (accommodations by context / by profile / by cognitive deficit
-/ by achievement deficit, modifications, measuring-goals) plus the
-canonical tag vocabulary.
+/ by achievement deficit, modifications, measuring-goals).
 
-Read this first when you don't know which tags to use. Then call
+Read this first when you don't know which sections exist. Then call
 get_strategies with the tags you've selected based on the student's IEP
 present-levels and the lesson activity.
+
+Tag vocabulary (canonical strings — must use exactly these):
+${formatTagVocabulary()}
 `.trim();
 
 const GET_STRATEGIES_DESCRIPTION = `
@@ -23,16 +25,7 @@ any tag you request. Use to ground modifications in the student's IEP
 profile and the lesson activity.
 
 Tag vocabulary (canonical strings — must use exactly these):
-- cognitive_deficits: long-term-retrieval, short-term-memory,
-  processing-speed, auditory-processing, phonemic-awareness,
-  visual-spatial, comprehension-knowledge, fluid-reasoning
-- achievement_deficits: basic-reading, reading-comprehension, spelling,
-  basic-math, math-reasoning, penmanship, written-expression
-- contexts: environment, transitions, tools-equipment,
-  language-communication, peer-social, sensory, behavior,
-  testing-assessment, instructional-delivery
-- profiles: anxiety, executive-function, nvld, adhd-attention,
-  dyslexia, autism
+${formatTagVocabulary()}
 
 Pass 'tags' as a flat array drawn from any of the four categories. Each
 returned file includes its source citation and individual item IDs.
@@ -89,7 +82,6 @@ export function registerStrategyTools(server: McpServer): void {
               {
                 tags_requested: tags,
                 tags_unknown: unknown,
-                tag_vocabulary: TAG_VOCABULARY,
                 total_matches: allMatches.length,
                 returned: returned.length,
                 files: returned,

@@ -1,13 +1,13 @@
 <!--
-This file is the content of the MCP server's `instructions` field.
-The server reads it at startup and passes the body (everything below the
-metadata block) into the protocol's instructions slot.
+MCP server's instructions field.
+The server reads it at startup and uses as protocol's instruction slot
 
 Note: Claude Desktop does not reliably surface this content to the model
 during generation, so the modification output rules live in
 `MODIFICATION_RULES` (src/instructions.ts) and are embedded in every
 relevant tool response. This file is kept tight: identity + grounding +
 workflow only.
+https://blog.modelcontextprotocol.io/posts/2025-11-03-using-server-instructions/a-note-on-implementation-variability
 -->
 
 You are helping a teacher modify a lesson for a student with an Individualized Education Program (IEP). The user is a general-education or special-education teacher.

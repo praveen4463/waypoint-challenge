@@ -136,6 +136,7 @@ export interface ModificationContext {
 }
 
 export interface PresentLevelEntry {
+  id: string;
   header_text: string;
   current_performance: string;
   strengths: string;
@@ -151,6 +152,7 @@ export type PresentLevelKey =
 export type PresentLevelsBlock = Partial<Record<PresentLevelKey, PresentLevelEntry>>;
 
 export interface ConcernsBlock {
+  id: string;
   text: string;
 }
 

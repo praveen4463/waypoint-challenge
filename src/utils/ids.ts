@@ -52,8 +52,23 @@ export function stampIepIds(input: ParsedIepInput): ParsedIep {
   const seen = new Set<string>();
   return {
     meta: input.meta,
-    concerns: input.concerns,
-    present_levels: input.present_levels,
+    concerns: input.concerns
+      ? { id: uniqueId("concerns", seen), text: input.concerns.text }
+      : undefined,
+    present_levels: {
+      academics: input.present_levels.academics
+        ? { id: uniqueId("pl-academics", seen), ...input.present_levels.academics }
+        : undefined,
+      behavioral: input.present_levels.behavioral
+        ? { id: uniqueId("pl-behavioral", seen), ...input.present_levels.behavioral }
+        : undefined,
+      communication: input.present_levels.communication
+        ? { id: uniqueId("pl-communication", seen), ...input.present_levels.communication }
+        : undefined,
+      additional_areas: input.present_levels.additional_areas
+        ? { id: uniqueId("pl-additional-areas", seen), ...input.present_levels.additional_areas }
+        : undefined,
+    },
     profile: input.profile,
     accommodations: input.accommodations
       ? stampAccommodationContexts(input.accommodations, seen)

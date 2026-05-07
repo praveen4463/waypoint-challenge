@@ -1,5 +1,4 @@
-// Canonical tag vocabulary for the curated domain library. Mirrors the
-// tag_vocabulary block in data/domain/curated/catalog.json — keep in sync.
+// Canonical tag vocabulary for the curated domain library
 
 export const TAG_VOCABULARY = {
   cognitive_deficits: [
@@ -32,7 +31,14 @@ export const TAG_VOCABULARY = {
     "testing-assessment",
     "instructional-delivery",
   ],
-  profiles: ["anxiety", "executive-function", "nvld", "adhd-attention", "dyslexia", "autism"],
+  profiles: [
+    "anxiety",
+    "executive-function",
+    "nvld",
+    "adhd-attention",
+    "dyslexia",
+    "autism",
+  ],
 } as const;
 
 export type TagCategory = keyof typeof TAG_VOCABULARY;
@@ -52,4 +58,10 @@ export function partitionTags(tags: string[]): {
     else unknown.push(t);
   }
   return { valid, unknown };
+}
+
+export function formatTagVocabulary(): string {
+  return Object.entries(TAG_VOCABULARY)
+    .map(([category, tags]) => `- ${category}: ${tags.join(", ")}`)
+    .join("\n");
 }

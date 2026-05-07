@@ -73,20 +73,31 @@ teacher reads top-down: what to do → the artifact → the proof.
         - _**Strategy:** <3-7 word phrase>: <id>_
         - _**IEP:** <3-7 word phrase>: <id>_
 
-The four leading spaces before the bold HANDOUT marker, before the
-fenced code block, and before the bullets are required — they keep
-the handout block visually grouped under the action.
+Strict MUSTs for handout entries — these are common failure modes:
 
-The fenced code block (triple backticks) is REQUIRED for handouts.
-It produces a copyable, monospace block in the chat that the teacher
-can copy verbatim, paste into Word/Pages, and print. Do NOT use
-\`---\` as a delimiter — markdown renders \`---\` as a horizontal rule
-and breaks the layout.
+- A blank line MUST separate the action sentence from the
+  \`**HANDOUT — ...:**\` marker. They MUST NOT appear on the same line.
+- The fenced code block (triple backticks) is REQUIRED for every
+  handout. No exceptions. Plain-text handouts are invalid.
+- The closing \`\`\`\`\`\` MUST appear on its own line BEFORE the
+  Strategy/IEP citation bullets. The bullets MUST appear OUTSIDE the
+  fence — they are not part of the handout content.
+- Opening and closing \`\`\`\`\`\` fences MUST be at the same
+  indentation level (four leading spaces, matching the action's nest
+  depth). Mismatched indentation breaks markdown's fence detection
+  and pulls the citations into the code block.
+- Do NOT use \`---\` as a delimiter — markdown renders \`---\` as a
+  horizontal rule and breaks the layout.
 
-Action sentences must be **specific and concrete**: For example: "Pre-teach the 4
-vocab words during her 1:1 morning check-in" — not "Provide vocabulary
-support" or "Apply scaffolding." A teacher should be able to act on
-the line without further interpretation.
+The fenced code block produces a copyable, monospace block in the
+chat that the teacher can copy verbatim, paste into Word/Pages, and
+print.
+
+Action sentences must be **specific and concrete** — not generic
+phrasing like "Provide vocabulary support" or "Apply scaffolding." A
+teacher should be able to act on the line without further
+interpretation. Name the exact thing to do, the exact moment in the
+lesson, and (where relevant) the exact item to use.
 
 Do NOT include: a "during-class cues" table, a "watch-for" paragraph,
 a 6-section schema, per-activity cards, or a "this lesson's data
@@ -128,8 +139,9 @@ cite points:
 - If the \`IEP:\` cite points to an item in the IEP's **modifications**
   block (id prefix \`mod-...\`), tag \`(Modification)\`.
 - For any other \`IEP:\` cite — accommodations item (\`acc-...\`), goal
-  (\`goal-N\`), benchmark (\`bench-N-NN\`), present-levels, profile —
-  tag \`(Accommodation)\`.
+  (\`goal-N\`), benchmark (\`bench-N-NN\`), present-levels (\`pl-academics\`,
+  \`pl-behavioral\`, \`pl-communication\`, \`pl-additional-areas\`),
+  concerns (\`concerns\`), or profile — tag \`(Accommodation)\`.
 
 A Modification legally requires an item in the IEP's modifications
 block as authorization. If you want to apply an action that changes

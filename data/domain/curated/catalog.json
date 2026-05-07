@@ -1,110 +1,36 @@
 {
-  "id": "catalog-root",
   "title": "Waypoint Curated Domain Library — Root Catalog",
-  "description": "Top-level index of all curated domain knowledge available to the Waypoint server. Three top-level sections: accommodations (organized by context, profile, cognitive deficit, achievement deficit), modifications (curriculum, assignment, assessment), and measuring-goals (data collection, progress reporting). Use this to discover relevant categories, then load the per-section catalogs and specific files via the get_strategies tool.",
+  "description": "Top-level index of all curated domain knowledge available to the Waypoint server. Three top-level sections: accommodations (organized by context, profile, cognitive deficit, achievement deficit), modifications (curriculum, assignment, assessment), and measuring-goals (data collection, progress reporting). Use this to understand what each section covers, then pick tags from the tag vocabulary (listed in the get_strategies tool description) and call get_strategies with those tags to retrieve matching strategy files.",
   "sections": [
     {
-      "id": "accommodations",
       "title": "Accommodations",
       "description": "Strategies that change HOW the student accesses content or responds — same learning expectation. Organized in four parallel taxonomies; the same accommodation may appear retrievable through multiple lenses.",
       "subsections": [
         {
-          "id": "by-context",
           "title": "Accommodations by Classroom Context",
-          "description": "Where the accommodation applies in the school day (environment, transitions, language, peer/social, sensory, behavior, testing, tools, miscellaneous). Source: ADayInOurShoes.com",
-          "catalog": "accommodations/by-context/catalog.json",
-          "totals": { "files": 9, "accommodations": 115 }
+          "description": "Where the accommodation applies in the school day (environment, transitions, language, peer/social, sensory, behavior, testing, tools, miscellaneous). Source: ADayInOurShoes.com"
         },
         {
-          "id": "by-profile",
           "title": "Accommodations by Disability Profile",
-          "description": "Profile-specific lists for Anxiety, Executive Function Disorder, and Nonverbal Learning Disability. Source: ADayInOurShoes.",
-          "catalog": "accommodations/by-profile/catalog.json",
-          "totals": { "files": 3, "accommodations": 90 }
+          "description": "Profile-specific lists for Anxiety, Executive Function Disorder, and Nonverbal Learning Disability. Source: ADayInOurShoes."
         },
         {
-          "id": "by-cognitive-deficit",
           "title": "Accommodations by Cognitive Deficit",
-          "description": "Organized by Woodcock-Johnson III cognitive cluster (long-term retrieval, short-term memory, processing speed, auditory processing, visual-spatial, comprehension-knowledge, fluid reasoning). Each file: Definition + Accommodations + Instructional Strategies. Source: Seaman Compendium.",
-          "catalog": "accommodations/by-cognitive-deficit/catalog.json",
-          "totals": { "files": 7, "accommodations": 70, "strategies": 104 }
+          "description": "Organized by Woodcock-Johnson III cognitive cluster (long-term retrieval, short-term memory, processing speed, auditory processing, visual-spatial, comprehension-knowledge, fluid reasoning). Each file: Definition + Accommodations + Instructional Strategies. Source: Seaman Compendium."
         },
         {
-          "id": "by-achievement-deficit",
           "title": "Accommodations by Achievement Deficit",
-          "description": "Organized by academic skill area (basic reading, reading comprehension, spelling, basic math, math reasoning, penmanship), plus a research-supported techniques file (SQ4R, Drill Sandwich, Cover-Copy-Compare, etc.). Source: Seaman Compendium Sections Two and Three.",
-          "catalog": "accommodations/by-achievement-deficit/catalog.json",
-          "totals": {
-            "files": 7,
-            "accommodations": 66,
-            "strategies": 161,
-            "techniques": 19
-          }
+          "description": "Organized by academic skill area (basic reading, reading comprehension, spelling, basic math, math reasoning, penmanship), plus a research-supported techniques file (SQ4R, Drill Sandwich, Cover-Copy-Compare, etc.). Source: Seaman Compendium Sections Two and Three."
         }
       ]
     },
     {
-      "id": "modifications",
       "title": "Modifications",
-      "description": "Strategies that change WHAT the student is taught, demonstrates, or is assessed on — different learning expectation than peers. Always check the IEP's Modifications section for authorization before applying.",
-      "catalog": "modifications/catalog.json",
-      "totals": { "files": 4, "modifications": 25 }
+      "description": "Strategies that change WHAT the student is taught, demonstrates, or is assessed on — different learning expectation than peers. Always check the IEP's Modifications section for authorization before applying."
     },
     {
-      "id": "measuring-goals",
       "title": "Measuring IEP Goals",
-      "description": "How to operationalize IEP goal data collection: classroom systems, cadence, methods, scoring conventions, progress-report drafting.",
-      "catalog": "measuring-goals/catalog.json",
-      "totals": { "files": 2 }
+      "description": "How to operationalize IEP goal data collection: classroom systems, cadence, methods, scoring conventions, progress-report drafting."
     }
-  ],
-  "tag_vocabulary": {
-    "description": "Canonical tags used across all curated files for retrieval. Use these strings exactly when filtering with get_strategies(tags).",
-    "cognitive_deficits": [
-      "long-term-retrieval",
-      "short-term-memory",
-      "processing-speed",
-      "auditory-processing",
-      "phonemic-awareness",
-      "visual-spatial",
-      "comprehension-knowledge",
-      "fluid-reasoning"
-    ],
-    "achievement_deficits": [
-      "basic-reading",
-      "reading-comprehension",
-      "spelling",
-      "basic-math",
-      "math-reasoning",
-      "penmanship",
-      "written-expression"
-    ],
-    "contexts": [
-      "environment",
-      "transitions",
-      "tools-equipment",
-      "language-communication",
-      "peer-social",
-      "sensory",
-      "behavior",
-      "testing-assessment",
-      "instructional-delivery"
-    ],
-    "profiles": [
-      "anxiety",
-      "executive-function",
-      "nvld",
-      "adhd-attention",
-      "dyslexia",
-      "autism"
-    ]
-  },
-  "totals": {
-    "files": 32,
-    "accommodation_items": 341,
-    "instructional_strategies": 265,
-    "techniques": 19,
-    "modification_items": 25,
-    "measuring_goals_documents": 2
-  }
+  ]
 }

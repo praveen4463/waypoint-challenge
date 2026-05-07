@@ -40,7 +40,7 @@ function walkContentJsons(dir: string): LoadedCuratedFile[] {
     if (statSync(full).isDirectory()) {
       out.push(...walkContentJsons(full));
     } else if (entry === "catalog.json") {
-      // Skip catalog files — they're indexes, not content.
+      // Skip catalog files
       continue;
     } else if (entry.endsWith(".json")) {
       const data = JSON.parse(readFileSync(full, "utf8")) as CuratedFile;

@@ -3,6 +3,7 @@ import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { getRootCatalog } from "../domain/catalog.js";
 import { getStrategies } from "../domain/strategies.js";
 import { partitionTags, TAG_VOCABULARY } from "../domain/tags.js";
+import { MODIFICATION_RULES } from "../instructions.js";
 
 const LIST_CATALOG_DESCRIPTION = `
 Returns the root catalog of Waypoint's curated domain library: all
@@ -100,6 +101,7 @@ export function registerStrategyTools(server: McpServer): void {
                       matched_tags: m.matched_tags,
                     }))
                   : [],
+                rules: MODIFICATION_RULES,
               },
               null,
               2,

@@ -2,6 +2,7 @@ import { z } from "zod";
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { findIepByStudent, listIeps } from "../storage/iep.js";
 import { findLessonByHint, listLessons } from "../storage/lessons.js";
+import { MODIFICATION_RULES } from "../instructions.js";
 
 const FIND_STUDENT_DESCRIPTION = `
 Resolve a free-text hint (typically the Claude Project name, e.g.
@@ -75,7 +76,14 @@ export function registerRetrieveTools(server: McpServer): void {
       }
       return {
         content: [
-          { type: "text", text: JSON.stringify(record, null, 2) },
+          {
+            type: "text",
+            text: JSON.stringify(
+              { ...record, rules: MODIFICATION_RULES },
+              null,
+              2,
+            ),
+          },
         ],
       };
     },
@@ -123,7 +131,14 @@ export function registerRetrieveTools(server: McpServer): void {
       }
       return {
         content: [
-          { type: "text", text: JSON.stringify(record, null, 2) },
+          {
+            type: "text",
+            text: JSON.stringify(
+              { ...record, rules: MODIFICATION_RULES },
+              null,
+              2,
+            ),
+          },
         ],
       };
     },

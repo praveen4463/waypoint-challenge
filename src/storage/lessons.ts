@@ -40,7 +40,6 @@ export interface LessonSummary {
 export function saveLesson(
   title: string,
   parsed: ParsedLessonShape,
-  raw_text: string,
 ): LessonRecord {
   const slug = slugify(title);
   const dir = join(LESSONS_DIR, slug);
@@ -54,7 +53,6 @@ export function saveLesson(
   };
 
   writeFileSync(join(dir, "lesson.json"), JSON.stringify(record, null, 2));
-  writeFileSync(join(dir, "lesson.raw.txt"), raw_text);
 
   return record;
 }
@@ -63,14 +61,6 @@ export function getLesson(slug: string): LessonRecord | null {
   const dir = join(LESSONS_DIR, slug);
   if (!existsSync(dir)) return null;
   return JSON.parse(readFileSync(join(dir, "lesson.json"), "utf8")) as LessonRecord;
-}
-
-/** On-demand accessor for raw lesson text. Used only by tools that need
- *  line-anchored quoting. */
-export function getLessonRawText(slug: string): string | null {
-  const file = join(LESSONS_DIR, slug, "lesson.raw.txt");
-  if (!existsSync(file)) return null;
-  return readFileSync(file, "utf8");
 }
 
 export function listLessons(): LessonSummary[] {
@@ -92,9 +82,6 @@ export function listLessons(): LessonSummary[] {
     });
 }
 
-/**
- * Resolve a free-text hint to a stored lesson.
- */
 export function findLessonByHint(hint: string): LessonRecord | null {
   const all = listLessons();
   if (all.length === 0) return null;

@@ -133,6 +133,8 @@ Every action carries three things: a `Strategy:` line citing the curated entry b
 
 This shape is instructed to Claude via the `MODIFICATION_RULES` block embedded in every relevant tool response, so the model follows the schema rather than reinventing presentation each time.
 
+No part of the output is hardcoded or referenced in any way in the `MODIFICATION_RULES`. Its truly generic and written in a way that it supports all kinds of IEP and Lessons.
+
 ##### 5. Here's what teacher gets (total 4 points, numbers removed due to format issue here in readme)
 
 Jasmine Bailey — "What is 'community' and why is it important?"

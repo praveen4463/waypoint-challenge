@@ -102,9 +102,9 @@ Trade-offs we accepted with this approach:
 
 The Waypoint server makes zero LLM calls of its own. It is a context provider and tool layer; Claude (in Claude Desktop) is the only model that reasons about anything.
 
-Two reasons this matters:
+Reason this matters:
 
-1. Whatever the teacher reads is what Claude produced. No second model pre-shapes or post-processes the output, so there are no places where two models can disagree about the same content.
+Whatever the teacher reads is what Claude produced. No second model pre-shapes or post-processes the output, so there are no places where two models can disagree about the same content.
 
 ##### 4. How Claude reasons over the three sources
 
@@ -135,15 +135,15 @@ This shape is instructed to Claude via the `MODIFICATION_RULES` block embedded i
 
 No part of the output is hardcoded or referenced in any way in the `MODIFICATION_RULES`. Its truly generic and written in a way that it supports all kinds of IEP and Lessons.
 
-##### 5. Here's what teacher gets (total 4 points, numbers removed due to format issue here in readme)
+##### 6. Here's what teacher gets
 
-Jasmine Bailey — "What is 'community' and why is it important?"
-
-Trigger: third-grade reading vs grade-level text: goal-3
-Trigger: academic frustration leads to avoidance: pl-academics
-
-Before the intro slide deck, hand Jasmine her vocab card and spend 2-3 minutes one-on-one walking through the four lesson words plus the four most blocking text terms (solidarity, archetype, normative, identity-forming). (Accommodation)
-HANDOUT — Vocab card:
+> #### Jasmine Bailey — "What is 'community' and why is it important?"
+>
+> Trigger: third-grade reading vs grade-level text: goal-3
+> Trigger: academic frustration leads to avoidance: pl-academics
+>
+> Before the intro slide deck, hand Jasmine her vocab card and spend 2-3 minutes one-on-one walking through the four lesson words plus the four most blocking text terms (solidarity, archetype, normative, identity-forming). (Accommodation)
+> HANDOUT — Vocab card:
 
 ```
 JASMINE — VOCAB FOR "WHAT IS COMMUNITY?"
@@ -173,11 +173,12 @@ identity-forming = something that helps make you who you are
    Ex: Speaking Spanish at home can be identity-forming.
 ```
 
-- _**Strategy:** Pre-teach key vocabulary before reading: ck-strat-01_
-- _**IEP:** Reference sheets and graphic organizers: acc-presentation-of-instruction-classroom-accommodations-04_
-
-Give Jasmine the DRQ note-catcher when whole-class reading begins, and direct her to fill in each section as the class moves through the text rather than answering on the standard student copy. (Accommodation)
-HANDOUT — DRQ note-catcher:
+> - _**Strategy:** Pre-teach key vocabulary before reading: ck-strat-01_
+> - _**IEP:** Reference sheets and graphic organizers: acc-presentation-of-instruction-classroom-accommodations-04_
+>
+> #### Give Jasmine the DRQ note-catcher when whole-class reading begins, and direct her to fill in each section as the class moves through the text rather than answering on the standard student copy. (Accommodation)
+>
+> HANDOUT — DRQ note-catcher:
 
 ```
 JASMINE — DURING-READING NOTES
@@ -220,16 +221,17 @@ Find Evidence: HIGHLIGHT in your text —
    - ONE sentence that says why community MATTERS
 ```
 
-- _**Strategy:** Provide study guide before reading: rc-acc-06_
-- _**IEP:** Accurately annotate a given text: bench-3-01_
-
-At the transition from partner reading (paragraphs 3-7) into whole-class paragraph 8, do a 30-second 1:1 check-in: ask Jasmine which calming strategy she'll use if she gets stuck on the abstract section, and let her know she can take a movement break before the short-response prompt if she needs one. (Accommodation)
-
-- Strategy: Allow breaks and opportunities for action: anx-08
-- IEP: Initiate a calming strategy independently: bench-1-02
-
-When the class moves to the short-response prompt, swap her blank response page for the scaffolded version below before she starts writing. (Accommodation)
-HANDOUT — Short-response scaffold:
+> - _**Strategy:** Provide study guide before reading: rc-acc-06_
+> - _**IEP:** Accurately annotate a given text: bench-3-01_
+>
+> ### At the transition from partner reading (paragraphs 3-7) into whole-class paragraph 8, do a 30-second 1:1 check-in: ask Jasmine which calming strategy she'll use if she gets stuck on the abstract section, and let her know she can take a movement break before the short-response prompt if she needs one. (Accommodation)
+>
+> - Strategy: Allow breaks and opportunities for action: anx-08
+> - IEP: Initiate a calming strategy independently: bench-1-02
+>
+> ### When the class moves to the short-response prompt, swap her blank response page for the scaffolded version below before she starts writing. (Accommodation)
+>
+> HANDOUT — Short-response scaffold:
 
 ```
 JASMINE — SHORT RESPONSE SCAFFOLD
@@ -265,8 +267,8 @@ CHECK YOUR WORK:
 [ ] I used at least one vocab word.
 ```
 
-- _**Strategy:** Word bank for written expression: ck-acc-06_
-- _**IEP:** Write a claim answering each part: bench-3-03_
+> - _**Strategy:** Word bank for written expression: ck-acc-06_
+> - _**IEP:** Write a claim answering each part: bench-3-03_
 
 ## Tests
 

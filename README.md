@@ -274,7 +274,7 @@ CHECK YOUR WORK:
 
 ##### 6. Here's what teacher gets, Ex 2
 
-![Teacher output](./docs/example2.png)
+![Teacher output](./docs/answer2.png)
 
 ## Tests
 

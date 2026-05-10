@@ -135,7 +135,7 @@ This shape is instructed to Claude via the `MODIFICATION_RULES` block embedded i
 
 No part of the output is hardcoded or referenced in any way in the `MODIFICATION_RULES`. Its truly generic and written in a way that it supports all kinds of IEP and Lessons.
 
-##### 6. Here's what teacher gets
+##### 6. Here's what teacher gets, Ex 1
 
 > #### Jasmine Bailey — "What is 'community' and why is it important?"
 >
@@ -271,6 +271,10 @@ CHECK YOUR WORK:
 
 > - _**Strategy:** Word bank for written expression: ck-acc-06_
 > - _**IEP:** Write a claim answering each part: bench-3-03_
+
+##### 6. Here's what teacher gets, Ex 2
+
+![Teacher output](./docs/example2.png)
 
 ## Tests
 

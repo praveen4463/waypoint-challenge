@@ -139,9 +139,9 @@ No part of the output is hardcoded or referenced in any way in the `MODIFICATION
 
 > #### Jasmine Bailey — "What is 'community' and why is it important?"
 >
-> Trigger: third-grade reading vs grade-level text: goal-3
+> Trigger: third-grade reading vs grade-level text: pl-academics
 >
-> Trigger: academic frustration leads to avoidance: pl-academics
+> Trigger: academic frustration leads to avoidance: pl-behavioral
 >
 > Before the intro slide deck, hand Jasmine her vocab card and spend 2-3 minutes one-on-one walking through the four lesson words plus the four most blocking text terms (solidarity, archetype, normative, identity-forming). (Accommodation)
 >

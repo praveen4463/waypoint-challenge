@@ -137,6 +137,10 @@ No part of the output is hardcoded or referenced in any way in the `MODIFICATION
 
 ##### 6. Here's what teacher gets, Ex 1
 
+![Teacher output](./docs/answer2.png)
+
+##### 7. Here's what teacher gets, Ex 2
+
 > #### Jasmine Bailey — "What is 'community' and why is it important?"
 >
 > Trigger: third-grade reading vs grade-level text: pl-academics
@@ -271,10 +275,6 @@ CHECK YOUR WORK:
 
 > - _**Strategy:** Word bank for written expression: ck-acc-06_
 > - _**IEP:** Write a claim answering each part: bench-3-03_
-
-##### 6. Here's what teacher gets, Ex 2
-
-![Teacher output](./docs/answer2.png)
 
 ## Tests
 

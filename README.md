@@ -293,3 +293,9 @@ A few screenshots from Claude's thinking pane while producing the output above. 
 ![Claude continuing the lesson-vs-IEP intersection, mapping specific lesson moments to specific IEP-driven concerns](./docs/lesson-iep-2.png)
 
 ![Claude calling get_strategies with tags drawn from the IEP, retrieving curated accommodation strategies that map back to specific IDs](./docs/strategy.png)
+
+## Potential next feature: Goal tracking
+
+Closing the loop between the delta sheet and IEP progress reporting is the natural next step. The curated data is already in the repo under `data/domain/curated/measuring-goals/` (the IEP work-bins method and a data-collection / progress-reporting template), so the schema and rubric are settled.
+
+The shape: two tools — `log_goal_progress` appends a scored data point (student, goal/benchmark ID, score, lesson) to a per-student `progress.jsonl`, and `get_progress_summary` rolls those points up into a quarterly report drafted against the curated template. The delta sheet already tells the teacher which benchmark each action targets, so after class she just says "Jasmine: claim 2, evidence 2, analysis 1" and Claude logs it. At quarter-end she asks for the report and Claude renders it from the same citations the modifications were built on — same provenance chain, no separate reporting workflow.

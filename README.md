@@ -1,5 +1,11 @@
 # Waypoint MCP Server
 
+I built this mcp server attempting a coding challege for a job posted on HN in May 2026. Here is the job's description on [HN](https://news.ycombinator.com/item?id=48012401)
+
+The founder emailed me next week telling following. This work put me into the top 5 applicants who attempted the mcp server challenge. Unfortunately I wasn't selected as their founding engineer role for some still unclear reason.
+
+<img width="1384" height="528" alt="Screenshot 2026-06-02 at 4 43 38 PM" src="https://github.com/user-attachments/assets/8a6ae21c-139e-4027-baf0-5f7400492cb5" />
+
 ## Repo layout (showed here only the important ones)
 
 ```
